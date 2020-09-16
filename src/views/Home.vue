@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <img src="../assets/bmw.png" alt="" class="img-fluid w-100" />
+      </div>
+    </div>
+    <div class="container"></div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  methods: {
+    show() {
+      this.$modal.show("modal");
+    },
+    hide() {
+      this.$modal.hide("modal");
+    }
   }
 };
 </script>
+<style lang="scss"></style>
