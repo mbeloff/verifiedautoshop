@@ -117,7 +117,7 @@ export default {
             type: "button",
             text: "Get a Quote",
             path: "",
-            class: "btn btn-cs btn-grad",
+            class: "btn btn-cs btn-prime",
             iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
           }
         ]
@@ -146,7 +146,6 @@ export default {
   .custom-section-content {
     text-align: right;
     margin-left: auto;
-    font-family: Helvetica;
     font-size: 1.25rem;
   }
   .btn-cs {
@@ -154,7 +153,7 @@ export default {
     font-size: 0.75rem;
     border-radius: 0;
   }
-  .btn-grad {
+  .btn-prime {
     color: white !important;
     background-image: linear-gradient(
       15deg,
