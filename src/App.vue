@@ -9,7 +9,7 @@
       :clickToClose="false"
       :focusTrap="true"
     >
-      <standard-form></standard-form>
+      <EForm></EForm>
     </modal>
     <div class="content">
       <router-view />
@@ -23,10 +23,10 @@
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
-import StandardForm from "@/components/StandardForm.vue";
+import EForm from "@/components/Form.vue";
 
 export default {
-  components: { Nav, Footer, StandardForm },
+  components: { Nav, Footer, EForm },
   methods: {
     show() {
       this.$modal.show("modal");
@@ -46,7 +46,7 @@ body {
   margin: 0 0 0 0;
   --verified: #5077bb;
   --primary: #103aad;
-  --secondary: #691035;
+  --secondary: #ff0000;
   --dark-color: #221c1a;
   --light-color: #4d7cff;
   --dark-bg: #201e1e;
@@ -64,7 +64,7 @@ body {
   background: var(--dark-bg);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@623&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@401&display=swap");
 
 .vm--modal {
   height: auto !important;
@@ -104,7 +104,7 @@ h4 {
 .btn {
   &.btn-cs {
     padding: 0.5rem 2rem;
-    font-size: 0.75rem;
+    // font-size: 0.75rem;
     border-radius: 0;
     text-transform: uppercase;
   }

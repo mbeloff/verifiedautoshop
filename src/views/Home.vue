@@ -51,5 +51,6 @@ export default {
   background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+  filter: drop-shadow(4px 6px 5px rgba(33, 33, 37, 0.411)) opacity(0.9);
 }
 </style>

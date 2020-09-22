@@ -2,7 +2,7 @@
   <div class="py-4 mt-5">
     <div style="overflow: hidden; max-width: 100vw">
       <div class="container">
-        <h1 class="mb-3">
+        <h1 class="mb-3 font-italic">
           <i class=" fas fa-check-circle mr-2"></i>Testimonials
         </h1>
         <swiper ref="mySwiperRef" class="swiper px-5" :options="swiperOption">
@@ -92,34 +92,34 @@ export default {
           author: "Serena",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.jpg",
-          comment:
-            "Really happy with the service, they kept me in the loop about what needed to be done."
+          comment: "Really happy with the service, everyone was very helpful."
         },
         {
           author: "Rami",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/2.jpg",
           comment:
-            "Much cheaper than dealership and the boys were great to work with."
+            "Much cheaper than dealership and the boys know what they're doing."
         },
         {
           author: "Liz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.jpg",
-          comment: "These guys get the job done. No fuss."
+          comment:
+            "I was able to book a service the next day, and they were very professional."
         },
         {
           author: "Anna",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.jpg",
           comment:
-            "They let me know what needed to be done and what could wait. Didn't try to sting me with extra services that I didn't really need."
+            "They let me know what needed to be done and what could wait. Didn't try to sting me with extra stuff that I didn't really need."
         },
         {
           author: "Waz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.jpg",
-          comment: "One more testimonial for good measure"
+          comment: "I can definitely recommend these guys."
         }
       ]
     };

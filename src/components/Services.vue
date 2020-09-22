@@ -23,11 +23,13 @@
           </li>
         </ul>
       </div>
-      <a href="" class="btn btn-cs btn-outline mb-5 mt-2">Get a Quote</a>
+      <a @click="show()" class="btn btn-cs btn-outline mb-5 mt-2"
+        >Get a Quote</a
+      >
     </div>
 
     <div class="container p-0 px-md-3">
-      <h1 class="mb-3 font-italic">
+      <h1 class="px-3 px-md-0 mb-3 font-italic">
         <i class=" fas fa-check-circle mr-2"></i>Services
       </h1>
       <tabs>

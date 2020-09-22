@@ -7,7 +7,7 @@
         ><!-- Custom Slot - Uncomment to use -->
         <template v-slot:custom-section>
           <div class="custom-section-content">
-            <p class="mb-0 font-weight-bold">1800 24 68 69</p>
+            <p class="mb-0 font-weight-bold">0424 975 336</p>
           </div>
         </template>
       </vue-navigation-bar>
@@ -148,28 +148,28 @@ export default {
     margin-left: auto;
     font-size: 1.25rem;
   }
-  .btn-cs {
-    padding: 0.5rem 2rem;
-    font-size: 0.75rem;
-    border-radius: 0;
-  }
-  .btn-prime {
-    color: white !important;
-    background-image: linear-gradient(
-      15deg,
-      var(--primary) 40%,
-      var(--light-color)
-    );
-    background-size: 300%;
-    background-position: 50%;
-    border: 1px solid var(--primary);
-    transition: background-position 0.15s ease-in-out;
-    &:hover {
-      background-position: 100%;
-      color: white;
-      border: 1px solid var(--primary);
-    }
-  }
+  // .btn-cs {
+  //   padding: 0.5rem 2rem;
+  //   font-size: 0.75rem;
+  //   border-radius: 0;
+  // }
+  // .btn-prime {
+  //   color: white !important;
+  //   background-image: linear-gradient(
+  //     15deg,
+  //     var(--primary) 40%,
+  //     var(--light-color)
+  //   );
+  //   background-size: 300%;
+  //   background-position: 50%;
+  //   border: 1px solid var(--primary);
+  //   transition: background-position 0.15s ease-in-out;
+  //   &:hover {
+  //     background-position: 100%;
+  //     color: white;
+  //     border: 1px solid var(--primary);
+  //   }
+  // }
   svg {
     width: 20px !important;
   }
@@ -206,6 +206,7 @@ export default {
   }
 
   &__popup {
+    border-radius: 5px;
     &__top {
       background: var(--dark-bg);
     }

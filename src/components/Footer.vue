@@ -3,7 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a class="btn btn-cs btn-prime">GET A QUOTE</a>
+          <img src="../assets/logo-sm.svg" alt="" style="height: 35px;" />
+          <a class="ml-2 btn btn-cs btn-prime" @click="show()">GET A QUOTE</a>
         </div>
         <div class="col-12 col-md-6"></div>
       </div>
@@ -30,7 +31,7 @@
         <div class="col-12 col-sm-6 col-md-4">
           <h6>Contact</h6>
           <ul class="list-unstyled small">
-            <li class="list-item h5">1800 24 68 69</li>
+            <li class="list-item h5">0424 975 336</li>
             <li class="list-item">46 Deshon St <br />Woolloongabba</li>
           </ul>
         </div>
@@ -40,7 +41,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    show() {
+      this.$modal.show("modal");
+    },
+    hide() {
+      this.$modal.hide("modal");
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">

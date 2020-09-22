@@ -59,7 +59,7 @@ export default {
   flex-direction: column;
   li {
     // border-bottom: 1px solid #cfcfcf;
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 0.5rem 1.5rem;
     cursor: pointer;
     transition: background 0.5s, color 0.5s;
@@ -76,6 +76,7 @@ export default {
   &.tabActive {
     color: var(--primary);
     background: rgb(230, 232, 238);
+    border-color: rgba(0, 0, 0, 0.068);
   }
 }
 </style>
