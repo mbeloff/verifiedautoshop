@@ -45,7 +45,7 @@ export default {
 body {
   margin: 0 0 0 0;
   --verified: #5077bb;
-  --primary: #103aad;
+  --primary: #1b3e9e;
   --secondary: #ff0000;
   --dark-color: #221c1a;
   --light-color: #4d7cff;
@@ -91,6 +91,7 @@ h2,
 h3,
 h4 {
   font-variation-settings: "wght" 600;
+  letter-spacing: 0.01px;
 }
 
 #nav {

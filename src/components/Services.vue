@@ -2,9 +2,9 @@
   <div class="py-5">
     <div class="container">
       <p class="lead">
-        Verified Autoshop Brisbane Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Saepe illo enim ipsam aspernatur iure asperiores fugit
-        consequuntur libero rerum minima.
+        Verified Autoshop is Brisbane's finest auto service center Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Saepe illo enim ipsam
+        aspernatur iure asperiores fugit consequuntur libero rerum minima.
       </p>
       <div class="my-5 ml-0 ml-md-2">
         <h4 class="color-prime font-italic">Why go Verified?</h4>
@@ -34,61 +34,190 @@
       </h1>
       <tabs>
         <tab title="Servicing">
-          <h4>Servicing</h4>
+          <h4>Routine Servicing & Maintenance</h4>
           <p>
             Trust Verified Autoshop to keep your car running smoothly by booking
             your regular service with us. Keeping your car serviced regularly
             will improve fuel efficiency and help prevent more costly problems
             by detecting issues before they develop.
           </p>
+          <p class="color-prime font-weight-bold">
+            Call Verified Autoshop for:
+          </p>
           <ul class="list-unstyled">
-            <li class="list-item item-dash">Log Book Service</li>
-            <li class="list-item item-dash">Minor Services</li>
-            <li class="list-item item-dash">Major Services</li>
+            <li class="list-item item-dash">New Car and Log Book Service</li>
+            <li class="list-item item-dash">Standard Service</li>
+            <li class="list-item item-dash">Major Service</li>
             <li class="list-item item-dash">Transmission Service</li>
           </ul>
         </tab>
         <tab title="Air Conditioning"
-          ><h4>Air Conditioning</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          sunt ducimus numquam odit, cumque, dolorem quas nemo, ut perspiciatis
-          id veniam! Consequuntur natus ut aliquid laboriosam quasi laborum
-          commodi quod blanditiis quam fugit dolorum, nihil minima labore fugiat
-          iusto. Aliquid?</tab
+          ><h4>Air Conditioning Servicing and Repairs</h4>
+          <p>
+            Does your air conditioning seem to not be working as well as it
+            should? A/C units should be checked for leaks and motors and
+            condensers checked regularly to ensure you're keeping cool and
+            comfortable in summer.
+          </p>
+          <p>
+            Contact Verified Autoshop for an A/C inspection, service or
+            refrigerant refill ("re-gas") or let us know when you book in for a
+            regular service and we'll diagnose and repair any issues while we're
+            at it.
+          </p></tab
         >
         <tab title="Diagnostics"
           ><h4>Diagnostics</h4>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-          asperiores voluptas, magni omnis fugit ab.</tab
+          <p>
+            We have the equipment and experience to diagnose all kinds of
+            mechanical and electrical problems.
+            <br />Don't waste your time with guesswork, let the qualified
+            technicians at Verified identify and resolve faults.
+          </p></tab
         >
         <tab title="Auto Electrical"
           ><h4>Auto Electrical</h4>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-          aliquam perspiciatis neque mollitia dolor laudantium, ipsum doloribus
-          dolores nobis.</tab
+          <p>
+            Your car’s electrical system is complex. When things start to go
+            wrong, it can damage other parts of your car, making it more likely
+            you’ll experience a dangerous malfunction while driving.
+          </p>
+          <p>
+            Don’t ignore auto electrical faults until it’s too late. If you
+            suspect your car’s developing an electrical fault, trust a Verified
+            auto electrician to fix the problem fast.
+          </p>
+          <p class="color-prime font-weight-bold">Specialists in:</p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">
+              Auto electrical wiring and electronic computer systems for all
+              makes and models
+            </li>
+            <li class="list-item item-dash">
+              Installations and repairs
+            </li>
+            <li class="list-item item-dash">
+              Auto electrical servicing and maintenance
+            </li>
+            <li class="list-item item-dash">
+              Quickly identifying electrical issues
+            </li>
+          </ul></tab
         >
         <tab title="Inspections"
           ><h4>Inspections</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          porro corrupti quam! Unde corporis possimus quis dolorem dignissimos
-          officia odit fugit, cupiditate tenetur nihil omnis.</tab
-        >
+          <p class="color-prime font-weight-bold">Buying a second hand car?</p>
+          <p>
+            Buying a second hand car can be a daunting exercise. Unless you’re
+            an expert, a seemingly great looking car can hide some serious
+            issues that will end up costing you more and risking your family’s
+            safety.
+          </p>
+          <p>
+            Let Verified Autoshop look over the vehicle first to give you peace
+            of mind before parting ways with your hard earned cash. We'll
+            identify any existing or developing issues so you can make an
+            informed decision about your purchase.
+          </p>
+          <p class="color-prime font-weight-bold">We will:</p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">
+              Inspect engine body and under the hood,
+            </li>
+            <li class="list-item item-dash">
+              Inspect tyres, brakes and suspension
+            </li>
+            <li class="list-item item-dash">
+              Test drive the car for you
+            </li>
+            <li class="list-item item-dash">
+              Provide a detailed report outlining any potential issues.
+            </li>
+          </ul>
+          <p class="color-prime font-weight-bold">Make sure:</p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">
+              Your vehicle is in good condition and safe to drive away.
+            </li>
+            <li class="list-item item-dash">
+              You know of any existing issues so you can negotiate and better
+              price.
+            </li>
+            <li class="list-item item-dash">
+              You avoid the hassle of chasing the previous owner to honour the
+              warranty promised.
+            </li>
+          </ul>
+        </tab>
         <tab title="Brakes & Suspensions"
           ><h4>Brakes & Suspensions</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae
-          obcaecati quo?
-        </tab>
-        <tab title="Paint & Panel"
-          ><h4>Paint & Panel</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae
-          obcaecati quo?
+          <p class="color-prime font-weight-bold">
+            Get your brakes check at Verified
+          </p>
+          <p>
+            Worn brakes mean longer stopping distances and difficulty stopping
+            in emergency situations. It's important that brakes be checked
+            regularly and repaired or replaced if needed to ensure your safety
+            on the road.
+          </p>
+          <p>
+            If your brakes are performing like they used to, or your noticing
+            any noise or change in steering when braking, give Verified Autoshop
+            a call and get your car checked out by our qualified technicians.
+          </p>
+          <p class="color-prime font-weight-bold">
+            Common Steering and Suspension Problems:
+          </p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">
+              Does your vehicle’s steering no longer seem precise and stable?
+            </li>
+            <li class="list-item item-dash">
+              Does your vehicle ‘wander,’ and not hold a straight line very
+              well?
+            </li>
+            <li class="list-item item-dash">
+              Are your tyres wearing out too fast? Do they have strange wear
+              patterns, or perhaps an edge that is worn out long before the
+              thread is worn?
+            </li>
+            <li class="list-item item-dash">
+              Does your vehicle bounce and sway after you hit bumps?
+            </li>
+            <li class="list-item item-dash">
+              Do you hear annoying squeaks, clunks, rattles or groaning noises
+              coming from under the vehicle as you drive?
+            </li>
+          </ul>
         </tab>
         <tab title="Tyres"
           ><h4>Tyres</h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-          accusantium accusamus quaerat qui vel rem voluptate assumenda, beatae
-          saepe tenetur nulla optio.</tab
-        >
+          <p>
+            Let us make sure you get the right tyres for your vehicle and
+            driving needs.
+          </p>
+          <p class="color-prime font-weight-bold">
+            Getting the right tyres can:
+          </p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">
+              Make your car ride more smooth and quiet
+            </li>
+            <li class="list-item item-dash">
+              Improve braking and handling
+            </li>
+            <li class="list-item item-dash">
+              Make your car hold turns better
+            </li>
+            <li class="list-item item-dash">
+              Keep you safe
+            </li>
+          </ul>
+          <p>
+            Contact Verified Autoshop for great value tyre replacement along
+            with wheel balancing, alignment and puncture repairs.
+          </p>
+        </tab>
       </tabs>
     </div>
   </div>
@@ -117,15 +246,16 @@ export default {
 <style lang="scss">
 .item-dash {
   position: relative;
-  margin-left: 10px;
+  margin-left: 2rem;
+  margin-bottom: 0.25rem;
   &::before {
     position: absolute;
     content: "";
     background: var(--light-color);
-    height: 2px;
-    width: 5px;
+    height: 6px;
+    width: 6px;
     left: -10px;
-    top: 50%;
+    top: 9px;
   }
 }
 </style>

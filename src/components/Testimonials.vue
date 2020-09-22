@@ -104,7 +104,7 @@ export default {
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/2.jpg",
           comment:
-            "Much cheaper than dealership and the boys know what they're doing."
+            "So much cheaper than dealership and the boys know what they're doing."
         },
         {
           author: "Liz",
@@ -118,13 +118,14 @@ export default {
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.jpg",
           comment:
-            "They let me know what needed to be done and what could wait. Didn't try to sting me with extra stuff that I didn't really need."
+            "I'm so happy with the service and the price. Don't get ripped off elsewhere."
         },
         {
           author: "Waz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.jpg",
-          comment: "I can definitely recommend these guys."
+          comment:
+            "Easy to recommend these guys, they did a great job. Even got the job done quicker than was estimated."
         }
       ]
     };

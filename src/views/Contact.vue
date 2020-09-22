@@ -2,9 +2,9 @@
   <div class="h-100 mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-5">
           <h2 class="title">Got a question?</h2>
-          <p class="sub-title">
+          <p>
             Please use this form to make a general enquiry.
           </p>
           <p>
@@ -12,21 +12,14 @@
             <a href="javascript:void(0)" @click="show()">click here</a>
           </p>
         </div>
-        <div class="col-12 col-md-6 form">
+        <div class="col-12 col-md-6 col-lg-7 form">
           <form
             name="VerifiedContact"
             method="post"
             id="VerifiedContact"
             action="/success"
-            data-netlify-honeypot="bot-field"
             @submit.prevent="handleSubmit"
           >
-            <input
-              type="text"
-              class="invisible py-0"
-              name="bot-field"
-              style="height: 0"
-            />
             <div class="row">
               <div class="col-md-12 form-group">
                 <label class="sr-only">Name</label>
