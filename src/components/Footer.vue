@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-5 py-4 text-left text-white" id="footer">
-    <div class="container">
+  <div class="text-left text-white" id="footer">
+    <div class="container py-4">
       <div class="row">
         <div class="col-12">
           <img src="../assets/logo-sm.svg" alt="" style="height: 35px;" />
@@ -66,5 +66,9 @@ export default {
 .list-item {
   font-weight: normal;
   font-variation-settings: "wght" 100;
+}
+
+.map {
+  border-top: 5px solid var(--primary);
 }
 </style>

@@ -1,12 +1,16 @@
 <template>
-  <div class="py-4 mt-5">
+  <div class="light-bg py-4 mt-5">
     <div style="overflow: hidden; max-width: 100vw">
       <div class="container">
         <h1 class="mb-3 font-italic">
           <i class=" fas fa-check-circle mr-2"></i>Testimonials
         </h1>
-        <swiper ref="mySwiperRef" class="swiper px-5" :options="swiperOption">
-          <swiper-slide v-for="(test, i) in testimonials" :key="i">
+        <swiper ref="mySwiperRef" class="swiper p-5" :options="swiperOption">
+          <swiper-slide
+            class="rounded shadow-lg"
+            v-for="(test, i) in testimonials"
+            :key="i"
+          >
             <div class="h-100 w-100">
               <div class="card-body small text-left">
                 <div
@@ -60,8 +64,9 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
         slidesPerGroup: 1,
+        autoplay: true,
         loop: true,
         loopFillGroupWithBlank: true,
         breakpoints: {
@@ -92,7 +97,7 @@ export default {
           author: "Serena",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.jpg",
-          comment: "Really happy with the service, everyone was very helpful."
+          comment: "Really happy with the service, all the staff very helpful."
         },
         {
           author: "Rami",

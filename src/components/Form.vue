@@ -101,7 +101,7 @@
         </div>
       </div>
       <div class="row mt-2">
-        <label class="col-12" for="contactVia">Contact me via:</label>
+        <label class="col-12" for="contactVia">Preferred Contact:</label>
         <div class="col-12">
           <input
             class="mr-2 ml-2"
@@ -272,22 +272,6 @@ select::placeholder {
 .btn-close {
   color: var(--primary);
 }
-
-// .form {
-//   .btn-submit {
-//     color: var(--primary);
-//     border: var(--primary) 1px solid;
-//     border-radius: 20px;
-//     // font-weight: 100;
-//     &:hover,
-//     &:focus {
-//       background: var(--primary);
-//       color: white !important;
-//       // transform: scale(1.02);
-//       transition: transform 0.1s cubic-bezier(0.5, -0.24, 0.5, 3.21);
-//     }
-//   }
-// }
 
 .fade-enter-active,
 .fade-leave-active {

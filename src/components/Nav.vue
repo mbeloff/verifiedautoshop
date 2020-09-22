@@ -105,7 +105,7 @@ export default {
               {
                 type: "link",
                 text: "Contact",
-                path: { name: "contact" },
+                path: { name: "Contact" },
                 iconLeft: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
               }
             ]

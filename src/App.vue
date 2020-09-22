@@ -64,6 +64,10 @@ body {
   background: var(--dark-bg);
 }
 
+.light-bg {
+  background: #e9ecee;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@401&display=swap");
 
 .vm--modal {

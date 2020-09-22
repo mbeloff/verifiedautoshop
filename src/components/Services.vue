@@ -1,14 +1,18 @@
 <template>
   <div class="py-5">
     <div class="container">
-      <p>
-        Verified Autoshop blha blah Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Molestias obcaecati voluptate blanditiis at hic
-        necessitatibus?
+      <p class="lead">
+        Verified Autoshop Brisbane Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Saepe illo enim ipsam aspernatur iure asperiores fugit
+        consequuntur libero rerum minima.
       </p>
-      <div class="small ml-0 ml-md-2">
-        <h5 class="color-prime">Why go Verified?</h5>
+      <div class="my-5 ml-0 ml-md-2">
+        <h4 class="color-prime font-italic">Why go Verified?</h4>
         <ul class="list-unstyled color-light mb-0">
+          <li class="list-item mb-2">
+            <i class="fas fa-check-circle mr-2"></i>We specialise in servicing &
+            maintenance, repairs, inspections and auto electrics.
+          </li>
           <li class="list-item mb-2">
             <i class="fas fa-check-circle mr-2"></i>We have the experience and
             know-how to service all makes and models.
@@ -16,10 +20,6 @@
           <li class="list-item mb-2">
             <i class="fas fa-check-circle mr-2"></i>We're committed to making
             great service and quality parts affordable.
-          </li>
-          <li class="list-item mb-2">
-            <i class="fas fa-check-circle mr-2"></i>We'll never undertake work
-            without discussing it with you first; no surprises on your bill.
           </li>
         </ul>
       </div>
@@ -35,10 +35,19 @@
       <tabs>
         <tab title="Servicing">
           <h4>Servicing</h4>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dicta
-          esse nam quaerat rerum? Facilis quae, voluptates nam ab eum inventore
-          eos repudiandae expedita non?</tab
-        >
+          <p>
+            Trust Verified Autoshop to keep your car running smoothly by booking
+            your regular service with us. Keeping your car serviced regularly
+            will improve fuel efficiency and help prevent more costly problems
+            by detecting issues before they develop.
+          </p>
+          <ul class="list-unstyled">
+            <li class="list-item item-dash">Log Book Service</li>
+            <li class="list-item item-dash">Minor Services</li>
+            <li class="list-item item-dash">Major Services</li>
+            <li class="list-item item-dash">Transmission Service</li>
+          </ul>
+        </tab>
         <tab title="Air Conditioning"
           ><h4>Air Conditioning</h4>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
@@ -105,4 +114,18 @@ export default {
   }
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.item-dash {
+  position: relative;
+  margin-left: 10px;
+  &::before {
+    position: absolute;
+    content: "";
+    background: var(--light-color);
+    height: 2px;
+    width: 5px;
+    left: -10px;
+    top: 50%;
+  }
+}
+</style>

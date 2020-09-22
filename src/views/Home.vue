@@ -47,7 +47,7 @@ export default {
 }
 
 .banner-logo {
-  height: 80%;
+  height: 50%;
   background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: 50%;
