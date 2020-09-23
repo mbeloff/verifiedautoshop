@@ -10,21 +10,13 @@
 
     <form
       class="col-12 pt-1 pb-3"
-      name="VerifiedEnquiry"
+      name="VerifiedQuote"
       method="post"
-      id="VerifiedEnquiry"
+      id="VerifiedQuote"
       action="/success"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
     >
-      <input
-        type="text"
-        class="invisible py-0"
-        name="bot-field"
-        style="height: 0"
-      />
-
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Vehicle</label>
 
@@ -187,7 +179,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          "form-name": "VerifiedEnquiry",
+          "form-name": "VerifiedQuote",
           ...this.form
         })
       })

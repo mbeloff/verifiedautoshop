@@ -14,9 +14,9 @@
         </div>
         <div class="col-12 col-md-6 col-lg-7 form">
           <form
-            name="VerifiedEquiry"
+            name="VerifiedEnquiry"
             method="post"
-            id="VerifiedEquiry"
+            id="VerifiedEnquiry"
             action="/success"
             @submit.prevent="handleSubmit"
           >
@@ -180,7 +180,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          "form-name": "VerifiedEquiry",
+          "form-name": "VerifiedEnquiry",
           ...this.enquire
         })
       })
