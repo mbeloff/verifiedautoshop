@@ -89,22 +89,17 @@ export default {
             text: "CONTACT US",
             arrowColor: "var(--primary)",
             subMenuOptions: [
+              // {
+              //   type: "link",
+              //   text: "About Us",
+              //   path: { name: "about-us" }
+              // },
+              // {
+              //   type: "hr"
+              // },
               {
                 type: "link",
-                text: "About Us",
-                path: { name: "about-us" }
-              },
-              {
-                type: "link",
-                text: "FAQ",
-                path: { name: "faq" }
-              },
-              {
-                type: "hr"
-              },
-              {
-                type: "link",
-                text: "Contact",
+                text: "Make an Enquiry",
                 path: { name: "Contact" },
                 iconLeft: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
               }
@@ -148,28 +143,6 @@ export default {
     margin-left: auto;
     font-size: 1.25rem;
   }
-  // .btn-cs {
-  //   padding: 0.5rem 2rem;
-  //   font-size: 0.75rem;
-  //   border-radius: 0;
-  // }
-  // .btn-prime {
-  //   color: white !important;
-  //   background-image: linear-gradient(
-  //     15deg,
-  //     var(--primary) 40%,
-  //     var(--light-color)
-  //   );
-  //   background-size: 300%;
-  //   background-position: 50%;
-  //   border: 1px solid var(--primary);
-  //   transition: background-position 0.15s ease-in-out;
-  //   &:hover {
-  //     background-position: 100%;
-  //     color: white;
-  //     border: 1px solid var(--primary);
-  //   }
-  // }
   svg {
     width: 20px !important;
   }
@@ -213,6 +186,25 @@ export default {
     &__bottom {
       &__custom-section {
         color: var(--primary);
+      }
+      &__menu-options {
+        &__option {
+          &__link {
+            &:not(.btn) {
+              color: var(--primary);
+              font-variation-settings: "wght" 600;
+              position: relative;
+              &::after {
+                position: absolute;
+                content: "";
+                background: var(--primary);
+                width: 125px;
+                height: 1px;
+                bottom: 5px;
+              }
+            }
+          }
+        }
       }
     }
   }

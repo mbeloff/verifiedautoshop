@@ -7,6 +7,7 @@
         </div>
       </div>
     </div>
+    <Intro></Intro>
 
     <Services></Services>
 
@@ -18,8 +19,9 @@
 // @ is an alias to /src
 import Services from "@/components/Services.vue";
 import Testimonials from "@/components/Testimonials.vue";
+import Intro from "@/components/Intro.vue";
 export default {
-  components: { Services, Testimonials },
+  components: { Services, Testimonials, Intro },
   name: "Home",
   methods: {
     show() {

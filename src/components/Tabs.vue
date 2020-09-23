@@ -2,7 +2,7 @@
   <div class="services-tabs">
     <ul class="tabs-header list-group">
       <li
-        class="mr-md-3 list-group-item"
+        class="mr-md-3 list-group-item shadow-responsive"
         v-for="(tab, index) in tabs"
         :key="tab.title"
         @click="selectTab(index)"
@@ -11,7 +11,8 @@
         {{ tab.title }}
       </li>
     </ul>
-    <div class="col-12 mt-2 mt-md-0">
+
+    <div class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive">
       <slot></slot>
     </div>
   </div>
@@ -69,6 +70,12 @@ export default {
         color: #f1f7ff;
       }
     }
+
+    @media only screen and (min-width: 768px) {
+      a {
+        pointer-events: none;
+      }
+    }
   }
 }
 
@@ -76,7 +83,13 @@ export default {
   &.tabActive {
     color: var(--primary);
     background: rgb(230, 232, 238);
-    border-color: rgba(0, 0, 0, 0.068);
+    border-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.shadow-responsive {
+  @media only screen and (min-width: 768px) {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
 }
 </style>

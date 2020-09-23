@@ -11,8 +11,8 @@ export default new Vuex.Store({
       name: "",
       number: "",
       email: "",
-      vehicleMake: "Vehicle Make",
-      vehicleModel: "Vehicle Model",
+      make: "Vehicle Make",
+      model: "Vehicle Model",
       contactVia: [],
       comments: ""
     },

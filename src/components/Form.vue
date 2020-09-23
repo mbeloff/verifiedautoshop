@@ -125,12 +125,10 @@
       <div class="row">
         <label class="col-12 section-label" for="">Comment/Question</label>
         <div class="col-md-12 form-group g-mb-40">
-          <label class="sr-only">Enter additional comments here</label>
-
           <textarea
             class="form-control"
             rows="4"
-            placeholder="Please enter any additional information or requests here ..."
+            placeholder="Please enter any additional information here ..."
             aria-label="Type your enquiry here"
             name="comment"
             v-model="form.comments"
@@ -165,11 +163,11 @@ export default {
   },
   watch: {
     selectedMake: function() {
-      this.form.vehicleMake = this.selectedMake.label;
+      this.form.make = this.selectedMake.label;
       this.selectedModel = "Vehicle Model";
     },
     selectedModel: function() {
-      this.form.vehicleModel = this.selectedModel;
+      this.form.model = this.selectedModel;
     }
   },
   methods: {

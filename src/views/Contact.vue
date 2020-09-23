@@ -202,10 +202,6 @@ export default {
 };
 </script>
 
-<style>
-.map {
-  border: 1px solid rgb(199, 196, 196);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+<style lang="scss">
+
 </style>

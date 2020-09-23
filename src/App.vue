@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 0 0 0;
   --verified: #5077bb;
@@ -98,10 +101,6 @@ h4 {
   height: 100px;
 }
 
-.content {
-  // padding-top: 100px;
-}
-
 .fa-check-circle {
   color: var(--verified);
 }
@@ -112,10 +111,15 @@ h4 {
     // font-size: 0.75rem;
     border-radius: 0;
     text-transform: uppercase;
+    box-shadow: 0rem 0rem 2rem #0044ff1c;
+    &:hover {
+      box-shadow: 0rem 0rem 2rem #6589ff21;
+    }
   }
   &.btn-outline {
     border: 1px solid var(--primary);
     color: var(--primary);
+
     &:hover {
       color: white;
       border: 1px solid var(--light-color);
@@ -143,5 +147,11 @@ h4 {
       border: none;
     }
   }
+}
+
+.map {
+  border: 1px solid rgb(199, 196, 196);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 </style>
