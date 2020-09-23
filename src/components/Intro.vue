@@ -36,7 +36,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    show() {
+      this.$modal.show("modal");
+    }
+  }
+};
 </script>
 
 <style lang="scss">

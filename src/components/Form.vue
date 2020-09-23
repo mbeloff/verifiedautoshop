@@ -10,9 +10,9 @@
 
     <form
       class="col-12 pt-1 pb-3"
-      name="VerifiedAutoEnquiry"
+      name="VerifiedEnquiry"
       method="post"
-      id="VerifiedAutoEnquiry"
+      id="VerifiedEnquiry"
       action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -187,7 +187,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          "form-name": "VerifiedAutoEnquiry",
+          "form-name": "VerifiedEnquiry",
           ...this.form
         })
       })
