@@ -1,6 +1,6 @@
 <template>
   <div class="container h-100 d-flex flex-center">
-    <div class="d-flex flex-column my-auto">
+    <div class="d-flex flex-column my-auto py-5">
       <h2 class="mb-3">thank you for your enquiry</h2>
       <p class="underline mb-5 font-weight-thin">
         We'll get back to you <br />

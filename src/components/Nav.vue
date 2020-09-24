@@ -7,7 +7,9 @@
         ><!-- Custom Slot - Uncomment to use -->
         <template v-slot:custom-section>
           <div class="custom-section-content">
-            <p class="mb-0 font-weight-bold">0424 975 336</p>
+            <p class="mb-0 font-weight-bold">
+              {{ $store.state.global.phone }}
+            </p>
           </div>
         </template>
       </vue-navigation-bar>
@@ -21,7 +23,7 @@ import "vue-navigation-bar/dist/vue-navigation-bar.css";
 export default {
   methods: {
     vnbItemClicked(text) {
-      if (text === "Get a Quote") {
+      if (text === "Book Now") {
         this.$modal.show("modal");
       }
     }
@@ -110,7 +112,7 @@ export default {
           {
             isLinkAction: true,
             type: "button",
-            text: "Get a Quote",
+            text: "Book Now",
             path: "",
             class: "btn btn-cs btn-prime",
             iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'

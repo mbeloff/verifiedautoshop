@@ -12,8 +12,13 @@
       </li>
     </ul>
 
-    <div class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive">
+    <div
+      class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive pb-5"
+    >
       <slot></slot>
+      <a @click="show()" class="btn btn-cs btn-outline btn-bottom m-2"
+        >Book Now</a
+      >
     </div>
   </div>
 </template>
@@ -40,6 +45,9 @@ export default {
       this.tabs.forEach((tab, index) => {
         tab.isActive = index === i;
       });
+    },
+    show() {
+      this.$modal.show("modal");
     }
   }
 };
@@ -91,5 +99,11 @@ export default {
   @media only screen and (min-width: 768px) {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
+}
+
+.btn-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 </style>

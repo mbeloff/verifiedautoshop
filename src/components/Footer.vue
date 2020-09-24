@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <img src="../assets/logo-sm.svg" alt="" style="height: 35px;" />
-          <a class="ml-2 btn btn-cs btn-prime" @click="show()">GET A QUOTE</a>
+          <a class="ml-2 btn btn-cs btn-prime" @click="show()">BOOK NOW</a>
         </div>
       </div>
       <div class="row mt-3">
@@ -31,10 +31,10 @@
         <div class="col-12 col-sm-6 col-md-4">
           <h6>Contact</h6>
           <ul class="list-unstyled small">
-            <li class="list-item h5">0424 975 336</li>
+            <li class="list-item h5">{{ $store.state.global.phone }}</li>
             <li class="list-item">
               <a href="mailto:bookings@verifiedautoshop.com"
-                >bookings@verifiedautoshop.com</a
+                >{{ $store.state.global.email }}</a
               >
             </li>
             <li class="list-item mt-2">46 Deshon St <br />Woolloongabba</li>

@@ -211,9 +211,22 @@
           ><tab title="Paint and Panel"
             ><h4>Paint & Panel</h4>
             <p>
-              Verified Autoshop can assist with collision repairs, panel beating
-              and spray painting.
+              Verified Autoshop's qualified staff can assist with collision
+              repairs, panel beating and spray painting - ensuring your car is
+              always looking it's best. Leave it to Verified to get your back on
+              the road ASAP.
             </p>
+            <ul class="list-unstyled">
+              <li class="list-item item-dash">
+                Collision Repairs
+              </li>
+              <li class="list-item item-dash">
+                Panel Beating
+              </li>
+              <li class="list-item item-dash">
+                Spray Painting
+              </li>
+            </ul>
           </tab></transition
         >
         <transition name="slide-fade"
@@ -269,7 +282,7 @@ export default {
 
 .slide-fade-enter-active {
   transition: max-height 1s ease, opacity 0.5s;
-  max-height: 1000px;
+  // max-height: 1000px;
   overflow: hidden;
 }
 .slide-fade-leave-active {
@@ -279,6 +292,6 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateY(-2px);
   opacity: 0;
-  max-height: 100px;
+  // max-height: 100px;
 }
 </style>

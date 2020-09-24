@@ -105,6 +105,8 @@ h4 {
   color: var(--verified);
 }
 
+
+
 .btn {
   &.btn-cs {
     padding: 0.5rem 2rem;
