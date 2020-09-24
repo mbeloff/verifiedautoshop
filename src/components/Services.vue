@@ -1,16 +1,5 @@
 <template>
   <div class="py-5" id="services">
-    <div class="position-absolute">
-      <div id="servicing"></div>
-      <div id="air-con"></div>
-      <div id="diagnostics"></div>
-      <div id="auto-electrical"></div>
-      <div id="inspections"></div>
-      <div id="brakes-and-suspension"></div>
-      <div id="tyres"></div>
-      <div id="paint-and-panel"></div>
-      <div id="car-grooming"></div>
-    </div>
     <div class="container p-0 px-md-3">
       <h1 class="px-3 px-md-0 mb-3 font-italic">
         <i class=" fas fa-check-circle mr-2"></i>Services
@@ -245,7 +234,7 @@
             ><h4>Car Cleaning & Detailing</h4>
             <p>
               Revive your car with our full car grooming services. Get a
-              thourough exterior and/or interior clean with your next routine
+              thorough exterior and/or interior clean with your next routine
               service, repair, or as a standalone service.
             </p>
           </tab></transition

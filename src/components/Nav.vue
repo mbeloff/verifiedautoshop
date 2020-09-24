@@ -1,5 +1,16 @@
 <template>
   <div class="nav-wrapper">
+    <div class="position-absolute">
+      <div id="servicing"></div>
+      <div id="air-con"></div>
+      <div id="diagnostics"></div>
+      <div id="auto-electrical"></div>
+      <div id="inspections"></div>
+      <div id="brakes-and-suspension"></div>
+      <div id="tyres"></div>
+      <div id="paint-and-panel"></div>
+      <div id="car-grooming"></div>
+    </div>
     <div class="container">
       <vue-navigation-bar
         :options="navbarOptions"
@@ -26,6 +37,69 @@ export default {
       if (text === "Book Now") {
         this.$modal.show("modal");
       }
+      if (text === "Servicing") {
+        this.$router.push({
+          name: "Services",
+          hash: "#servicing",
+          params: { sIndex: "0" }
+        });
+      }
+      if (text === "Air Conditioning") {
+        this.$router.push({
+          name: "Services",
+          hash: "#air-con",
+          params: { sIndex: "1" }
+        });
+      }
+      if (text === "Diagnostics") {
+        this.$router.push({
+          name: "Services",
+          hash: "#diagnostics",
+          params: { sIndex: "2" }
+        });
+      }
+      if (text === "Auto Electrical") {
+        this.$router.push({
+          name: "Services",
+          hash: "#auto-electrical",
+          params: { sIndex: "3" }
+        });
+      }
+      if (text === "Inspections") {
+        this.$router.push({
+          name: "Services",
+          hash: "#inspections",
+          params: { sIndex: "4" }
+        });
+      }
+      if (text === "Brakes and Suspension") {
+        this.$router.push({
+          name: "Services",
+          hash: "#brakes-and-suspension",
+          params: { sIndex: "5" }
+        });
+      }
+      if (text === "Tyres") {
+        this.$router.push({
+          name: "Services",
+          hash: "#tyres",
+          params: { sIndex: "6" }
+        });
+      }
+      if (text === "Paint and Panel") {
+        this.$router.push({
+          name: "Services",
+          hash: "#paint-and-panel",
+          params: { sIndex: "7" }
+        });
+      }
+      if (text === "Car Grooming") {
+        this.$router.push({
+          name: "Services",
+          hash: "#car-grooming",
+          params: { sIndex: "8" }
+        });
+      }
     }
   },
   data() {
@@ -49,40 +123,69 @@ export default {
             arrowColor: "var(--primary)",
             subMenuOptions: [
               {
-                isLinkAction: true,
                 type: "link",
                 text: "Servicing",
-                path: { name: "about" }
+                path: {
+                  name: "Services",
+                  hash: "#servicing",
+                  params: { sIndex: "0" }
+                }
               },
               {
                 type: "link",
                 text: "Air Conditioning",
-                path: { name: "locations" }
+                path: {
+                  name: "Services",
+                }
               },
               {
                 type: "link",
                 text: "Diagnostics",
-                path: { name: "blog" }
+                path: {
+                  name: "Services",
+                }
               },
               {
                 type: "link",
                 text: "Auto Electrical",
-                path: { name: "blog" }
+                path: {
+                  name: "Services",
+                }
               },
               {
                 type: "link",
                 text: "Inspections",
-                path: { name: "blog" }
+                path: {
+                  name: "Services",
+                }
               },
               {
                 type: "link",
                 text: "Brakes and Suspension",
-                path: { name: "blog" }
+                path: {
+                  name: "Services",
+                }
               },
               {
                 type: "link",
                 text: "Tyres",
-                path: { name: "blog" }
+                path: {
+                  name: "Services",
+                }
+              },
+              {
+                type: "link",
+                text: "Paint and Panel",
+                path: {
+                  name: "Services",
+                }
+              },
+              {
+                type: "link",
+                text: "Car Grooming",
+                path: {
+                  name: "Services",
+                }
               }
             ]
           },

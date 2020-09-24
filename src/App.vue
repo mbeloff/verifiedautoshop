@@ -49,7 +49,7 @@ body {
   margin: 0 0 0 0;
   --verified: #5077bb;
   --primary: #1b3e9e;
-  --secondary: #ff0000;
+  --secondary: #ff4800;
   --dark-color: #221c1a;
   --light-color: #4d7cff;
   --dark-bg: #201e1e;
