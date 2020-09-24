@@ -17,10 +17,12 @@ export default new Vuex.Store({
       email: "",
       make: "Vehicle Make",
       model: "Vehicle Model",
-      contactVia: [],
+      preferredContact: "",
+      typeOfEnquiry: "Type of Enquiry",
       comments: ""
     },
     makes: [
+      { label: "Other/Not Listed", models: ["Other/Not Listed"] },
       {
         label: "Alfa Romeo",
         models: [

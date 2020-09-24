@@ -22,8 +22,13 @@
 
         <div class="col-12 col-md-6 form-group">
           <!-- <label>Vechicle Make</label> -->
-          <select class="form-control" v-model="selectedMake" ref="make">
-            <option value="Vehicle Make" :key="-1" selected="selected"
+          <select
+            class="form-control"
+            v-model="selectedMake"
+            ref="make"
+            required
+          >
+            <option value="Vehicle Make" :key="-1" selected disabled
               >Vehicle Make</option
             >
             <option v-for="(make, i) in makes" :key="i" :value="make">{{
@@ -33,9 +38,8 @@
           <i class="form-icon fal fa-car"></i>
         </div>
         <div class="col-12 col-md-6 form-group" v-if="selectedMake != -1">
-          <!-- <label>Vechicle Model</label> -->
-          <select class="form-control" v-model="selectedModel">
-            <option :key="-1" value="Vehicle Model" selected="selected"
+          <select class="form-control" v-model="selectedModel" required>
+            <option :key="-1" value="Vehicle Model" selected disabled
               >Vehicle Model</option
             >
             <option v-for="(option, i) in selectedMake.models" :key="i">{{
@@ -92,25 +96,63 @@
           /><i class="form-icon fal fa-envelope"></i>
         </div>
       </div>
-      <div class="row mt-2">
-        <label class="col-12" for="contactVia">Preferred Contact:</label>
-        <div class="col-12">
-          <input
-            class="mr-2 ml-2"
-            type="checkbox"
-            id="usePhone"
-            value="Phone"
-            v-model="form.contactVia"
-          />
-          <label for="usePhone">Phone</label>
-          <input
-            class="mr-2 ml-2"
-            type="checkbox"
-            id="useEmail"
-            value="Email"
-            v-model="form.contactVia"
-          />
-          <label for="useEmail">Email</label>
+      <div class="row">
+        <label class="col-12 section-label" for="">Preferred Contact:</label>
+        <div class="col-12 col-md-6">
+          <div class="col-12 px-0 form-group">
+            <label for="usePhone"
+              ><input
+                class="mr-2 ml-2"
+                type="radio"
+                value="Phone"
+                name="prefContact"
+                required
+                v-model="form.preferredContact"
+              />Phone</label
+            >
+
+            <label for="useEmail"
+              ><input
+                class="mr-2 ml-2"
+                type="radio"
+                value="Email"
+                name="prefContact"
+                v-model="form.preferredContact"
+              />Email</label
+            >
+            <label for="useAny"
+              ><input
+                class="mr-2 ml-2"
+                type="radio"
+                value="Any"
+                name="prefContact"
+                v-model="form.preferredContact"
+              />Either</label
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <select
+              class="form-control"
+              name="topic"
+              id="topic"
+              v-model="form.typeOfEnquiry"
+            >
+              <option value="Type of Enquiry" disabled selected
+                >Type of Enquiry</option
+              >
+              <option value="Servicing">Servicing</option>
+              <option value="Repair">Repair</option>
+              <option value="Diagnostics">Diagnostics</option>
+              <option value="Inspection">Inspection</option>
+              <option value="Tyres">Tyres</option>
+              <option value="Paint/Panel">Paint/Panel</option>
+              <option value="Grooming">Grooming</option>
+              <option value="Other">Other - Detail Below</option>
+            </select>
+            <i class="form-icon fal fa-clipboard-list-check"></i>
+          </div>
         </div>
       </div>
 

@@ -9,7 +9,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-12 col-sm-6 col-md-4">
-          <h6>Services</h6>
+          <h6 class="footer-heading"><span>Services</span></h6>
           <ul class="list-unstyled small">
             <li class="list-item">
               <router-link
@@ -104,7 +104,7 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6>Information</h6>
+          <h6 class="footer-heading"><span>Information</span></h6>
           <ul class="list-unstyled small">
             <li class="list-item">
               <router-link :to="{ name: 'About' }">About Us</router-link>
@@ -116,7 +116,7 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6>Contact</h6>
+          <h6 class="footer-heading"><span>Contact</span></h6>
           <ul class="list-unstyled small">
             <li class="list-item h5">{{ $store.state.global.phone }}</li>
             <li class="list-item">
@@ -147,9 +147,29 @@ export default {
 
 <style scoped lang="scss">
 #footer {
-  background: rgb(38, 39, 44);
+  // background: rgb(38, 39, 44);
+  background: var(--dark-bg);
   a {
     color: white;
+  }
+}
+
+.footer-heading {
+  span {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      content: "";
+      background-image: linear-gradient(
+        to right,
+        rgb(0, 81, 255),
+        rgba(160, 212, 255, 0.11)
+      );
+      width: 100%;
+      height: 1px;
+    }
   }
 }
 

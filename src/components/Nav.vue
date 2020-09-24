@@ -1,6 +1,6 @@
 <template>
   <div class="nav-wrapper">
-    <div class="position-absolute">
+    <div class="position-absolute" style="width: 0; height: 0">
       <div id="servicing"></div>
       <div id="air-con"></div>
       <div id="diagnostics"></div>
@@ -135,56 +135,56 @@ export default {
                 type: "link",
                 text: "Air Conditioning",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Diagnostics",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Auto Electrical",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Inspections",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Brakes and Suspension",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Tyres",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Paint and Panel",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               },
               {
                 type: "link",
                 text: "Car Grooming",
                 path: {
-                  name: "Services",
+                  name: "Services"
                 }
               }
             ]
@@ -194,14 +194,14 @@ export default {
             text: "CONTACT US",
             arrowColor: "var(--primary)",
             subMenuOptions: [
-              // {
-              //   type: "link",
-              //   text: "About Us",
-              //   path: { name: "about-us" }
-              // },
-              // {
-              //   type: "hr"
-              // },
+              {
+                type: "link",
+                text: "About Us",
+                path: { name: "About" }
+              },
+              {
+                type: "hr"
+              },
               {
                 type: "link",
                 text: "Make an Enquiry",
