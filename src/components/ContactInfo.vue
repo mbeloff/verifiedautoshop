@@ -3,8 +3,8 @@
     <div class="row  mt-5 py-5">
       <div class="col-12 col-md-6 col-lg-5 ml-auto text-md-left">
         <h1 class="mb-3 font-italic">
-        <i class=" fas fa-check-circle mr-2"></i>Contact Info
-      </h1>
+          <i class=" fas fa-check-circle mr-2"></i>Contact Info
+        </h1>
         <div class="d-flex align-items-center">
           <p>
             <i class="contact-icon fal fa-location-circle fa-fw fa-2x"></i>
@@ -60,5 +60,14 @@ export default {};
 <style lang="scss" scoped>
 .contact-icon {
   color: var(--primary);
+}
+
+@media only screen and (max-width: 320px) {
+  p {
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
 }
 </style>
