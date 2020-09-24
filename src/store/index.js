@@ -1208,8 +1208,8 @@ export default new Vuex.Store({
   mutations: {
     storeForm(state, n) {
       state.form = n;
-      state.form.vehicleMake = "Vehicle Make";
-      state.form.vehicleModel = "Vehicle Model";
+      state.form.make = "Vehicle Make";
+      state.form.model = "Vehicle Model";
     }
   },
   actions: {},

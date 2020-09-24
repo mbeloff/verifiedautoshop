@@ -11,21 +11,108 @@
         <div class="col-12 col-sm-6 col-md-4">
           <h6>Services</h6>
           <ul class="list-unstyled small">
-            <li class="list-item">Servicing</li>
-            <li class="list-item">Air Conditioning</li>
-            <li class="list-item">Diagnostics</li>
-            <li class="list-item">Auto Electrical</li>
-            <li class="list-item">Inspections</li>
-            <li class="list-item">Brakes and Suspension</li>
-            <li class="list-item">Tyres</li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#servicing',
+                  params: { sIndex: '0' }
+                }"
+                >Servicing</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#air-con',
+                  params: { sIndex: '1' }
+                }"
+                >Air Conditioning</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#diagnostics',
+                  params: { sIndex: '2' }
+                }"
+                >Diagnostics</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#auto-electrical',
+                  params: { sIndex: '3' }
+                }"
+                >Auto Electrical</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#inspections',
+                  params: { sIndex: '4' }
+                }"
+                >Vehicle Inspections</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#brakes-and-suspension',
+                  params: { sIndex: '5' }
+                }"
+                >Brakes & Suspension</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#tyres',
+                  params: { sIndex: '6' }
+                }"
+                >Tyres</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#paint-and-panel',
+                  params: { sIndex: '7' }
+                }"
+                >Paint & Panel</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link
+                :to="{
+                  name: 'Services',
+                  hash: '#car-grooming',
+                  params: { sIndex: '8' }
+                }"
+                >Car Grooming</router-link
+              >
+            </li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
           <h6>Information</h6>
           <ul class="list-unstyled small">
-            <li class="list-item">About Us</li>
-            <li class="list-item">FAQ</li>
-            <li class="list-item">Contact</li>
+            <li class="list-item">
+              <router-link :to="{ name: 'About' }">About Us</router-link>
+            </li>
+            <!-- <li class="list-item">FAQ</li> -->
+            <li class="list-item">
+              <router-link :to="{ name: 'Contact' }">Contact</router-link>
+            </li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
@@ -33,9 +120,9 @@
           <ul class="list-unstyled small">
             <li class="list-item h5">{{ $store.state.global.phone }}</li>
             <li class="list-item">
-              <a href="mailto:bookings@verifiedautoshop.com"
-                >{{ $store.state.global.email }}</a
-              >
+              <a href="mailto:bookings@verifiedautoshop.com">{{
+                $store.state.global.email
+              }}</a>
             </li>
             <li class="list-item mt-2">46 Deshon St <br />Woolloongabba</li>
           </ul>

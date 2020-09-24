@@ -35,7 +35,29 @@ export default {
     this.tabs = this.$children;
   },
   mounted() {
-    this.selectTab(0);
+    if (this.$route.params.sIndex == 0) {
+      this.selectTab(0);
+    } else if (this.$route.params.sIndex == 1) {
+      this.selectTab(1);
+    } else if (this.$route.params.sIndex == 2) {
+      this.selectTab(2);
+    } else if (this.$route.params.sIndex == 3) {
+      this.selectTab(3);
+    } else if (this.$route.params.sIndex == 4) {
+      this.selectTab(4);
+    } else if (this.$route.params.sIndex == 5) {
+      this.selectTab(5);
+    } else if (this.$route.params.sIndex == 6) {
+      this.selectTab(6);
+    } else if (this.$route.params.sIndex == 7) {
+      this.selectTab(7);
+    } else if (this.$route.params.sIndex == 8) {
+      this.selectTab(8);
+    } else if (this.$route.params.sIndex == 9) {
+      this.selectTab(9);
+    } else {
+      this.selectTab(0);
+    }
   },
   methods: {
     selectTab(i) {
@@ -48,6 +70,35 @@ export default {
     },
     show() {
       this.$modal.show("modal");
+    }
+  },
+  watch: {
+    "$route.params.sIndex": {
+      handler: function() {
+        if (this.$route.params.sIndex == 0) {
+          this.selectTab(0);
+        } else if (this.$route.params.sIndex == 1) {
+          this.selectTab(1);
+        } else if (this.$route.params.sIndex == 2) {
+          this.selectTab(2);
+        } else if (this.$route.params.sIndex == 3) {
+          this.selectTab(3);
+        } else if (this.$route.params.sIndex == 4) {
+          this.selectTab(4);
+        } else if (this.$route.params.sIndex == 5) {
+          this.selectTab(5);
+        } else if (this.$route.params.sIndex == 6) {
+          this.selectTab(6);
+        } else if (this.$route.params.sIndex == 7) {
+          this.selectTab(7);
+        } else if (this.$route.params.sIndex == 8) {
+          this.selectTab(8);
+        } else if (this.$route.params.sIndex == 9) {
+          this.selectTab(9);
+        }
+      },
+      deep: true,
+      immediate: true
     }
   }
 };

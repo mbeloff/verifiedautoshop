@@ -4,6 +4,8 @@ const Home = () => import("../views/Home.vue");
 const Success = () => import("../views/Success.vue");
 const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
+const About = () => import("../views/About.vue");
+const Services = () => import("../views/Services.vue");
 
 Vue.use(VueRouter);
 
@@ -16,16 +18,17 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: About
   },
   {
     path: "/success",
     name: "Success",
     component: Success
+  },
+  {
+    path: "/services",
+    name: "Services",
+    component: Services
   },
   {
     path: "/contact",
@@ -48,11 +51,14 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { selector: to.hash };
+    }
     if (savedPosition) {
       return savedPosition;
-    } else {
-      return { x: 0, y: 0 };
     }
+
+    return { x: 0, y: 0 };
   }
 });
 

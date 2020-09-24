@@ -26,7 +26,7 @@
             <option value="Vehicle Make" :key="-1" selected="selected"
               >Vehicle Make</option
             >
-            <option v-for="make in makes" :key="make" :value="make">{{
+            <option v-for="(make, i) in makes" :key="i" :value="make">{{
               make.label
             }}</option>
           </select>
@@ -38,7 +38,7 @@
             <option :key="-1" value="Vehicle Model" selected="selected"
               >Vehicle Model</option
             >
-            <option v-for="option in selectedMake.models" :key="option">{{
+            <option v-for="(option, i) in selectedMake.models" :key="i">{{
               option
             }}</option>
           </select>

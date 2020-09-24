@@ -1,5 +1,16 @@
 <template>
-  <div class="py-5">
+  <div class="py-5" id="services">
+    <div class="position-absolute">
+      <div id="servicing"></div>
+      <div id="air-con"></div>
+      <div id="diagnostics"></div>
+      <div id="auto-electrical"></div>
+      <div id="inspections"></div>
+      <div id="brakes-and-suspension"></div>
+      <div id="tyres"></div>
+      <div id="paint-and-panel"></div>
+      <div id="car-grooming"></div>
+    </div>
     <div class="container p-0 px-md-3">
       <h1 class="px-3 px-md-0 mb-3 font-italic">
         <i class=" fas fa-check-circle mr-2"></i>Services
@@ -253,7 +264,7 @@ export default {
     Tab,
     Tabs
   },
-  name: "Home",
+  name: "Services",
   methods: {
     show() {
       this.$modal.show("modal");
