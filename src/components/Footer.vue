@@ -120,9 +120,9 @@
           <ul class="list-unstyled small">
             <li class="list-item h5">{{ $store.state.global.phone }}</li>
             <li class="list-item">
-              <a href="mailto:bookings@verifiedautoshop.com">{{
-                $store.state.global.email
-              }}</a>
+              <a :href="`mailto:` + $store.state.global.email">
+                {{ $store.state.global.email }}</a
+              >
             </li>
             <li class="list-item mt-2">46 Deshon St <br />Woolloongabba</li>
           </ul>

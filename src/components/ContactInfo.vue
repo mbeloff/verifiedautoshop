@@ -29,8 +29,10 @@
             <i class="contact-icon fal fa-phone-square fa-fw fa-2x"></i>
           </p>
           <p class="w-100 ml-4">
-            <b>phone:</b> {{ $store.state.global.phone }}<br /><b>mail:</b>
-            {{ $store.state.global.email }}
+            <b>phone:</b> {{ $store.state.global.phone }}<br /><b>mail: </b>
+            <a :href="`mailto:` + $store.state.global.email">
+              {{ $store.state.global.email }}</a
+            >
           </p>
         </div>
       </div>
