@@ -236,6 +236,11 @@ export default {
   text-align: left;
   background: transparent;
   color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+  @media only screen and (max-width: 992px) {
+    padding: 15px 0;
+  }
   &__brand-image-wrapper {
     &__link {
       &__image {

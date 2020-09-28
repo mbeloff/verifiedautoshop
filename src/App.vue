@@ -98,14 +98,12 @@ h4 {
 }
 
 #nav {
-  height: 100px;
+  // height: 100px;
 }
 
 .fa-check-circle {
   color: var(--verified);
 }
-
-
 
 .btn {
   &.btn-cs {

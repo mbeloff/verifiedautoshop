@@ -35,7 +35,7 @@ export default {
 </script>
 <style lang="scss">
 .fp-banner {
-  height: 25vh;
+  height: 50vh;
   min-height: 250px;
   max-height: 350px;
   // overflow: hidden;
