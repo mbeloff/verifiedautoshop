@@ -87,7 +87,7 @@ export default {
   display: grid;
   grid-gap: 1rem;
   @media only screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr 1fr;
     margin-top: 2rem;
     .card {
       &:nth-of-type(2) {
