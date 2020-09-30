@@ -91,6 +91,12 @@ body {
   height: auto !important;
 }
 
+.content {
+  a {
+    color: #004997;
+  }
+}
+
 #app {
   min-height: 100vh;
   font-family: "Rubik", Helvetica, Arial, sans-serif;
