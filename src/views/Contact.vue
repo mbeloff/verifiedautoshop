@@ -78,14 +78,14 @@
                   required
                   v-model="enquire.question"
                 ></textarea
-                ><i class="form-icon fal fa-comment-alt-lines"></i>
+                ><i class="textarea-icon fal fa-comment-alt-lines"></i>
               </div>
             </div>
             <div class="row">
               <label class="col-12 section-label" for=""
                 >Preferred Contact:</label
               >
-              <div class="col-12 col-md-6">
+              <div class="col-12">
                 <div class="col-12 px-0 form-group">
                   <label for="usePhone"
                     ><input
@@ -119,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="text-right mt-4">
+            <div class="text-right">
               <button
                 type="submit"
                 class="btn btn-cs btn-outline"

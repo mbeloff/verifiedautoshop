@@ -65,18 +65,22 @@
           <input
             class="form-control"
             type="text"
+            autocomplete="off"
             aria-label="Vehicle Year"
             placeholder="Vehicle Year"
             v-model="form.year"
             maxlength="4"
+            name="vehicle model year"
           />
           <i class="form-icon fal fa-car"></i>
         </div>
         <div class="col-12 col-sm-6 form-group">
           <input
+            name="vehicle reg"
             class="form-control"
             type="text"
             aria-label="Vehicle Rego"
+            autocomplete="off"
             placeholder="Vehicle Rego"
             maxlength="8"
             v-model="form.rego"
@@ -238,6 +242,7 @@
       <div class="text-right mt-4">
         <button
           type="submit"
+          value="submit"
           class="btn btn-cs btn-outline text-uppercase"
           aria-label="Submit"
         >
@@ -269,6 +274,7 @@ export default {
       selectedModel: this.$store.state.selectedModel,
       selectedMake: this.$store.state.selectedMake,
       form: this.$store.state.form,
+      errors: [],
       datepicker: {
         disabledDropoff: {
           to: new Date()
@@ -299,7 +305,6 @@ export default {
     hide() {
       this.$store.commit("storeForm", this.form);
       this.$modal.hide("modal");
-      // this.$store.commit("modalStatus");
     }
     // encode(data) {
     //   return Object.keys(data)
@@ -333,122 +338,11 @@ export default {
     setTimeout(() => {
       this.$refs.make.focus();
     }, 500);
+  },
+  created() {
     this.$store.commit("modalStatus");
   }
 };
 </script>
 
-<style lang="scss">
-.secondary {
-  color: var(--primary);
-}
-
-.check-grid {
-  display: grid;
-  grid-template-columns: 2rem 1fr;
-}
-
-.form > * {
-  font-variation-settings: "wght" 300;
-}
-
-.form .section-label {
-  font-size: 1rem;
-  color: var(--primary);
-  font-variation-settings: "wght" 400;
-}
-
-input.form-control,
-textarea.form-control {
-  background: rgb(255, 255, 255);
-  padding-left: 2.4rem;
-  span {
-    width: 100%;
-  }
-}
-
-select.form-control {
-  padding-left: 2.1rem;
-}
-
-.form-icon,
-.date-icon,
-.textarea-icon,
-.time-icon {
-  color: var(--primary);
-  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.74, 2.66);
-}
-
-.form-icon {
-  position: absolute;
-  left: 1.5rem;
-
-  &:not(.textarea-icon) {
-    bottom: 0.7rem;
-  }
-}
-
-.date-icon {
-  bottom: 0.7rem;
-}
-
-.textarea-icon {
-  position: absolute;
-  left: 1.5rem;
-  top: 0.7rem;
-}
-
-.form-control,
-.input-group {
-  &:hover,
-  &:focus {
-    + .form-icon,
-    .date-icon,
-    + .textarea-icon {
-      transform: scale(1.25);
-      color: var(--secondary);
-    }
-  }
-}
-
-.time-picker {
-  &:hover,
-  &:focus {
-    .time-icon {
-      transform: scale(1.25);
-      color: var(--secondary);
-    }
-  }
-}
-
-textarea::placeholder,
-input::placeholder,
-select::placeholder {
-  color: #808a94;
-  // font-weight: 100;
-}
-
-.btn-close {
-  color: var(--primary);
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.5s;
-  height: 100px;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  height: 0;
-}
-
-.custom-icon {
-  margin-left: 1rem;
-  color: var(--primary);
-}
-
-.form-control.special-input {
-  padding-left: 0.2rem;
-}
-</style>
+<style lang="scss"></style>
