@@ -1,13 +1,13 @@
 import Vue from "vue";
 import Vuex from "vuex";
-
+import moment from "moment";
 Vue.use(Vuex);
-
 export default new Vuex.Store({
   state: {
     global: {
       phone: "0424 975 336",
-      email: "bookings@verifiedautoshop.com"
+      email: "bookings@verifiedautoshop.com",
+      modalOpen: false
     },
     selectedMake: "Vehicle Make",
     selectedModel: "Vehicle Model",
@@ -15,11 +15,17 @@ export default new Vuex.Store({
       name: "",
       number: "",
       email: "",
-      make: "Vehicle Make",
-      model: "Vehicle Model",
+      make: undefined,
+      model: undefined,
+      year: "",
+      rego: "",
       preferredContact: "",
       typeOfEnquiry: "Type of Enquiry",
-      comments: ""
+      comments: "",
+      dropoff: moment()._d,
+      dropoff_time: "08:00",
+      pickup: moment()._d,
+      pickup_time: "16:00"
     },
     makes: [
       { label: "Other/Not Listed", models: ["Other/Not Listed"] },
@@ -1212,6 +1218,9 @@ export default new Vuex.Store({
       state.form = n;
       state.form.make = "Vehicle Make";
       state.form.model = "Vehicle Model";
+    },
+    modalStatus(state) {
+      state.global.modalOpen = !state.global.modalOpen;
     }
   },
   actions: {},

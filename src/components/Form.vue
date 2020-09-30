@@ -1,26 +1,39 @@
 <template>
   <div class="form">
-    <div class="col-12 dark-bg py-2" style="height: 50px">
-      <a
-        class="btn-close far fa-times float-right p-2 text-white"
-        @click="hide()"
-      ></a>
-      <img src="../assets/logo-sm.svg" alt="" class="h-100" />
-    </div>
-
     <form
-      class="col-12 pt-1 pb-3"
+      class="col-12 pt-3 pb-3"
       name="VerifiedQuote"
       method="post"
       id="VerifiedQuote"
-      action="/success"
-      data-netlify="true"
-      @submit.prevent="handleSubmit"
+      action="https://mechanicdesk.com.au/booking_requests/"
     >
+      <input
+        type="hidden"
+        name="token"
+        value="208c5f70fea76d55514cb31d4799f335353ea6ba"
+      />
+      <input type="hidden" :value="form.name" name="name" />
+      <input type="hidden" :value="form.make" name="make" />
+      <input type="hidden" :value="form.model" name="model" />
+      <input type="hidden" :value="form.year" name="year" />
+      <input type="hidden" :value="form.rego" name="registration_number" />
+      <input type="hidden" :value="form.number" name="phone" />
+      <input type="hidden" :value="form.email" name="email" />
+      <input type="hidden" :value="form.comments" name="note" />
+      <input
+        type="hidden"
+        :value="formatDate(form.pickup) + ' ' + form.pickup_time"
+        name="pickup_time"
+      />
+      <input
+        type="hidden"
+        :value="formatDate(form.dropoff) + ' ' + form.dropoff_time"
+        name="drop_off_time"
+      />
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Vehicle</label>
 
-        <div class="col-12 col-md-6 form-group">
+        <div class="col-12 col-sm-6 form-group">
           <!-- <label>Vechicle Make</label> -->
           <select
             class="form-control"
@@ -37,7 +50,7 @@
           </select>
           <i class="form-icon fal fa-car"></i>
         </div>
-        <div class="col-12 col-md-6 form-group" v-if="selectedMake != -1">
+        <div class="col-12 col-sm-6 form-group">
           <select class="form-control" v-model="selectedModel" required>
             <option :key="-1" value="Vehicle Model" selected disabled
               >Vehicle Model</option
@@ -48,9 +61,31 @@
           </select>
           <i class="form-icon fal fa-car"></i>
         </div>
+        <div class="col-12 col-sm-6 form-group">
+          <input
+            class="form-control"
+            type="text"
+            aria-label="Vehicle Year"
+            placeholder="Vehicle Year"
+            v-model="form.year"
+            maxlength="4"
+          />
+          <i class="form-icon fal fa-car"></i>
+        </div>
+        <div class="col-12 col-sm-6 form-group">
+          <input
+            class="form-control"
+            type="text"
+            aria-label="Vehicle Rego"
+            placeholder="Vehicle Rego"
+            maxlength="8"
+            v-model="form.rego"
+          />
+          <i class="form-icon fal fa-car"></i>
+        </div>
       </div>
 
-      <div class="row">
+      <div class="row form-group">
         <label class="col-12 section-label" for="">Your Details</label>
         <div class="col-md-12 form-group">
           <label class="sr-only">Name</label>
@@ -60,16 +95,12 @@
             type="text"
             aria-label="Your name"
             placeholder="Name"
-            name="name"
             required
             v-model="form.name"
           />
           <i class="form-icon fal fa-user"></i>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 form-group">
+        <div class="col-sm-6 form-group">
           <label class="sr-only">Phone</label>
 
           <input
@@ -77,13 +108,12 @@
             type="tel"
             placeholder="Phone"
             aria-label="Your phone number"
-            name="number"
             required
             v-model="form.number"
           /><i class="form-icon fal fa-phone-rotary"></i>
         </div>
 
-        <div class="col-md-6 form-group">
+        <div class="col-sm-6 form-group">
           <label class="sr-only">Email</label>
 
           <input
@@ -91,47 +121,80 @@
             type="email"
             placeholder="Email"
             aria-label="Your email address"
-            name="email"
             v-model="form.email"
           /><i class="form-icon fal fa-envelope"></i>
         </div>
       </div>
-      <div class="row">
-        <label class="col-12 section-label" for="">Preferred Contact:</label>
-        <div class="col-12 col-md-6">
-          <div class="col-12 px-0 form-group">
-            <label for="usePhone"
-              ><input
-                class="mr-2 ml-2"
-                type="radio"
-                value="Phone"
-                name="prefContact"
-                required
-                v-model="form.preferredContact"
-              />Phone</label
-            >
 
-            <label for="useEmail"
-              ><input
-                class="mr-2 ml-2"
-                type="radio"
-                value="Email"
-                name="prefContact"
-                v-model="form.preferredContact"
-              />Email</label
-            >
-            <label for="useAny"
-              ><input
-                class="mr-2 ml-2"
-                type="radio"
-                value="Any"
-                name="prefContact"
-                v-model="form.preferredContact"
-              />Either</label
-            >
+      <div class="row form-group">
+        <div class="col-sm-6">
+          <label class="section-label" for="drop">Dropoff Time</label>
+          <div class="row form-group">
+            <datepicker
+              class="col-7"
+              :bootstrap-styling="true"
+              :calendar-button="true"
+              calendar-button-icon="fal fa-calendar date-icon"
+              :format="formatDate"
+              v-model="form.dropoff"
+              input-class="special-input"
+              name="drop"
+              :disabled-dates="datepicker.disabledDropoff"
+            ></datepicker>
+            <!-- <i class="form-icon fal fa-calendar"></i> -->
+            <vue-timepicker
+              class="col-5"
+              hide-clear-button
+              input-width="100%"
+              format="HH:mm"
+              hour-label="hour"
+              minute-label="min"
+              input-class="form-control"
+              :minute-interval="10"
+              :hour-range="[[8, 17]]"
+              hide-disabled-items
+              advanced-keyboard
+              v-model="form.dropoff_time"
+              ><template v-slot:icon>
+                <i class="fal fa-clock time-icon"></i> </template
+            ></vue-timepicker>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-sm-6">
+          <label class="section-label" for="pick">Collect Time</label>
+          <div class="row form-group">
+            <datepicker
+              class="col-7"
+              :bootstrap-styling="true"
+              :calendar-button="true"
+              input-class="special-input"
+              calendar-button-icon="fal fa-calendar date-icon"
+              :format="formatDate"
+              v-model="form.pickup"
+              name="pick"
+              :disabled-dates="datepicker.disabledPickup"
+            ></datepicker>
+            <vue-timepicker
+              class="col-5"
+              hide-clear-button
+              input-width="100%"
+              format="HH:mm"
+              hour-label="hour"
+              minute-label="min"
+              input-class="form-control"
+              :minute-interval="10"
+              :hour-range="[[8, 17]]"
+              hide-disabled-items
+              advanced-keyboard
+              v-model="form.pickup_time"
+              ><template v-slot:icon>
+                <i class="fal fa-clock time-icon"></i> </template
+            ></vue-timepicker>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-12 col-sm-6">
           <div class="form-group">
             <select
               class="form-control"
@@ -154,20 +217,22 @@
             <i class="form-icon fal fa-clipboard-list-check"></i>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
-        <label class="col-12 section-label" for="">Comment/Question</label>
+        <label class="col-12 section-label" for=""
+          >Additional Comments/Questions...</label
+        >
         <div class="col-md-12 form-group g-mb-40">
           <textarea
             class="form-control"
             rows="4"
-            placeholder="Please enter any additional information here ..."
+            placeholder="Outline any work required, or issues you are having with your vehicle ..."
             aria-label="Type your enquiry here"
             name="comment"
             v-model="form.comments"
           ></textarea
-          ><i class="form-icon fal fa-comment-alt-lines"></i>
+          ><i class="textarea-icon fal fa-comment-alt-lines"></i>
         </div>
       </div>
       <div class="text-right mt-4">
@@ -186,13 +251,32 @@
 </template>
 
 <script>
+import Datepicker from "vuejs-datepicker";
+import moment from "moment";
+// Main JS (in UMD format)
+import VueTimepicker from "vue2-timepicker";
+
+// CSS
+import "vue2-timepicker/dist/VueTimepicker.css";
 export default {
+  components: {
+    Datepicker,
+    VueTimepicker
+  },
   data() {
     return {
       makes: this.$store.state.makes,
       selectedModel: this.$store.state.selectedModel,
       selectedMake: this.$store.state.selectedMake,
-      form: this.$store.state.form
+      form: this.$store.state.form,
+      datepicker: {
+        disabledDropoff: {
+          to: new Date()
+        },
+        disabledPickup: {
+          to: new Date()
+        }
+      }
     };
   },
   watch: {
@@ -202,45 +286,54 @@ export default {
     },
     selectedModel: function() {
       this.form.model = this.selectedModel;
+    },
+    "form.dropoff": function() {
+      this.form.pickup = this.form.dropoff;
+      this.datepicker.disabledPickup.to = this.form.dropoff;
     }
   },
   methods: {
+    formatDate(date) {
+      return moment(date).format("DD/MM/YYYY");
+    },
     hide() {
       this.$store.commit("storeForm", this.form);
       this.$modal.hide("modal");
-    },
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&");
-    },
-    handleSubmit() {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": "VerifiedQuote",
-          ...this.form
-        })
-      })
-        .then(() => {
-          this.$router.push("success");
-          // console.log('success')
-          this.$modal.hide("modal");
-        })
-        .catch(() => {
-          this.$router.push("404");
-          // console.log('failure')
-          this.$modal.hide("modal");
-        });
+      // this.$store.commit("modalStatus");
     }
+    // encode(data) {
+    //   return Object.keys(data)
+    //     .map(
+    //       key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+    //     )
+    //     .join("&");
+    // },
+    // handleSubmit() {
+    //   fetch("/", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //     body: this.encode({
+    //       "form-name": "VerifiedQuote",
+    //       ...this.form
+    //     })
+    //   })
+    //     .then(() => {
+    //       this.$router.push("success");
+    //       // console.log('success')
+    //       this.$modal.hide("modal");
+    //     })
+    //     .catch(() => {
+    //       this.$router.push("404");
+    //       // console.log('failure')
+    //       this.$modal.hide("modal");
+    //     });
+    // }
   },
   mounted() {
     setTimeout(() => {
       this.$refs.make.focus();
     }, 500);
+    this.$store.commit("modalStatus");
   }
 };
 </script>
@@ -260,38 +353,72 @@ export default {
 }
 
 .form .section-label {
-  // font-family: Arial;
-  // font-weight: unset;
   font-size: 1rem;
   color: var(--primary);
   font-variation-settings: "wght" 400;
 }
 
-.form-control {
+input.form-control,
+textarea.form-control {
   background: rgb(255, 255, 255);
-  padding-left: 2.4rem !important;
+  padding-left: 2.4rem;
   span {
     width: 100%;
-    // padding-right: 4.5rem;
   }
 }
 
 select.form-control {
-  padding-left: 2.1rem !important;
+  padding-left: 2.1rem;
+}
+
+.form-icon,
+.date-icon,
+.textarea-icon,
+.time-icon {
+  color: var(--primary);
+  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.74, 2.66);
 }
 
 .form-icon {
   position: absolute;
   left: 1.5rem;
-  top: 0.7rem;
-  color: var(--primary);
-  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.74, 2.66);
+
+  &:not(.textarea-icon) {
+    bottom: 0.7rem;
+  }
 }
 
-.form-control:focus + .form-icon,
-.form-control:hover + .form-icon {
-  transform: scale(1.25);
-  color: var(--secondary);
+.date-icon {
+  bottom: 0.7rem;
+}
+
+.textarea-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.7rem;
+}
+
+.form-control,
+.input-group {
+  &:hover,
+  &:focus {
+    + .form-icon,
+    .date-icon,
+    + .textarea-icon {
+      transform: scale(1.25);
+      color: var(--secondary);
+    }
+  }
+}
+
+.time-picker {
+  &:hover,
+  &:focus {
+    .time-icon {
+      transform: scale(1.25);
+      color: var(--secondary);
+    }
+  }
 }
 
 textarea::placeholder,
@@ -310,8 +437,18 @@ select::placeholder {
   transition: all 0.5s;
   height: 100px;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
   height: 0;
+}
+
+.custom-icon {
+  margin-left: 1rem;
+  color: var(--primary);
+}
+
+.form-control.special-input {
+  padding-left: 0.2rem;
 }
 </style>

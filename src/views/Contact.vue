@@ -81,6 +81,44 @@
                 ><i class="form-icon fal fa-comment-alt-lines"></i>
               </div>
             </div>
+            <div class="row">
+              <label class="col-12 section-label" for=""
+                >Preferred Contact:</label
+              >
+              <div class="col-12 col-md-6">
+                <div class="col-12 px-0 form-group">
+                  <label for="usePhone"
+                    ><input
+                      class="mr-2 ml-2"
+                      type="radio"
+                      value="Phone"
+                      name="prefContact"
+                      required
+                      v-model="enquire.preferredContact"
+                    />Phone</label
+                  >
+
+                  <label for="useEmail"
+                    ><input
+                      class="mr-2 ml-2"
+                      type="radio"
+                      value="Email"
+                      name="prefContact"
+                      v-model="enquire.preferredContact"
+                    />Email</label
+                  >
+                  <label for="useAny"
+                    ><input
+                      class="mr-2 ml-2"
+                      type="radio"
+                      value="Any"
+                      name="prefContact"
+                      v-model="enquire.preferredContact"
+                    />Either</label
+                  >
+                </div>
+              </div>
+            </div>
             <div class="text-right mt-4">
               <button
                 type="submit"
@@ -113,7 +151,8 @@ export default {
         name: "",
         number: "",
         email: "",
-        question: ""
+        question: "",
+        preferredContact: ""
       }
     };
   },

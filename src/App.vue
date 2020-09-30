@@ -1,21 +1,36 @@
 <template>
   <div id="app">
-    <Nav id="nav"></Nav>
+    <Nav id="nav" v-show="!$store.state.global.modalOpen"></Nav>
     <modal
       name="modal"
       height="auto"
+      width="700px"
       :scrollable="true"
       :adaptive="true"
       :clickToClose="false"
       :focusTrap="true"
     >
-      <EForm></EForm>
+      <template>
+        <div class="col-12 dark-bg py-2" style="height: 50px">
+          <a
+            class="btn-close far fa-times float-right p-2 text-white"
+            @click="hide()"
+          ></a>
+          <img src="./assets/logo-sm.svg" alt="" class="h-100" />
+        </div>
+        <iframe
+          src="/quote"
+          frameborder="0"
+          width="100%"
+          style="min-height: 700px"
+        ></iframe>
+      </template>
     </modal>
     <div class="content">
       <router-view />
     </div>
 
-    <Footer></Footer>
+    <Footer v-show="!$store.state.global.modalOpen"></Footer>
   </div>
 </template>
 
@@ -23,20 +38,19 @@
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
-import EForm from "@/components/Form.vue";
+// import EForm from "@/components/Form.vue";
 
 export default {
-  components: { Nav, Footer, EForm },
+  components: { Nav, Footer },
   methods: {
     show() {
       this.$modal.show("modal");
+      // this.$store.commit("modalStatus");
     },
     hide() {
       this.$modal.hide("modal");
+      // this.$store.commit("modalStatus");
     }
-  },
-  mount() {
-    this.show();
   }
 };
 </script>

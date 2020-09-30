@@ -6,6 +6,7 @@ const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
 const About = () => import("../views/About.vue");
 const Services = () => import("../views/Services.vue");
+const Form = () => import("../components/Form.vue");
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/quote",
+    name: "Quote",
+    component: Form
   },
   {
     path: "/about",
