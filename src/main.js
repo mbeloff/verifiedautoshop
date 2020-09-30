@@ -9,8 +9,14 @@ import "aos/dist/aos.css";
 import VueNavigationBar from "vue-navigation-bar";
 Vue.component("vue-navigation-bar", VueNavigationBar);
 import VModal from "vue-js-modal";
+import VueAnalytics from "vue-analytics";
 Vue.use(VModal);
 Vue.config.productionTip = false;
+
+Vue.use(VueAnalytics, {
+  id: "UA-179418961-1",
+  router
+});
 
 new Vue({
   created() {
