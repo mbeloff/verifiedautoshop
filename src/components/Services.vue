@@ -14,7 +14,7 @@
               regularly will improve fuel efficiency and help prevent more
               costly problems by detecting issues before they develop.
             </p>
-            <p class="color-prime font-weight-bold">
+            <p class="color-prime font-weight-bold mb-1">
               Call Verified Autoshop for:
             </p>
             <ul class="list-unstyled">
@@ -66,7 +66,7 @@
               suspect your car’s developing an electrical fault, trust a
               Verified auto electrician to fix the problem fast.
             </p>
-            <p class="color-prime font-weight-bold">Specialists in:</p>
+            <p class="color-prime font-weight-bold mb-1">Specialists in:</p>
             <ul class="list-unstyled">
               <li class="list-item item-dash">
                 Auto electrical wiring and electronic computer systems for all
@@ -102,7 +102,7 @@
               We'll identify any existing or developing issues so you can make
               an informed decision about your purchase.
             </p>
-            <p class="color-prime font-weight-bold">We will:</p>
+            <p class="color-prime font-weight-bold mb-1">We will:</p>
             <ul class="list-unstyled">
               <li class="list-item item-dash">
                 Inspect engine body and under the hood,
@@ -117,7 +117,7 @@
                 Provide a detailed report outlining any potential issues.
               </li>
             </ul>
-            <p class="color-prime font-weight-bold">Make sure:</p>
+            <p class="color-prime font-weight-bold mb-1">Make sure:</p>
             <ul class="list-unstyled">
               <li class="list-item item-dash">
                 Your vehicle is in good condition and safe to drive away.
@@ -151,7 +151,7 @@
               Autoshop a call and get your car checked out by our qualified
               technicians.
             </p>
-            <p class="color-prime font-weight-bold">
+            <p class="color-prime font-weight-bold mb-1">
               Common Steering and Suspension Problems:
             </p>
             <ul class="list-unstyled">
@@ -184,7 +184,7 @@
               Let us make sure you get the right tyres for your vehicle and
               driving needs.
             </p>
-            <p class="color-prime font-weight-bold">
+            <p class="color-prime font-weight-bold mb-1">
               Getting the right tyres can:
             </p>
             <ul class="list-unstyled">
@@ -267,7 +267,7 @@ export default {
 <style lang="scss">
 .item-dash {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-bottom: 0.25rem;
   &::before {
     position: absolute;
@@ -275,6 +275,7 @@ export default {
     background: var(--light-color);
     height: 6px;
     width: 6px;
+    border-radius: 50%;
     left: -10px;
     top: 9px;
   }

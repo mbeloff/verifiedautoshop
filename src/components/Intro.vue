@@ -8,7 +8,7 @@
       <div
         class="my-5 ml-0 mx-md-auto col-12 col-md-12 col-lg-10 col-xl-8 text-md-center"
       >
-        <h4 class="color-prime font-italic">Why go Verified?</h4>
+        <h4 class="color-prime font-italic">We can look at it today!</h4>
         <!-- <ul class="list-unstyled color-light mb-0">
           <li class="list-item text-center">
             <i class="fas fa-check-circle mr-2"></i>
@@ -55,6 +55,7 @@
           </div>
         </div>
       </div>
+
       <a @click="show()" class="btn btn-cs btn-outline mt-2">Book Now</a>
     </div>
   </div>

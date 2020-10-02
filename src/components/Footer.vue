@@ -3,8 +3,15 @@
     <div class="container py-4">
       <div class="row">
         <div class="col-12">
-          <img src="../assets/logo-sm.svg" alt="" style="height: 35px;" />
-          <a class="ml-2 btn btn-cs btn-prime" @click="show()">BOOK NOW</a>
+          <img
+            src="../assets/logo-sm.svg"
+            alt=""
+            style="height: 35px;"
+            class="mt-3"
+          />
+          <a class="ml-md-3 mt-3 btn btn-cs btn-prime" @click="show()"
+            >BOOK NOW <i class="fas fa-comment-alt-lines fa-fw ml-1"></i
+          ></a>
         </div>
       </div>
       <div class="row mt-3">
@@ -118,13 +125,16 @@
         <div class="col-12 col-sm-6 col-md-4">
           <h6 class="footer-heading"><span>Contact</span></h6>
           <ul class="list-unstyled small">
-            <li class="list-item h5">{{ $store.state.global.phone }}</li>
+            <li class="list-item h5 mb-0">{{ $store.state.global.phone }}</li>
             <li class="list-item">
               <a :href="`mailto:` + $store.state.global.email">
                 {{ $store.state.global.email }}</a
               >
             </li>
-            <li class="list-item mt-2">46 Deshon St <br />Woolloongabba</li>
+            <li class="list-item mt-2">
+              <b>Verified Autoshop Brisbane</b> <br />46 Deshon St
+              <br />Woolloongabba, 4102
+            </li>
           </ul>
         </div>
       </div>
@@ -151,6 +161,11 @@ export default {
   background: var(--dark-bg);
   a {
     color: white;
+  }
+  .btn {
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 

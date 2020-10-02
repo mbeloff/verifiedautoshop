@@ -130,6 +130,7 @@ h4 {
     border-radius: 0;
     text-transform: uppercase;
     box-shadow: 0rem 0rem 2rem #0044ff1c;
+
     &:hover {
       box-shadow: 0rem 0rem 2rem #6589ff21;
     }
@@ -150,6 +151,7 @@ h4 {
   }
   &.btn-prime {
     color: white !important;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.425);
     background-image: linear-gradient(
       15deg,
       var(--primary) 40%,

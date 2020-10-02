@@ -290,14 +290,21 @@ export default {
 
   &__popup {
     border-radius: 5px;
+    box-shadow: 0 .5rem 3rem black;
     &__top {
       background: var(--dark-bg);
+      padding: .5rem;
+      &__image {
+        margin-bottom: 0;
+      }
     }
     &__bottom {
+      padding-top: 0;
       &__custom-section {
         color: var(--primary);
       }
       &__menu-options {
+        margin-bottom: 0;
         &__option {
           &__link {
             &:not(.btn) {
