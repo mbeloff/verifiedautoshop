@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav id="nav" v-show="!$store.state.global.modalOpen"></Nav>
+    <Nav id="nav" ref="bits" v-if="$route.name != 'Quote'"></Nav>
     <modal
       name="modal"
       height="auto"
@@ -23,14 +23,14 @@
           frameborder="0"
           width="100%"
           style="min-height: 700px"
+          height="100%"
         ></iframe>
       </template>
     </modal>
     <div class="content">
       <router-view />
     </div>
-
-    <Footer v-show="!$store.state.global.modalOpen"></Footer>
+    <Footer ref="bits" v-if="$route.name != 'Quote'"></Footer>
   </div>
 </template>
 

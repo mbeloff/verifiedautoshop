@@ -6,6 +6,14 @@
           <div class="banner-logo d-flex flex-fill my-auto"></div>
         </div>
       </div>
+      <div class="row">
+        <img
+          src="../assets/afterpay/FB cover photo 03.jpg"
+          alt=""
+          class="mx-auto"
+          style="height: 200px;"
+        />
+      </div>
     </div>
     <Intro></Intro>
 
@@ -20,6 +28,7 @@
 import Services from "@/components/Services.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import Intro from "@/components/Intro.vue";
+
 export default {
   components: { Services, Testimonials, Intro },
   name: "Home",

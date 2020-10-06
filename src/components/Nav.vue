@@ -15,11 +15,11 @@
       <vue-navigation-bar
         :options="navbarOptions"
         @vnb-item-clicked="vnbItemClicked"
-        ><!-- Custom Slot - Uncomment to use -->
+      >
         <template v-slot:custom-section>
           <div class="custom-section-content">
             <p class="mb-0 font-weight-bold">
-              {{ $store.state.global.phone }}
+              <nobr>{{ $store.state.global.phone }}</nobr>
             </p>
           </div>
         </template>
@@ -290,10 +290,10 @@ export default {
 
   &__popup {
     border-radius: 5px;
-    box-shadow: 0 .5rem 3rem black;
+    box-shadow: 0 0.5rem 3rem black;
     &__top {
       background: var(--dark-bg);
-      padding: .5rem;
+      padding: 0.5rem;
       &__image {
         margin-bottom: 0;
       }

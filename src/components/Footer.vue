@@ -1,5 +1,16 @@
 <template>
   <div class="text-left text-white" id="footer">
+    <div class="container-fluid" style="background: #212338">
+      <div class="row">
+        <div class="col-12 col-md-7 col-lg-5 col-xl-4 px-0 mx-auto">
+          <img
+            src="../assets/afterpay/FB cover photo 02.jpg"
+            alt=""
+            class="img-fluid mx-auto"
+          />
+        </div>
+      </div>
+    </div>
     <div class="container py-4">
       <div class="row">
         <div class="col-12">
@@ -9,6 +20,7 @@
             style="height: 35px;"
             class="mt-3"
           />
+
           <a class="ml-md-3 mt-3 btn btn-cs btn-prime" @click="show()"
             >BOOK NOW <i class="fas fa-comment-alt-lines fa-fw ml-1"></i
           ></a>

@@ -55,7 +55,6 @@
           </div>
         </div>
       </div>
-
       <a @click="show()" class="btn btn-cs btn-outline mt-2">Book Now</a>
     </div>
   </div>

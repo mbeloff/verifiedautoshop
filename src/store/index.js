@@ -1218,9 +1218,6 @@ export default new Vuex.Store({
       state.form = n;
       state.form.make = "Vehicle Make";
       state.form.model = "Vehicle Model";
-    },
-    modalStatus(state) {
-      state.global.modalOpen = !state.global.modalOpen;
     }
   },
   actions: {},
