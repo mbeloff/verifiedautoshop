@@ -2,8 +2,8 @@
   <div class="py-5 intro text-center light-bg">
     <div class="container">
       <p class="lead">
-        Verified Autoshop is Brisbane's complete auto repair center, offering a
-        full range of maintenance and repair services.
+        Verified Autoshop is your complete auto repair centre, offering a full
+        range of maintenance, repair & grooming services.
       </p>
       <div
         class="my-5 ml-0 mx-md-auto col-12 col-md-12 col-lg-10 col-xl-8 text-md-center"
