@@ -3,7 +3,7 @@
     <div class="row  mt-5 py-5">
       <div class="col-12 col-md-6 col-lg-5 ml-auto text-md-left">
         <h1 class="mb-3 font-italic">
-          <i class=" fas fa-check-circle mr-2"></i>Contact Info
+          <i class=" fas fa-check-circle mr-2"></i>Contact
         </h1>
         <div class="d-flex align-items-center">
           <p>
@@ -32,6 +32,11 @@
             <b>phone:</b> {{ $store.state.global.phone }}<br /><b>mail: </b>
             <a :href="`mailto:` + $store.state.global.email">
               {{ $store.state.global.email }}</a
+            ><br /><span v-if="$route.name != 'Contact'"
+              ><b>online: </b>
+              <router-link :to="{ name: 'Contact' }"
+                >message us</router-link
+              ></span
             >
           </p>
         </div>

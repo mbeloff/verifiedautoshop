@@ -2,7 +2,7 @@
   <div class="services-tabs">
     <ul class="tabs-header list-group">
       <li
-        class="mr-md-3 list-group-item shadow-responsive"
+        class="mr-md-3 list-group-item shadow-responsive unselectable"
         v-for="(tab, index) in tabs"
         :key="tab.title"
         @click="selectTab(index)"
@@ -156,5 +156,12 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 </style>

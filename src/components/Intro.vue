@@ -42,8 +42,8 @@
           <div class="card shadow-lg">
             <i class="fas fa-check-circle card-icon"></i>
             <p class="px-2 my-auto">
-              We're experts in servicing & maintenance, mechanical repairs &
-              diagnostics, auto electrics and vehicle inspections.
+              We're experts in servicing & maintenance, mechanical repairs, auto
+              electrics and vehicle inspections.
             </p>
           </div>
           <div class="card shadow-lg">

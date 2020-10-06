@@ -7,7 +7,19 @@ export default new Vuex.Store({
     global: {
       phone: "0424 975 336",
       email: "bookings@verifiedautoshop.com",
-      modalOpen: false
+      locationIndex: 0,
+      locations: [
+        {
+          city: "Brisbane",
+          token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
+          index: 0
+        },
+        {
+          city: "Christchurch",
+          token: "temp_token",
+          index: 1
+        }
+      ]
     },
     selectedMake: "Vehicle Make",
     selectedModel: "Vehicle Model",

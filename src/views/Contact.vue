@@ -179,20 +179,34 @@ export default {
           ...this.enquire
         })
       })
-        .then(() => {
+        .then(function(response) {
+          if (!response.ok) {
+            throw Error(response.statusText);
+          }
+          return response;
+        })
+        .then(function() {
+          console.log("ok");
           this.$router.push("success");
-          // console.log('success')
         })
         .catch(() => {
-          this.$router.push("404");
-          // console.log('failure')
+          console.log("");
+          this.$router.push("NotFound");
         });
+      // .then(() => {
+      //   this.$router.push("success");
+      //   // console.log('success')
+      // })
+      // .catch(() => {
+      //   this.$router.push("404");
+      //   // console.log('failure')
+      // });
     }
   },
   mounted() {
     setTimeout(() => {
       this.$refs.name.focus();
-    }, 500);
+    }, 200);
   }
 };
 </script>

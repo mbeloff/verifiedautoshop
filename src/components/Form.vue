@@ -9,8 +9,8 @@
     >
       <input
         type="hidden"
+        :value="locations[locationIndex].token"
         name="token"
-        value="208c5f70fea76d55514cb31d4799f335353ea6ba"
       />
       <input type="hidden" :value="form.name" name="name" />
       <input type="hidden" :value="form.make" name="make" />
@@ -19,7 +19,16 @@
       <input type="hidden" :value="form.rego" name="registration_number" />
       <input type="hidden" :value="form.number" name="phone" />
       <input type="hidden" :value="form.email" name="email" />
-      <input type="hidden" :value="form.comments" name="note" />
+      <input
+        type="hidden"
+        :value="
+          'LOCATION: ' +
+            locations[locationIndex].city.toUpperCase() +
+            ' --- ' +
+            form.comments
+        "
+        name="note"
+      />
       <input
         type="hidden"
         :value="formatDate(form.pickup) + ' ' + form.pickup_time"
@@ -30,6 +39,24 @@
         :value="formatDate(form.dropoff) + ' ' + form.dropoff_time"
         name="drop_off_time"
       />
+      <div class="row form-group">
+        <label for="" class="col-12 section-label">Select Location</label>
+        <div class="col-12 col-sm-6 form-group">
+          <select
+            class="form-control"
+            v-model="locationIndex"
+            ref="locSelect"
+            required
+          >
+            <option v-for="(location, i) in locations" :key="i" :value="i">{{
+              location.city
+            }}</option>
+            <!-- <option value="Brisbane" selected>Brisbane</option>
+            <option value="Christchurch">Christchurch</option> -->
+          </select>
+          <i class="form-icon fal fa-globe"></i>
+        </div>
+      </div>
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Vehicle</label>
 
@@ -280,6 +307,17 @@ export default {
   },
   data() {
     return {
+      locationIndex: 0,
+      locations: [
+        {
+          city: "Brisbane",
+          token: "208c5f70fea76d55514cb31d4799f335353ea6ba"
+        },
+        {
+          city: "Christchurch",
+          token: "208c5f70fea76d55514cb31d4799f335353ea6ba"
+        }
+      ],
       makes: this.$store.state.makes,
       selectedModel: this.$store.state.selectedModel,
       selectedMake: this.$store.state.selectedMake,

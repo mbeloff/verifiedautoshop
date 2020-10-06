@@ -124,14 +124,25 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6 class="footer-heading"><span>Information</span></h6>
+          <h6 class="footer-heading"><span>Quick Links</span></h6>
           <ul class="list-unstyled small">
             <li class="list-item">
-              <router-link :to="{ name: 'About' }">About Us</router-link>
+              <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
             </li>
-            <!-- <li class="list-item">FAQ</li> -->
             <li class="list-item">
-              <router-link :to="{ name: 'Contact' }">Contact</router-link>
+              <router-link :to="{ name: 'Services', hash: '' }"
+                >Services</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link :to="{ name: 'About', hash: '' }"
+                >About Us</router-link
+              >
+            </li>
+            <li class="list-item">
+              <router-link :to="{ name: 'Contact', hash: '#' }"
+                >Contact</router-link
+              >
             </li>
           </ul>
         </div>

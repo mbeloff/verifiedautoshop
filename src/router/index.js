@@ -63,7 +63,6 @@ const router = new VueRouter({
     if (savedPosition) {
       return savedPosition;
     }
-
     return { x: 0, y: 0 };
   }
 });
