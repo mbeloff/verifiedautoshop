@@ -179,28 +179,14 @@ export default {
           ...this.enquire
         })
       })
-        .then(function(response) {
-          if (!response.ok) {
-            throw Error(response.statusText);
-          }
-          return response;
-        })
-        .then(function() {
-          console.log("ok");
+        .then(() => {
           this.$router.push("success");
+          // console.log('success')
         })
         .catch(() => {
-          console.log("");
-          this.$router.push("NotFound");
+          this.$router.push("404");
+          // console.log('failure')
         });
-      // .then(() => {
-      //   this.$router.push("success");
-      //   // console.log('success')
-      // })
-      // .catch(() => {
-      //   this.$router.push("404");
-      //   // console.log('failure')
-      // });
     }
   },
   mounted() {
