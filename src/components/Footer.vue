@@ -6,7 +6,8 @@
           <img
             src="../assets/afterpay/FB cover photo 02.jpg"
             alt=""
-            class="img-fluid mx-auto"
+            class="mx-auto"
+            style="width: 100%; max-width: 100vw"
           />
         </div>
       </div>
