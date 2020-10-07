@@ -19,16 +19,7 @@
       <input type="hidden" :value="form.rego" name="registration_number" />
       <input type="hidden" :value="form.number" name="phone" />
       <input type="hidden" :value="form.email" name="email" />
-      <input
-        type="hidden"
-        :value="
-          'LOCATION: ' +
-            locations[locationIndex].city.toUpperCase() +
-            ' --- ' +
-            form.comments
-        "
-        name="note"
-      />
+      <input type="hidden" :value="form.comments" name="note" />
       <input
         type="hidden"
         :value="formatDate(form.pickup) + ' ' + form.pickup_time"
@@ -315,7 +306,7 @@ export default {
         },
         {
           city: "Christchurch",
-          token: "208c5f70fea76d55514cb31d4799f335353ea6ba"
+          token: "27b7c5186fa1eb92837c02a07b0227ca454fb598"
         }
       ],
       makes: this.$store.state.makes,
