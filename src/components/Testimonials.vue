@@ -2,9 +2,7 @@
   <div class="light-bg py-4 mt-5">
     <div class="mx-auto" style="overflow: hidden; max-width: 100vw">
       <div class="container">
-        <h1 class="mb-3 font-italic">
-          <i class=" fas fa-check-circle mr-2"></i>Testimonials
-        </h1>
+        <Title>Testimonials</Title>
         <swiper ref="mySwiperRef" class="swiper p-5" :options="swiperOption">
           <swiper-slide
             class="rounded shadow-lg"
@@ -42,7 +40,6 @@
         </swiper>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -98,7 +95,7 @@ export default {
           author: "Serena",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.jpg",
-          comment: "Really happy with the service, all the staff very helpful."
+          comment: "Excellent service!"
         },
         {
           author: "Rami",

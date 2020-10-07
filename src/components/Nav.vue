@@ -196,8 +196,8 @@ export default {
             subMenuOptions: [
               {
                 type: "link",
-                text: "About Us",
-                path: { name: "About" }
+                text: "Locations",
+                path: { name: "Locations" }
               },
               {
                 type: "hr"

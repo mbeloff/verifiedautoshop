@@ -1,9 +1,9 @@
 <template>
   <div class="py-5" id="services">
+    <div class="container">
+      <Title>Services</Title>
+    </div>
     <div class="container p-0 px-md-3">
-      <h1 class="px-3 px-md-0 mb-3 font-italic">
-        <i class=" fas fa-check-circle mr-2"></i>Services
-      </h1>
       <tabs>
         <transition name="slide-fade"
           ><tab title="Servicing">

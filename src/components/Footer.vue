@@ -135,8 +135,8 @@
               >
             </li>
             <li class="list-item">
-              <router-link :to="{ name: 'About', hash: '' }"
-                >About Us</router-link
+              <router-link :to="{ name: 'Locations', hash: '' }"
+                >Locations</router-link
               >
             </li>
             <li class="list-item">

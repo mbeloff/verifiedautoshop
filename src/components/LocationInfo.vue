@@ -4,9 +4,7 @@
       <div class="col-12 col-md-6">
         <div class="row py-5">
           <div class="col-12 ml-auto text-md-left">
-            <h1 class="mb-3 font-italic">
-              <i class=" fas fa-check-circle mr-2"></i>Brisbane
-            </h1>
+            <Title>Brisbane</Title>
             <div class="d-flex align-items-center">
               <p>
                 <i class="contact-icon fal fa-location-circle fa-fw fa-2x"></i>
@@ -67,9 +65,7 @@
       <div class="col-12 col-md-6">
         <div class="row  py-5">
           <div class="col-12 ml-auto text-md-left">
-            <h1 class="mb-3 font-italic">
-              <i class=" fas fa-check-circle mr-2"></i>Christchurch
-            </h1>
+            <Title>Christchurch</Title>
             <div class="d-flex align-items-center">
               <p>
                 <i class="contact-icon fal fa-location-circle fa-fw fa-2x"></i>

@@ -4,7 +4,7 @@ const Home = () => import("../views/Home.vue");
 const Success = () => import("../views/Success.vue");
 const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
-const About = () => import("../views/About.vue");
+const Locations = () => import("../views/Locations.vue");
 const Services = () => import("../views/Services.vue");
 const Form = () => import("../components/Form.vue");
 
@@ -22,9 +22,9 @@ const routes = [
     component: Form
   },
   {
-    path: "/about",
-    name: "About",
-    component: About
+    path: "/locations",
+    name: "Locations",
+    component: Locations
   },
   {
     path: "/success",
