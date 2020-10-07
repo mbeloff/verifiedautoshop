@@ -390,4 +390,22 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.vue__time-picker .dropdown ul li:not([disabled]).active,
+.vue__time-picker .dropdown ul li:not([disabled]).active:focus,
+.vue__time-picker .dropdown ul li:not([disabled]).active:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.form .vdp-datepicker__calendar .cell.selected {
+  background: var(--primary);
+  color: white;
+}
+
+.form .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
+.form .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
+.form .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
+  border: 1px solid var(--primary);
+}
+</style>
