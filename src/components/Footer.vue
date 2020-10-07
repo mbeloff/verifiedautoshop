@@ -159,6 +159,10 @@
               <b>Verified Autoshop Brisbane</b> <br />46 Deshon St
               <br />Woolloongabba, 4102
             </li>
+            <li class="list-item mt-2">
+              <b>Verified Autoshop Christchurch</b> <br />135 Ferry Rd
+              <br />Christchurch, 8011
+            </li>
           </ul>
         </div>
       </div>

@@ -42,13 +42,12 @@
         </swiper>
       </div>
     </div>
-    <ContactInfo></ContactInfo>
+
   </div>
 </template>
 
 <script>
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
-import ContactInfo from "@/components/ContactInfo.vue";
 
 import "swiper/css/swiper.css";
 
@@ -57,8 +56,7 @@ export default {
   title: "Testimonials Looper",
   components: {
     Swiper,
-    SwiperSlide,
-    ContactInfo
+    SwiperSlide
   },
   directives: {
     swiper: directive
