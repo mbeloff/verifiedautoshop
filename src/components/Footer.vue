@@ -1,6 +1,16 @@
 <template>
   <div class="text-left text-white" id="footer">
     <div class="container-fluid" style="background: #212338">
+      <div class="row light-bg py-3">
+        <div class="col-8 col-sm-4 col-md-3 col-lg-2 col-xl-1 px-0 mx-auto">
+          <img
+            src="../assets/mta-qld.png"
+            alt=""
+            class="mx-auto"
+            style="width: 100%; max-width: 100vw; min-width: 200px;"
+          />
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-md-7 col-lg-5 col-xl-4 px-0 mx-auto">
           <img
@@ -18,7 +28,7 @@
           <img
             src="../assets/logo-sm.svg"
             alt=""
-            style="height: 35px;"
+            style="height: 40px;"
             class="mt-3"
           />
 
