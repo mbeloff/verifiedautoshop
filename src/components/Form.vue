@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <form
-      class="col-12 pt-3 pb-3"
+      class="col-12 pt-3 light-bg"
       name="VerifiedQuote"
       method="post"
       id="VerifiedQuote"
@@ -48,6 +48,50 @@
           <i class="form-icon fal fa-globe"></i>
         </div>
       </div>
+      
+
+      <div class="row form-group">
+        <label class="col-12 section-label" for="">Your Details</label>
+        <div class="col-md-12 form-group">
+          <label class="sr-only">Name</label>
+
+          <input
+            class="form-control"
+            type="text"
+            aria-label="Your name"
+            placeholder="Name"
+            required
+            ref="name"
+            v-model="form.name"
+          />
+          <i class="form-icon fal fa-user"></i>
+        </div>
+        <div class="col-sm-6 form-group">
+          <label class="sr-only">Phone</label>
+
+          <input
+            class="form-control"
+            type="tel"
+            placeholder="Phone"
+            aria-label="Your phone number"
+            required
+            v-model="form.number"
+          /><i class="form-icon fal fa-phone-rotary"></i>
+        </div>
+
+        <div class="col-sm-6 form-group">
+          <label class="sr-only">Email</label>
+
+          <input
+            class="form-control"
+            type="email"
+            placeholder="Email"
+            aria-label="Your email address"
+            v-model="form.email"
+          /><i class="form-icon fal fa-envelope"></i>
+        </div>
+      </div>
+
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Vehicle</label>
 
@@ -104,47 +148,6 @@
             v-model="form.rego"
           />
           <i class="form-icon fal fa-car"></i>
-        </div>
-      </div>
-
-      <div class="row form-group">
-        <label class="col-12 section-label" for="">Your Details</label>
-        <div class="col-md-12 form-group">
-          <label class="sr-only">Name</label>
-
-          <input
-            class="form-control"
-            type="text"
-            aria-label="Your name"
-            placeholder="Name"
-            required
-            v-model="form.name"
-          />
-          <i class="form-icon fal fa-user"></i>
-        </div>
-        <div class="col-sm-6 form-group">
-          <label class="sr-only">Phone</label>
-
-          <input
-            class="form-control"
-            type="tel"
-            placeholder="Phone"
-            aria-label="Your phone number"
-            required
-            v-model="form.number"
-          /><i class="form-icon fal fa-phone-rotary"></i>
-        </div>
-
-        <div class="col-sm-6 form-group">
-          <label class="sr-only">Email</label>
-
-          <input
-            class="form-control"
-            type="email"
-            placeholder="Email"
-            aria-label="Your email address"
-            v-model="form.email"
-          /><i class="form-icon fal fa-envelope"></i>
         </div>
       </div>
 
@@ -258,19 +261,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-6">
-          <img
-            class="img-fluid"
-            src="../assets/afterpay/Afterpay_BookNow_Banner_600x150_White@1x.png"
-            alt=""
-          />
-        </div>
-
-        <div class="col-12 col-sm-6 ml-auto text-right mt-4">
+        <div class="col-12 col-sm-6 ml-auto text-right mt-2 mt-sm-4 order-sm-2">
           <button
             type="submit"
             value="submit"
-            class="btn btn-cs btn-outline text-uppercase"
+            class="btn btn-cs btn-prime text-uppercase"
             aria-label="Submit"
           >
             <p class="mb-0">
@@ -278,6 +273,15 @@
             </p>
           </button>
         </div>
+        <div class="col-12 col-sm-6">
+          <img
+            class="img-fluid form-img"
+            src="../assets/afterpay/Afterpay_BookNow_Banner_600x150_White@1x.png"
+            alt=""
+          />
+        </div>
+
+        
       </div>
     </form>
   </div>
@@ -299,16 +303,7 @@ export default {
   data() {
     return {
       locationIndex: 0,
-      locations: [
-        {
-          city: "Brisbane",
-          token: "208c5f70fea76d55514cb31d4799f335353ea6ba"
-        },
-        {
-          city: "Christchurch",
-          token: "27b7c5186fa1eb92837c02a07b0227ca454fb598"
-        }
-      ],
+      locations: this.$store.state.global.locations,
       makes: this.$store.state.makes,
       selectedModel: this.$store.state.selectedModel,
       selectedMake: this.$store.state.selectedMake,
@@ -345,43 +340,25 @@ export default {
       this.$store.commit("storeForm", this.form);
       this.$modal.hide("modal");
     }
-    // encode(data) {
-    //   return Object.keys(data)
-    //     .map(
-    //       key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-    //     )
-    //     .join("&");
-    // },
-    // handleSubmit() {
-    //   fetch("/", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //     body: this.encode({
-    //       "form-name": "VerifiedQuote",
-    //       ...this.form
-    //     })
-    //   })
-    //     .then(() => {
-    //       this.$router.push("success");
-    //       // console.log('success')
-    //       this.$modal.hide("modal");
-    //     })
-    //     .catch(() => {
-    //       this.$router.push("404");
-    //       // console.log('failure')
-    //       this.$modal.hide("modal");
-    //     });
-    // }
   },
   mounted() {
     setTimeout(() => {
-      this.$refs.make.focus();
+      this.$refs.name.focus();
     }, 500);
   }
 };
 </script>
 
 <style lang="scss">
+.form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-img {
+  filter: opacity(0.35);
+}
+
 .vue__time-picker .dropdown ul li:not([disabled]).active,
 .vue__time-picker .dropdown ul li:not([disabled]).active:focus,
 .vue__time-picker .dropdown ul li:not([disabled]).active:hover {
