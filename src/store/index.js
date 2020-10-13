@@ -31,8 +31,6 @@ export default new Vuex.Store({
       model: null,
       year: null,
       rego: null,
-      preferredContact: "",
-      typeOfEnquiry: "Type of Enquiry",
       comments: "",
       dropoff: moment()._d,
       dropoff_time: "09:00",

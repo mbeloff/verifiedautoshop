@@ -109,12 +109,7 @@
 
         <div class="col-12 col-sm-6 form-group">
           <!-- <label>Vechicle Make</label> -->
-          <select
-            class="form-control"
-            v-model="selectedMake"
-            ref="make"
-            required
-          >
+          <select class="form-control" v-model="selectedMake">
             <option value="Vehicle Make" :key="-1" selected disabled
               >Vehicle Make</option
             >
@@ -154,6 +149,7 @@
             class="form-control"
             type="text"
             aria-label="Vehicle Rego"
+            required
             autocomplete="off"
             placeholder="Vehicle Rego"
             maxlength="8"
