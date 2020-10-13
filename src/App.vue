@@ -54,6 +54,21 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-color) transparent;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--light-color);
+  border: 1px solid transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }

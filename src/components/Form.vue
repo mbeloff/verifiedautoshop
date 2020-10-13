@@ -48,7 +48,6 @@
           <i class="form-icon fal fa-globe"></i>
         </div>
       </div>
-      
 
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Details</label>
@@ -175,8 +174,8 @@
               hour-label="hour"
               minute-label="min"
               input-class="form-control"
-              :minute-interval="10"
-              :hour-range="[[8, 17]]"
+              :minute-interval="15"
+              :hour-range="[[9, 16]]"
               hide-disabled-items
               advanced-keyboard
               v-model="form.dropoff_time"
@@ -207,8 +206,8 @@
               hour-label="hour"
               minute-label="min"
               input-class="form-control"
-              :minute-interval="10"
-              :hour-range="[[8, 17]]"
+              :minute-interval="15"
+              :hour-range="[[9, 16]]"
               hide-disabled-items
               advanced-keyboard
               v-model="form.pickup_time"
@@ -280,8 +279,6 @@
             alt=""
           />
         </div>
-
-        
       </div>
     </form>
   </div>
@@ -356,7 +353,7 @@ export default {
 }
 
 .form-img {
-  filter: opacity(0.35);
+  filter: opacity(0.5);
 }
 
 .vue__time-picker .dropdown ul li:not([disabled]).active,

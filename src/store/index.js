@@ -35,9 +35,9 @@ export default new Vuex.Store({
       typeOfEnquiry: "Type of Enquiry",
       comments: "",
       dropoff: moment()._d,
-      dropoff_time: "08:00",
+      dropoff_time: "09:00",
       pickup: moment()._d,
-      pickup_time: "16:00"
+      pickup_time: "15:00"
     },
     makes: [
       { label: "Other/Not Listed", models: ["Other/Not Listed"] },
