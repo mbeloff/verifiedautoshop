@@ -16,7 +16,7 @@ export default new Vuex.Store({
         },
         {
           city: "Christchurch",
-          token: "temp_token",
+          token: "27b7c5186fa1eb92837c02a07b0227ca454fb598",
           index: 1
         }
       ]

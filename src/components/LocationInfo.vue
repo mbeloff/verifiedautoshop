@@ -18,9 +18,8 @@
                 <i class="contact-icon fal fa-clock fa-fw fa-2x"></i>
               </p>
               <p class="w-100 ml-4">
-                <b>Opening Hours:</b> <br />mon-fri: 7-5 <br />
-                sat: 9-12 <br />
-                sun: closed
+                <b>Opening Hours:</b> <br />mon-fri: 8-4 <br />
+                sat-sun: closed
               </p>
             </div>
 
@@ -80,9 +79,8 @@
                 <i class="contact-icon fal fa-clock fa-fw fa-2x"></i>
               </p>
               <p class="w-100 ml-4">
-                <b>Opening Hours:</b> <br />mon-fri: 7-5 <br />
-                sat: 9-12 <br />
-                sun: closed
+                <b>Opening Hours:</b> <br />mon-fri: 8-4 <br />
+                sat-sun: closed
               </p>
             </div>
 
