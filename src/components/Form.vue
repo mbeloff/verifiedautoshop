@@ -48,6 +48,7 @@
           <i class="form-icon fal fa-globe"></i>
         </div>
       </div>
+      
 
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Details</label>
@@ -279,6 +280,8 @@
             alt=""
           />
         </div>
+
+        
       </div>
     </form>
   </div>
@@ -355,6 +358,7 @@ export default {
 .form-img {
   filter: opacity(0.5);
 }
+
 
 .vue__time-picker .dropdown ul li:not([disabled]).active,
 .vue__time-picker .dropdown ul li:not([disabled]).active:focus,

@@ -60,6 +60,7 @@ export default {
 }
 *::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 *::-webkit-scrollbar-track {
   background: transparent;
@@ -68,9 +69,12 @@ export default {
   background-color: var(--light-color);
   border: 1px solid transparent;
 }
-
 html {
   scroll-behavior: smooth;
+}
+.vw--overlay {
+  // overflow: hidden;
+  max-width: 100vw;
 }
 body {
   margin: 0 0 0 0;
