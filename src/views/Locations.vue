@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <img src="../assets/sign-banner.jpg" alt="" class="banner-img" />
+      <img src="../assets/sign-banner-b.jpg" alt="" class="banner-img" />
     </div>
 
     <div class="container py-5">
