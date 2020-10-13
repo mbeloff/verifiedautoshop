@@ -1,11 +1,24 @@
 <template>
   <div class="form">
+    <iframe
+      v-show="submitted"
+      src="https://mechanicdesk.com.au/booking_requests/"
+      frameborder="0"
+      name="my_iframe"
+      width="100%"
+      style="min-height: 775px"
+      height="100%"
+    ></iframe>
     <form
+      v-show="!submitted"
       class="col-12 pt-3 light-bg"
       name="VerifiedQuote"
       method="post"
+      ref="theform"
       id="VerifiedQuote"
       action="https://mechanicdesk.com.au/booking_requests/"
+      target="my_iframe"
+      @submit.prevent="submitForm"
     >
       <input
         type="hidden"
@@ -48,7 +61,6 @@
           <i class="form-icon fal fa-globe"></i>
         </div>
       </div>
-      
 
       <div class="row form-group">
         <label class="col-12 section-label" for="">Your Details</label>
@@ -280,8 +292,6 @@
             alt=""
           />
         </div>
-
-        
       </div>
     </form>
   </div>
@@ -302,6 +312,7 @@ export default {
   },
   data() {
     return {
+      submitted: false,
       locationIndex: 0,
       locations: this.$store.state.global.locations,
       makes: this.$store.state.makes,
@@ -339,6 +350,10 @@ export default {
     hide() {
       this.$store.commit("storeForm", this.form);
       this.$modal.hide("modal");
+    },
+    submitForm() {
+      this.submitted = true;
+      this.$refs.theform.submit();
     }
   },
   mounted() {
@@ -358,7 +373,6 @@ export default {
 .form-img {
   filter: opacity(0.5);
 }
-
 
 .vue__time-picker .dropdown ul li:not([disabled]).active,
 .vue__time-picker .dropdown ul li:not([disabled]).active:focus,

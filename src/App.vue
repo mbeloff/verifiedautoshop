@@ -18,13 +18,7 @@
           ></a>
           <img src="./assets/logo-sm.svg" alt="" class="h-100" />
         </div>
-        <iframe
-          src="/quote"
-          frameborder="0"
-          width="100%"
-          style="min-height: 775px"
-          height="100%"
-        ></iframe>
+        <EForm></EForm>
       </template>
     </modal>
     <div class="content">
@@ -38,10 +32,10 @@
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
-// import EForm from "@/components/Form.vue";
+import EForm from "@/components/Form.vue";
 
 export default {
-  components: { Nav, Footer },
+  components: { Nav, Footer, EForm },
   methods: {
     show() {
       this.$modal.show("modal");
@@ -56,24 +50,30 @@ export default {
 <style lang="scss">
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--light-color) transparent;
+  scrollbar-color: var(--light-color) var(--dark-color);
 }
 *::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--dark-color);
 }
 *::-webkit-scrollbar-thumb {
   background-color: var(--light-color);
-  border: 1px solid transparent;
+  border: 1px solid var(--dark-color);
+  border-radius: 2px;
 }
 html {
   scroll-behavior: smooth;
 }
 .vw--overlay {
-  // overflow: hidden;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.vm--container {
+  overflow: hidden;
   max-width: 100vw;
 }
 body {
