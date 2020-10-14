@@ -48,34 +48,35 @@ export default {
 </script>
 
 <style lang="scss">
-* {
+body,
+.vm--container,
+.vm--overlay {
   scrollbar-width: thin;
   scrollbar-color: var(--light-color) var(--dark-color);
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--dark-color);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+  }
 }
-*::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-*::-webkit-scrollbar-track {
-  background: var(--dark-color);
-}
-*::-webkit-scrollbar-thumb {
-  background-color: var(--light-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 2px;
-}
+
 html {
   scroll-behavior: smooth;
 }
-.vw--overlay {
-  overflow: hidden;
-  max-width: 100vw;
-}
 
+.vm--overlay,
 .vm--container {
   overflow: hidden;
   max-width: 100vw;
 }
+
 body {
   margin: 0 0 0 0;
   --verified: #5077bb;
