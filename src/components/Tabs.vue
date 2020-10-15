@@ -35,26 +35,8 @@ export default {
     this.tabs = this.$children;
   },
   mounted() {
-    if (this.$route.params.sIndex == 0) {
-      this.selectTab(0);
-    } else if (this.$route.params.sIndex == 1) {
-      this.selectTab(1);
-    } else if (this.$route.params.sIndex == 2) {
-      this.selectTab(2);
-    } else if (this.$route.params.sIndex == 3) {
-      this.selectTab(3);
-    } else if (this.$route.params.sIndex == 4) {
-      this.selectTab(4);
-    } else if (this.$route.params.sIndex == 5) {
-      this.selectTab(5);
-    } else if (this.$route.params.sIndex == 6) {
-      this.selectTab(6);
-    } else if (this.$route.params.sIndex == 7) {
-      this.selectTab(7);
-    } else if (this.$route.params.sIndex == 8) {
-      this.selectTab(8);
-    } else if (this.$route.params.sIndex == 9) {
-      this.selectTab(9);
+    if (this.$route.params.sIndex) {
+      this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
     } else {
       this.selectTab(0);
     }
@@ -75,27 +57,7 @@ export default {
   watch: {
     "$route.params.sIndex": {
       handler: function() {
-        if (this.$route.params.sIndex == 0) {
-          this.selectTab(0);
-        } else if (this.$route.params.sIndex == 1) {
-          this.selectTab(1);
-        } else if (this.$route.params.sIndex == 2) {
-          this.selectTab(2);
-        } else if (this.$route.params.sIndex == 3) {
-          this.selectTab(3);
-        } else if (this.$route.params.sIndex == 4) {
-          this.selectTab(4);
-        } else if (this.$route.params.sIndex == 5) {
-          this.selectTab(5);
-        } else if (this.$route.params.sIndex == 6) {
-          this.selectTab(6);
-        } else if (this.$route.params.sIndex == 7) {
-          this.selectTab(7);
-        } else if (this.$route.params.sIndex == 8) {
-          this.selectTab(8);
-        } else if (this.$route.params.sIndex == 9) {
-          this.selectTab(9);
-        }
+        this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
       },
       deep: true,
       immediate: true
@@ -117,10 +79,23 @@ export default {
 .tabs-header {
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .list-group-item {
+      border-radius: 0;
+    }
+    .list-group-item:nth-of-type(2) {
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .list-group-item:nth-of-type(2n) {
+      border-left: 0;
+    }
+  }
   li {
     // border-bottom: 1px solid #cfcfcf;
-    font-size: 0.8rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     transition: background 0.5s, color 0.5s;
     &:hover {
