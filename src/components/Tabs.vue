@@ -84,12 +84,22 @@ export default {
     grid-template-columns: 1fr 1fr;
     .list-group-item {
       border-radius: 0;
+      padding: 1.5rem 0.75rem;
+      &.tabActive {
+        color: white;
+        background: var(--primary) !important;
+        border-color: rgba(0, 0, 0, 0.05);
+      }
     }
     .list-group-item:nth-of-type(2) {
       border-top: 1px solid rgba(0, 0, 0, 0.125);
-    }
-    .list-group-item:nth-of-type(2n) {
       border-left: 0;
+    }
+    .list-group-item {
+      &:nth-of-type(4n - 3),
+      &:nth-of-type(4n + 4) {
+        background: rgb(244, 245, 247);
+      }
     }
   }
   li {
