@@ -82,25 +82,25 @@ export default {
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 1rem;
     .list-group-item {
-      border-radius: 0;
-      padding: 1.5rem 0.75rem;
+      border-radius: 0.25rem;
+      padding: 0.5rem 0.5rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+      box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.089);
       &.tabActive {
         color: white;
         background: var(--primary) !important;
         border-color: rgba(0, 0, 0, 0.05);
       }
     }
-    .list-group-item:nth-of-type(2) {
-      border-top: 1px solid rgba(0, 0, 0, 0.125);
-      border-left: 0;
-    }
-    .list-group-item {
-      &:nth-of-type(4n - 3),
-      &:nth-of-type(4n + 4) {
-        background: rgb(244, 245, 247);
-      }
-    }
+    // .list-group-item {
+    //   &:nth-of-type(4n - 3),
+    //   &:nth-of-type(4n + 4) {
+    //     background: rgb(244, 245, 247);
+    //   }
+    // }
   }
   li {
     // border-bottom: 1px solid #cfcfcf;
