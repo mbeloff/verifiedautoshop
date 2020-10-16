@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
           <h6 class="footer-heading"><span>Services</span></h6>
           <ul class="list-unstyled small">
             <li class="list-item">
@@ -234,6 +234,7 @@ export default {
 .list-item {
   font-weight: normal;
   font-variation-settings: "wght" 100;
+  margin: 0.5rem 0;
 }
 
 .map {
