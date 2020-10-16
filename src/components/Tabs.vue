@@ -1,10 +1,14 @@
 <template>
   <div class="services-tabs">
-    <ul class="tabs-header list-group">
+    <ul class="tabs-header list-group" role="tablist">
       <li
+        role="button"
         class="mr-md-3 list-group-item shadow-responsive unselectable"
         v-for="(tab, index) in tabs"
         :key="tab.title"
+        :tabindex="0"
+        @keydown.enter.prevent="selectTab(index)"
+        @keydown.space.prevent="selectTab(index)"
         @click="selectTab(index)"
         :class="{ tabActive: index == selectedIndex }"
       >
@@ -13,10 +17,17 @@
     </ul>
 
     <div
+      role="tabpanel"
       class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive pb-5"
     >
       <slot></slot>
-      <a @click="show()" class="btn btn-cs btn-outline btn-bottom m-2"
+      <a
+        @keypress.enter="show()"
+        @keypress.space="show()"
+        tabindex="0"
+        role="button"
+        @click="show()"
+        class="btn btn-cs btn-outline btn-bottom m-2"
         >Book Now</a
       >
     </div>

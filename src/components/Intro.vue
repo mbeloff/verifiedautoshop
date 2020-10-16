@@ -55,7 +55,14 @@
           </div>
         </div>
       </div>
-      <a @click="show()" class="btn btn-cs btn-outline mt-2">Book Now</a>
+      <a
+        tabindex="0"
+        @keypress.enter="show()"
+        @keypress.space="show()"
+        @click="show()"
+        class="btn btn-cs btn-outline mt-2"
+        >Book Now</a
+      >
     </div>
   </div>
 </template>

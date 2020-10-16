@@ -34,7 +34,12 @@
             class="mt-3"
           />
 
-          <a class="ml-md-3 mt-3 btn btn-cs btn-prime" @click="show()"
+          <a
+            tabindex="0"
+            @keypress.enter="show()"
+            @keypress.space="show()"
+            class="ml-md-3 mt-3 btn btn-cs btn-prime"
+            @click="show()"
             >BOOK NOW <i class="fas fa-comment-alt-lines fa-fw ml-1"></i
           ></a>
         </div>

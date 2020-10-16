@@ -28,11 +28,19 @@
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
           <div
+            tabindex="0"
+            @keydown.enter.prevent="prev()"
+            @keydown.space.prevent="prev()"
+            role="button"
             class="swiper-button-prev"
             slot="button-prev"
             @click="prev()"
           ></div>
           <div
+            tabindex="0"
+            @keydown.enter.prevent="next()"
+            @keydown.space.prevent="next()"
+            role="button"
             class="swiper-button-next"
             slot="button-next"
             @click="next()"
