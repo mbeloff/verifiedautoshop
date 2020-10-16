@@ -1,8 +1,8 @@
 <template>
-  <div class="services-tabs">
+  <div class="services-tabs" role="tabs">
     <ul class="tabs-header list-group" role="tablist">
       <li
-        role="button"
+        role="tab"
         class="mr-md-3 list-group-item shadow-responsive unselectable"
         v-for="(tab, index) in tabs"
         :key="tab.title"
@@ -17,7 +17,6 @@
     </ul>
 
     <div
-      role="tabpanel"
       class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive pb-5"
     >
       <slot></slot>
