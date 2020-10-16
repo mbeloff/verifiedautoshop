@@ -1,5 +1,5 @@
 <template>
-  <div class="services-tabs" role="tabs">
+  <div class="services-tabs">
     <ul class="tabs-header list-group" role="tablist">
       <li
         role="tab"
