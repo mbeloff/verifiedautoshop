@@ -1,4 +1,23 @@
+const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 module.exports = {
+  configureWebpack: {
+    plugins: [
+      new ImageminWebpWebpackPlugin({
+        config: [
+          {
+            test: /\.(jpe?g|png)/,
+            options: {
+              quality: 80
+            }
+          }
+        ],
+        overrideExtension: true,
+        detailedLogs: false,
+        silent: false,
+        strict: true
+      })
+    ]
+  },
   pages: {
     index: {
       // entry for the page
