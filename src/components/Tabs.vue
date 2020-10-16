@@ -82,11 +82,11 @@ export default {
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     padding: 0 1rem;
     .list-group-item {
       border-radius: 0.25rem;
-      padding: 0.5rem 0.5rem;
+      padding: 0.25rem 0.25rem;
       border-top: 1px solid rgba(0, 0, 0, 0.125);
       box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.089);
       &.tabActive {

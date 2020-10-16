@@ -9,7 +9,7 @@
             src="../assets/mta-qld.png"
             alt=""
             class="mx-auto"
-            style="max-width: 100%; min-width: 180px;"
+            style="max-width: 100%;"
           />
         </div>
       </div>
