@@ -2,12 +2,14 @@
   <div class="text-left text-white" id="footer">
     <div class="container-fluid" style="background: #212338">
       <div class="row light-bg py-3">
-        <div class="col-8 col-sm-4 col-md-3 col-lg-2 col-xl-1 px-0 mx-auto">
+        <div
+          class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-1 px-5 px-sm-0 mx-auto"
+        >
           <img
             src="../assets/mta-qld.png"
             alt=""
             class="mx-auto"
-            style="width: 100%; max-width: 100vw; min-width: 200px;"
+            style="max-width: 100%; min-width: 180px;"
           />
         </div>
       </div>
