@@ -82,7 +82,7 @@ export default {
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     padding: 0 1rem;
     .list-group-item {
       border-radius: 0.25rem;
