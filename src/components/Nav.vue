@@ -228,7 +228,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "/path/to/node_modules/vue-navigation-bar.css";
 .nav-wrapper {
   background: var(--dark-bg);
 }
