@@ -16,7 +16,7 @@
                   style="height:50px; width: 50px;"
                 >
                   <img
-                    :src="test.img"
+                    :src="transformImgExt(test.img)"
                     alt=""
                     class="h-100 w-100 rounded-circle"
                   />

@@ -4,8 +4,6 @@ import router from "./router";
 import store from "./store";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import VueNavigationBar from "vue-navigation-bar";
 Vue.component("vue-navigation-bar", VueNavigationBar);
 import VModal from "vue-js-modal";
@@ -54,10 +52,49 @@ Vue.use(VueAnalytics, {
   router
 });
 
+Vue.mixin({
+  data: function() {
+    return {
+      // We'll initially assume webp is supported
+      webpSupported: true
+    };
+  },
+  methods: {
+    transformImgExt(url) {
+      // If webp is supported, transform the url
+      if (this.webpSupported) {
+        return url.replace(/\.\w{1,5}$/, ".webp");
+      } else {
+        // Otherwise, just return the original
+        return url;
+      }
+    }
+  }
+});
+
 new Vue({
   created() {
-    AOS.init();
-  },
+    (async () => {
+      // If browser doesn't have createImageBitmap, we can't use webp.
+      if (!self.createImageBitmap) {
+        this.webpSupported = false;
+        console.log("webp not supported");
+        return;
+      }
+      console.log("webp supported");
+      // Base64 representation of a white point image
+      const webpData =
+        "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=";
+      // Retrieve the Image in Blob Format
+      const blob = await fetch(webpData).then(r => r.blob());
+      // If the createImageBitmap method succeeds, return true, otherwise false
+      this.webpSupported = await createImageBitmap(blob).then(
+        () => true,
+        () => false
+      );
+    })();
+  }, // End created
+
   router,
   store,
   render: h => h(App)

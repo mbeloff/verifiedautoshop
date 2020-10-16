@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12 col-md-7 col-lg-5 col-xl-4 px-0 mx-auto">
           <img
-            src="../assets/afterpay/FB cover photo 03.jpg"
+            :src="transformImgExt('../assets/afterpay/FB cover photo 03.jpg')"
             alt=""
             class="img-fluid mx-auto"
             style="width: 100%; max-width: 100vw"
