@@ -269,7 +269,7 @@ export default {
     }
     &__option {
       &__link {
-        color: grey;
+        color: rgb(225, 228, 230);
         &:hover {
           color: white;
         }
