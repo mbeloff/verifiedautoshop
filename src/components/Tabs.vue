@@ -92,17 +92,24 @@ export default {
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    padding: 0 1rem;
+    // grid-gap: 2rem;
+    // padding: 0 1rem;
     .list-group-item {
-      border-radius: 0.25rem;
-      padding: 0.25rem 0.25rem;
-      border-top: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0rem;
+      padding: 1.5rem 0.25rem 1.5rem 0.5rem;
+      // border-top: 1px solid rgba(0, 0, 0, 0.125);
       box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.089);
       &.tabActive {
         color: white;
         background: var(--primary) !important;
         border-color: rgba(0, 0, 0, 0.05);
+      }
+      &:nth-of-type(2n) {
+        border-left: 0;
+      }
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
       }
     }
     // .list-group-item {

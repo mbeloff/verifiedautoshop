@@ -9,7 +9,7 @@
             v-for="(test, i) in testimonials"
             :key="i"
           >
-            <div class="h-100 w-100">
+            <div class="h-100 w-100" style="pointer-events: none;">
               <div class="card-body small text-left">
                 <div
                   class="mr-auto mb-3 rounded-circle shadow-lg"
@@ -106,18 +106,11 @@ export default {
           comment: "Excellent service!"
         },
         {
-          author: "Rami",
-          img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/2.jpg",
-          comment:
-            "So much cheaper than dealership and the boys know what they're doing."
-        },
-        {
           author: "Liz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.jpg",
           comment:
-            "I was able to book a service the next day, and they were very professional."
+            "I was able to book a service the next day, very professional."
         },
         {
           author: "Anna",
@@ -130,8 +123,7 @@ export default {
           author: "Waz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.jpg",
-          comment:
-            "Easy to recommend these guys, they did a great job. Even got the job done quicker than was estimated."
+          comment: "Easy to recommend these guys, they did a great job."
         }
       ]
     };

@@ -117,7 +117,7 @@
                 Provide a detailed report outlining any potential issues.
               </li>
             </ul>
-            <p class="color-prime font-weight-bold mb-1">Make sure:</p>
+            <p class="color-prime font-weight-bold mb-1">We'll Make sure:</p>
             <ul class="list-unstyled">
               <li class="list-item item-dash">
                 Your vehicle is in good condition and safe to drive away.

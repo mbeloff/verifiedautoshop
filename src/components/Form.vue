@@ -4,7 +4,7 @@
       v-show="submitted"
       src="https://mechanicdesk.com.au/booking_requests/"
       frameborder="0"
-      name="my_iframe"
+      name="mechDesk_iFrame"
       width="100%"
       style="min-height: 775px"
       height="100%"
@@ -17,7 +17,7 @@
       ref="theform"
       id="VerifiedQuote"
       action="https://mechanicdesk.com.au/booking_requests/"
-      target="my_iframe"
+      target="mechDesk_iFrame"
       @submit.prevent="submitForm"
     >
       <input
