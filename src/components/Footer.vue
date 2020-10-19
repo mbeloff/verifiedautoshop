@@ -233,7 +233,7 @@ export default {
       background-image: linear-gradient(
         to right,
         rgb(0, 81, 255),
-        rgba(160, 212, 255, 0.11)
+        rgba(160, 212, 255, 0)
       );
       width: 100%;
       height: 1px;
