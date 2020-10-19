@@ -120,7 +120,7 @@ export default {
           {
             type: "link",
             text: "SERVICES",
-            arrowColor: "var(--primary)",
+            arrowColor: "#7cabff",
             subMenuOptions: [
               {
                 type: "link",
@@ -192,7 +192,7 @@ export default {
           {
             type: "link",
             text: "CONTACT US",
-            arrowColor: "var(--primary)",
+            arrowColor: "#7cabff",
             subMenuOptions: [
               {
                 type: "link",

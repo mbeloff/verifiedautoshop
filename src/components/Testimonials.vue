@@ -9,14 +9,14 @@
             v-for="(test, i) in testimonials"
             :key="i"
           >
-            <div class="h-100 w-100" style="pointer-events: none;">
+            <div class="h-100 w-100">
               <div class="card-body small text-left">
                 <div
                   class="mr-auto mb-3 rounded-circle shadow-lg"
                   style="height:50px; width: 50px;"
                 >
                   <img
-                    :src="transformImgExt(test.img)"
+                    :src="test.img"
                     alt=""
                     class="h-100 w-100 rounded-circle"
                   />
@@ -102,27 +102,27 @@ export default {
         {
           author: "Serena",
           img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.jpg",
+            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.webp",
           comment: "Excellent service!"
         },
         {
           author: "Liz",
           img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.jpg",
+            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.webp",
           comment:
             "I was able to book a service the next day, very professional."
         },
         {
           author: "Anna",
           img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.jpg",
+            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.webp",
           comment:
             "I'm so happy with the service and the price. Don't get ripped off elsewhere."
         },
         {
           author: "Waz",
           img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.jpg",
+            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.webp",
           comment: "Easy to recommend these guys, they did a great job."
         }
       ]

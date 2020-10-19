@@ -3,24 +3,32 @@
     <div class="container-fluid" style="background: #212338">
       <div class="row light-bg py-3">
         <div
-          class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-1 px-5 px-sm-0 mx-auto"
+          class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 px-5 px-sm-0 mx-auto"
         >
-          <img
-            src="../assets/mta-qld.png"
-            alt=""
-            class="mx-auto"
-            style="max-width: 100%;"
-          />
+          <picture>
+            <source srcset="../assets/mta-qld.webp" type="image/webp" />
+            <source srcset="../assets/mta-qld.png" type="image/jpeg" />
+            <img
+              src="../assets/mta-qld.png"
+              alt=""
+              class="mx-auto"
+              style="max-width: 100%;"
+            />
+          </picture>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-7 col-lg-5 col-xl-4 px-0 mx-auto">
-          <img
-            src="../assets/afterpay/FB cover photo 02.jpg"
-            alt=""
-            class="mx-auto"
-            style="width: 100%; max-width: 100vw"
-          />
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4 px-0 mx-auto">
+          <picture>
+            <source srcset="../assets/afterpay/AP_FB2.webp" type="image/webp" />
+            <source srcset="../assets/afterpay/AP_FB2.jpg" type="image/jpeg" />
+            <img
+              src="../assets/afterpay/AP_FB2.jpg"
+              alt=""
+              class="mx-auto"
+              style="width: 100%; max-width: 100vw"
+            />
+          </picture>
         </div>
       </div>
     </div>
