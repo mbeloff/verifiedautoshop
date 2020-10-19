@@ -41,15 +41,9 @@
             style="height: 40px;"
             class="mt-3"
           />
-
-          <a
-            tabindex="0"
-            @keypress.enter="show()"
-            @keypress.space="show()"
-            class="ml-md-3 mt-3 btn btn-cs btn-prime"
-            @click="show()"
-            >BOOK NOW <i class="fas fa-comment-alt-lines fa-fw ml-1"></i
-          ></a>
+          <BookNow class="btn-prime ml-md-3 mt-3"
+            ><i class="fas fa-comment-alt-lines fa-fw ml-1"></i
+          ></BookNow>
         </div>
       </div>
       <div class="row mt-3">
@@ -197,18 +191,11 @@
 
 <script>
 export default {
-  methods: {
-    show() {
-      this.$modal.show("modal");
-      this.$zendesk.hide();
-    },
-  }
 };
 </script>
 
 <style scoped lang="scss">
 #footer {
-  // background: rgb(38, 39, 44);
   background: var(--dark-bg);
   a {
     color: white;

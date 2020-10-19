@@ -7,7 +7,7 @@
       <tabs>
         <transition name="slide-fade"
           ><tab title="Servicing">
-            <h4>Routine Servicing & Maintenance</h4>
+            <h4>Essential Servicing & Maintenance</h4>
             <p>
               Trust Verified Autoshop to keep your car running smoothly by
               booking your regular service with us. Keeping your car serviced
@@ -254,12 +254,6 @@ export default {
     Tabs
   },
   name: "Services",
-  methods: {
-    show() {
-      this.$modal.show("modal");
-      this.$zendesk.hide();
-    },
-  }
 };
 </script>
 <style lang="scss">

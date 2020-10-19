@@ -18,15 +18,7 @@
 
     <div class="col-12 rounded border p-2 px-3 shadow-responsive pb-5">
       <slot></slot>
-      <a
-        @keypress.enter="show()"
-        @keypress.space="show()"
-        tabindex="0"
-        role="button"
-        @click="show()"
-        class="btn btn-cs btn-outline btn-bottom m-2"
-        >Book Now</a
-      >
+      <BookNow class="btn-outline btn-bottom m-2"></BookNow>
     </div>
   </div>
 </template>
@@ -57,10 +49,6 @@ export default {
       this.tabs.forEach((tab, index) => {
         tab.isActive = index === i;
       });
-    },
-    show() {
-      this.$modal.show("modal");
-      this.$zendesk.hide();
     }
   },
   watch: {
