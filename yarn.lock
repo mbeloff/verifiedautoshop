@@ -861,6 +861,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@dansmaculotte/vue-zendesk@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@dansmaculotte/vue-zendesk/-/vue-zendesk-0.4.1.tgz#876008d1868d1421e64fe6087e1e9e3bea2c2467"
+  integrity sha512-4+N8EvKH1zVrFXBUpHN2Vm4cdnbjw+iAgcmCYbV9LhKkZWZCajtbN+9uKF2SWxYgqIdR5G21tx4DHVC6fhSW/w==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz?cache=0&sync_timestamp=1593993857635&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -9609,11 +9614,6 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
-
-vue-analytics@^5.22.1:
-  version "5.22.1"
-  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.22.1.tgz#9d6b32da56daee1b9dfb23a267b50349a03f710f"
-  integrity sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ==
 
 vue-awesome-swiper@^4.1.1:
   version "4.1.1"

@@ -226,31 +226,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <select
-              class="form-control"
-              name="topic"
-              id="topic"
-              v-model="form.typeOfEnquiry"
-            >
-              <option value="Type of Enquiry" disabled selected
-                >Type of Enquiry</option
-              >
-              <option value="Servicing">Servicing</option>
-              <option value="Repair">Repair</option>
-              <option value="Diagnostics">Diagnostics</option>
-              <option value="Inspection">Inspection</option>
-              <option value="Tyres">Tyres</option>
-              <option value="Paint/Panel">Paint/Panel</option>
-              <option value="Grooming">Grooming</option>
-              <option value="Other">Other - Detail Below</option>
-            </select>
-            <i class="form-icon fal fa-clipboard-list-check"></i>
-          </div>
-        </div>
-      </div> -->
 
       <div class="row">
         <label class="col-12 section-label" for=""
@@ -343,10 +318,11 @@ export default {
     formatDate(date) {
       return moment(date).format("DD/MM/YYYY");
     },
-    hide() {
-      this.$store.commit("storeForm", this.form);
-      this.$modal.hide("modal");
-    },
+    // hide() {
+    //   this.$zendesk.show();
+    //   this.$store.commit("storeForm", this.form);
+    //   this.$modal.hide("modal");
+    // },
     submitForm() {
       this.submitted = true;
       this.$refs.theform.submit();

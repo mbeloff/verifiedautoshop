@@ -200,10 +200,8 @@ export default {
   methods: {
     show() {
       this.$modal.show("modal");
+      this.$zendesk.hide();
     },
-    hide() {
-      this.$modal.hide("modal");
-    }
   }
 };
 </script>

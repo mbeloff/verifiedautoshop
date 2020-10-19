@@ -60,6 +60,7 @@ export default {
     },
     show() {
       this.$modal.show("modal");
+      this.$zendesk.hide();
     }
   },
   watch: {
