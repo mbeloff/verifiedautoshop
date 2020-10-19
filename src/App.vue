@@ -118,15 +118,15 @@ body {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
-h4 {
+.h3,
+h4,
+.h4 {
   font-variation-settings: "wght" 600;
   letter-spacing: 0.01px;
-}
-
-#nav {
-  // height: 100px;
 }
 
 .vm--modal {

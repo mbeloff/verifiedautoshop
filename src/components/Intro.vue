@@ -1,36 +1,14 @@
 <template>
   <div class="py-5 intro text-center light-bg">
     <div class="container">
-      <p class="lead">
+      <p class="">
         Verified Autoshop is your complete auto repair centre, offering a full
         range of maintenance, repair & grooming services.
       </p>
       <div
         class="my-5 ml-0 mx-md-auto col-12 col-md-12 col-lg-10 col-xl-8 text-md-center"
       >
-        <h4 class="color-prime font-italic">We can look at it today!</h4>
-        <!-- <ul class="list-unstyled color-light mb-0">
-          <li class="list-item text-center">
-            <i class="fas fa-check-circle mr-2"></i>
-          </li>
-          <li class="list-item">
-            We're experts in servicing & maintenance, mechanical repairs &
-            diagnostics, auto electrics and vehicle inspections.
-          </li>
-          <li class="list-item text-center">
-            <i class="fas fa-check-circle mr-2"></i>
-          </li>
-          <li class="list-item">
-            We have the experience and know-how to service all makes and models.
-          </li>
-          <li class="list-item text-center">
-            <i class="fas fa-check-circle mr-2"></i>
-          </li>
-          <li class="list-item">
-            We're committed to making great service and quality parts
-            affordable.
-          </li>
-        </ul> -->
+        <p class="h4 color-prime font-italic">We can look at it today!</p>
         <div class="card-grid">
           <div class="card shadow-lg">
             <i class="fas fa-check-circle card-icon"></i>

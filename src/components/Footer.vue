@@ -54,7 +54,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
-          <h6 class="footer-heading"><span>Services</span></h6>
+          <p class="footer-heading h6"><span>Services</span></p>
           <ul class="list-unstyled small">
             <li class="list-item">
               <router-link
