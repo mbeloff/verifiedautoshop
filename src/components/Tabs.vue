@@ -16,9 +16,7 @@
       </li>
     </ul>
 
-    <div
-      class="col-12 mt-2 mt-md-0 rounded border p-2 px-3 shadow-responsive pb-5"
-    >
+    <div class="col-12 rounded border p-2 px-3 shadow-responsive pb-5">
       <slot></slot>
       <a
         @keypress.enter="show()"
@@ -89,16 +87,19 @@ export default {
 .tabs-header {
   display: flex;
   flex-direction: column;
+  .list-group-item {
+    &.tabActive {
+      color: var(--primary);
+      background: rgb(230, 232, 238);
+      border-color: rgba(0, 0, 0, 0.05);
+    }
+  }
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-gap: 2rem;
-    // padding: 0 1rem;
     .list-group-item {
       border-radius: 0rem;
       padding: 1.5rem 0.25rem 1.5rem 0.5rem;
-      // border-top: 1px solid rgba(0, 0, 0, 0.125);
-      box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.089);
       &.tabActive {
         color: white;
         background: var(--primary) !important;
@@ -112,15 +113,8 @@ export default {
         border-top: 1px solid rgba(0, 0, 0, 0.125);
       }
     }
-    // .list-group-item {
-    //   &:nth-of-type(4n - 3),
-    //   &:nth-of-type(4n + 4) {
-    //     background: rgb(244, 245, 247);
-    //   }
-    // }
   }
   li {
-    // border-bottom: 1px solid #cfcfcf;
     font-size: 0.75rem;
     padding: 0.75rem 1rem;
     cursor: pointer;
@@ -140,15 +134,8 @@ export default {
   }
 }
 
-.list-group-item {
-  &.tabActive {
-    color: var(--primary);
-    background: rgb(230, 232, 238);
-    border-color: rgba(0, 0, 0, 0.05);
-  }
-}
-
 .shadow-responsive {
+  box-shadow: none;
   @media only screen and (min-width: 768px) {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
