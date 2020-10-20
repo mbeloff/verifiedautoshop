@@ -22,9 +22,7 @@
         </picture>
       </div>
     </div>
-    <div class="specials-ticker container-fluid text-center">
-      <span>Special:</span> Essential Lube Service - $99
-    </div>
+    <SpecialsTicker />
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-5 col-xl-4 px-0 mx-auto">
@@ -61,9 +59,10 @@
 import Services from "@/components/Services.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import Intro from "@/components/Intro.vue";
+import SpecialsTicker from "@/components/SpecialsTicker.vue";
 
 export default {
-  components: { Services, Testimonials, Intro },
+  components: { Services, Testimonials, Intro, SpecialsTicker },
   name: "Home",
   methods: {
     show() {
