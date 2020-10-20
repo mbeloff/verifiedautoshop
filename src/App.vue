@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav id="nav" v-if="$route.name != 'Quote'"></Nav>
+    <Nav id="nav"></Nav>
     <modal
       name="modal"
       height="auto"
@@ -24,7 +24,7 @@
     <div class="content">
       <router-view />
     </div>
-    <Footer v-if="$route.name != 'Quote'"></Footer>
+    <Footer></Footer>
   </div>
 </template>
 
