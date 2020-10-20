@@ -22,7 +22,9 @@
         </picture>
       </div>
     </div>
-
+    <div class="specials-ticker container-fluid text-center">
+      <span>Special:</span> Essential Lube Service - $99
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-5 col-xl-4 px-0 mx-auto">
@@ -71,10 +73,7 @@ export default {
   },
   created() {
     if (this.$route.name === "Quote") {
-      console.log("on quote route");
       this.show();
-    } else {
-      console.log("not quote route");
     }
   }
 };

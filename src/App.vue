@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav id="nav"></Nav>
+
     <modal
       name="modal"
       height="auto"
@@ -14,6 +15,7 @@
         <EForm></EForm>
       </template>
     </modal>
+
     <div class="content">
       <router-view />
     </div>
@@ -106,6 +108,16 @@ body {
   color: #262f38;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.specials-ticker {
+  background: rgb(37, 95, 255);
+  font-variation-settings: "wght" 100;
+  color: rgb(255, 255, 255);
+  span {
+    font-weight: unset;
+    font-variation-settings: "wght" 600;
+  }
 }
 
 h1,

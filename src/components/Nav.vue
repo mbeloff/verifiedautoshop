@@ -109,7 +109,7 @@ export default {
         elementId: "nav",
         isUsingVueRouter: true,
         mobileBreakpoint: 992,
-        brandImagePath: "../",
+        brandImagePath: "/",
         brandImage: require("../assets/logo.svg"),
         brandImageAltText: "brand-image",
         collapseButtonOpenColor: "white",
