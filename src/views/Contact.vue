@@ -202,7 +202,14 @@ export default {
         })
       })
         .then(() => {
-          this.$router.push("success");
+          this.$router.push({
+            name: "Thanks",
+            params: {
+              head: "Message received :)",
+              message: "We'll get back to you as soon as we can",
+              type: "enquiries"
+            }
+          });
           // console.log('success')
         })
         .catch(() => {

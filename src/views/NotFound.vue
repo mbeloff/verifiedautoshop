@@ -6,8 +6,11 @@
         Something went wrong, or the page<br />
         you're looking for is missing <br />
       </p>
-      <a class="my-2" style="font-size: 1.5rem" @click="$router.go(-1)"
-        ><i class="fal fa-backward align-middle mr-2"></i>go back</a
+      <a
+        class="my-2"
+        style="font-size: 1.5rem"
+        @click="$router.push({ name: 'Home' })"
+        ><i class="fal fa-home align-middle mr-2"></i>back home</a
       >
     </div>
   </div>

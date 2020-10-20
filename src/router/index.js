@@ -27,9 +27,16 @@ const routes = [
     component: Locations
   },
   {
-    path: "/success",
+    path: "/:type/success",
     name: "Success",
-    component: Success
+    component: Success,
+    props: true
+  },
+  {
+    path: "/:type/thanks",
+    name: "Thanks",
+    component: Success,
+    props: true
   },
   {
     path: "/services",
