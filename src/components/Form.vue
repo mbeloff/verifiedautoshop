@@ -318,11 +318,6 @@ export default {
     formatDate(date) {
       return moment(date).format("DD/MM/YYYY");
     },
-    // hide() {
-    //   this.$zendesk.show();
-    //   this.$store.commit("storeForm", this.form);
-    //   this.$modal.hide("modal");
-    // },
     submitForm() {
       this.submitted = true;
       this.$refs.theform.submit();

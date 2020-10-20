@@ -68,6 +68,14 @@ export default {
       this.$modal.show("modal");
       this.$zendesk.hide();
     }
+  },
+  created() {
+    if (this.$route.name === "Quote") {
+      console.log("on quote route");
+      this.show();
+    } else {
+      console.log("not quote route");
+    }
   }
 };
 </script>

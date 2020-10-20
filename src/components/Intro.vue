@@ -33,14 +33,6 @@
           </div>
         </div>
       </div>
-      <!-- <a
-        tabindex="0"
-        @keypress.enter="show()"
-        @keypress.space="show()"
-        @click="show()"
-        class="btn btn-cs btn-outline mt-2"
-        >Book Now</a
-      > -->
       <BookNow class="btn-outline"></BookNow>
     </div>
   </div>
