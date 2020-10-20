@@ -23,8 +23,8 @@
               <li class="list-item item-dash">Major Service</li>
               <li class="list-item item-dash">Transmission Service</li>
             </ul>
-          </tab></transition
-        >
+          </tab>
+        </transition>
         <transition name="slide-fade">
           <tab title="Air Conditioning"
             ><h4>Air Conditioning Servicing and Repairs</h4>
@@ -39,9 +39,9 @@
               refrigerant refill ("re-gas") or let us know when you book in for
               a regular service and we'll diagnose and repair any issues while
               we're at it.
-            </p></tab
-          ></transition
-        >
+            </p>
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Diagnostics"
             ><h4>Diagnostics</h4>
@@ -50,9 +50,9 @@
               mechanical and electrical problems.
               <br />Don't waste your time with guesswork, let the qualified
               technicians at Verified identify and resolve faults.
-            </p></tab
-          ></transition
-        >
+            </p>
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Auto Electrical"
             ><h4>Auto Electrical</h4>
@@ -81,9 +81,9 @@
               <li class="list-item item-dash">
                 Quickly identifying electrical issues
               </li>
-            </ul></tab
-          ></transition
-        >
+            </ul>
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Inspections"
             ><h4>Inspections</h4>
@@ -131,8 +131,8 @@
                 warranty promised.
               </li>
             </ul>
-          </tab></transition
-        >
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Brakes & Suspensions"
             ><h4>Brakes & Suspensions</h4>
@@ -175,8 +175,8 @@
                 coming from under the vehicle as you drive?
               </li>
             </ul>
-          </tab></transition
-        >
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Tyres"
             ><h4>Tyres</h4>
@@ -205,8 +205,8 @@
               Contact Verified Autoshop for great value tyre replacement along
               with wheel balancing, alignment and puncture repairs.
             </p>
-          </tab></transition
-        >
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Paint and Panel"
             ><h4>Paint & Panel</h4>
@@ -227,8 +227,8 @@
                 Spray Painting
               </li>
             </ul>
-          </tab></transition
-        >
+          </tab>
+        </transition>
         <transition name="slide-fade"
           ><tab title="Car Grooming"
             ><h4>Car Cleaning & Detailing</h4>
@@ -237,8 +237,8 @@
               thorough exterior and/or interior clean with your next routine
               service, repair, or as a standalone service.
             </p>
-          </tab></transition
-        >
+          </tab>
+        </transition>
       </tabs>
     </div>
   </div>
@@ -253,7 +253,7 @@ export default {
     Tab,
     Tabs
   },
-  name: "Services",
+  name: "Services"
 };
 </script>
 <style lang="scss">

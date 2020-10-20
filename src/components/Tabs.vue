@@ -77,6 +77,10 @@ export default {
   display: flex;
   flex-direction: column;
   .list-group-item {
+    // Extra tab from button outside slot
+    &:last-of-type {
+      display: none;
+    }
     &.tabActive {
       color: var(--primary);
       background: rgb(230, 232, 238);
