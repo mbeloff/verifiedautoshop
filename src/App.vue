@@ -302,4 +302,10 @@ select::placeholder {
 // END FORM STYLES
 //
 //
+.long-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
 </style>

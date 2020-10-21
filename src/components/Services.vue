@@ -275,16 +275,11 @@ export default {
 
 .slide-fade-enter-active {
   transition: max-height 1s ease, opacity 0.5s;
-  // max-height: 1000px;
-  overflow: hidden;
 }
 .slide-fade-leave-active {
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateY(-2px);
+.slide-fade-enter, .slide-fade-leave-to {
   opacity: 0;
-  // max-height: 100px;
 }
 </style>

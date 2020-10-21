@@ -7,7 +7,7 @@
           <source srcset="../assets/bmw2.jpg" type="image/jpg" />
           <img
             src="../assets/bmw2.jpg"
-            alt=""
+            alt="Stylish photo of verified auto bmw"
             class="mx-auto position-absolute banner-img"
           />
         </picture>
@@ -16,7 +16,7 @@
         <picture class="d-flex flex-center w-100 h-100">
           <img
             src="../assets/logo-sm.svg"
-            alt="Alt Text!"
+            alt="Verified Autoshop Logo"
             class="img-fluid mx-auto w-100 banner-logo"
           />
         </picture>
@@ -25,7 +25,7 @@
     <SpecialsTicker />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-5 col-xl-4 px-0 mx-auto">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-3 mx-auto">
           <picture>
             <source
               srcset="../assets/afterpay/FB-cover-photo-03.webp"
@@ -37,9 +37,8 @@
             />
             <img
               src="../assets/afterpay/FB-cover-photo-03.jpg"
-              alt="Alt Text!"
-              class="img-fluid mx-auto"
-              style="width: 100%; max-width: 100vw"
+              alt="Afterpay available here"
+              class="img-fluid"
             />
           </picture>
         </div>

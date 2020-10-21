@@ -65,6 +65,7 @@ export default {
 
 <style lang="scss">
 .services-tabs {
+  padding: 1px;
   display: grid;
   grid-template-columns: auto 1fr;
   @media only screen and (max-width: 768px) {

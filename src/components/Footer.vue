@@ -2,32 +2,20 @@
   <div class="text-left text-white" id="footer">
     <div class="container-fluid" style="background: #212338">
       <div class="row light-bg py-3">
-        <div
-          class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 px-5 px-sm-0 mx-auto"
-        >
+        <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2 mx-auto">
           <picture>
             <source srcset="../assets/mta-qld.webp" type="image/webp" />
             <source srcset="../assets/mta-qld.png" type="image/jpeg" />
-            <img
-              src="../assets/mta-qld.png"
-              alt=""
-              class="mx-auto"
-              style="max-width: 100%;"
-            />
+            <img src="../assets/mta-qld.png" alt="" class="img-fluid" />
           </picture>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-5 col-xl-4 px-0 mx-auto">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-3 mx-auto">
           <picture>
             <source srcset="../assets/afterpay/AP_FB2.webp" type="image/webp" />
             <source srcset="../assets/afterpay/AP_FB2.jpg" type="image/jpeg" />
-            <img
-              src="../assets/afterpay/AP_FB2.jpg"
-              alt=""
-              class="mx-auto"
-              style="width: 100%; max-width: 100vw"
-            />
+            <img src="../assets/afterpay/AP_FB2.jpg" alt="" class="img-fluid" />
           </picture>
         </div>
       </div>
@@ -170,7 +158,10 @@
           <ul class="list-unstyled small">
             <li class="list-item h5 mb-0">{{ $store.state.global.phone }}</li>
             <li class="list-item">
-              <a :href="`mailto:` + $store.state.global.email">
+              <a
+                class="long-word"
+                :href="`mailto:` + $store.state.global.email"
+              >
                 {{ $store.state.global.email }}</a
               >
             </li>
@@ -190,8 +181,7 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style scoped lang="scss">
