@@ -379,6 +379,9 @@ export default {
   left: unset;
   width: calc(100% - 30px);
   padding: 0.25rem 0;
+  .select-list {
+    height: 10.5rem;
+  }
   ul {
     height: 11rem;
   }
