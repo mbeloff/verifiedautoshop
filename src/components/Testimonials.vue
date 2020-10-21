@@ -3,6 +3,8 @@
     <div class="mx-auto" style="overflow: hidden; max-width: 100vw">
       <div class="container">
         <Title>Testimonials</Title>
+      </div>
+      <div class="container p-0">
         <swiper ref="mySwiperRef" class="swiper p-5" :options="swiperOption">
           <swiper-slide
             class="rounded shadow-lg"
@@ -143,6 +145,11 @@ export default {
 .swiper {
   min-height: 230px;
   width: 100%;
+  &.p-5 {
+    padding-bottom: 5rem !important;
+    padding-top: 2.5rem !important;
+    padding-left: 3rem !important;
+  }
 
   .swiper-slide {
     display: flex;
