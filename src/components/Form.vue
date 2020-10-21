@@ -390,6 +390,12 @@ export default {
   }
 }
 
+.form .vdp-datepicker__calendar .cell {
+  border-radius: 50%;
+  width: calc(297px / 7);
+  height: calc(297px / 7);
+}
+
 .vue__time-picker .dropdown ul li:not([disabled]).active,
 .vue__time-picker .dropdown ul li:not([disabled]).active:focus,
 .vue__time-picker .dropdown ul li:not([disabled]).active:hover {
