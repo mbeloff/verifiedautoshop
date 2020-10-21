@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isActive" role="tabpanel">
+  <div v-if="tabActive" role="tabpanel">
     <slot></slot>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      isActive: true
+      tabActive: true
     };
   }
 };

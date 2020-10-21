@@ -7,8 +7,7 @@
         v-for="(tab, index) in tabs"
         :key="tab.title"
         :tabindex="0"
-        @keydown.enter.prevent="selectTab(index)"
-        @keydown.space.prevent="selectTab(index)"
+        @keypress.enter="selectTab(index)"
         @click="selectTab(index)"
         :class="{ tabActive: index == selectedIndex }"
       >
@@ -18,6 +17,7 @@
 
     <div class="col-12 rounded border p-2 px-3 shadow-responsive pb-5">
       <slot></slot>
+
       <BookNow class="btn-outline btn-bottom m-2"></BookNow>
     </div>
   </div>
@@ -47,7 +47,7 @@ export default {
 
       // loop over all the tabs
       this.tabs.forEach((tab, index) => {
-        tab.isActive = index === i;
+        tab.tabActive = index == i;
       });
     }
   },
@@ -78,7 +78,7 @@ export default {
   display: flex;
   flex-direction: column;
   .list-group-item {
-    // Extra tab from button outside slot
+    // Extra tab from button outside slot (i.e. extra child when component created)
     &:last-of-type {
       display: none;
     }
@@ -87,6 +87,12 @@ export default {
       background: rgb(230, 232, 238);
       border-color: rgba(0, 0, 0, 0.05);
     }
+    &:hover {
+      &:not(.tabActive) {
+        background: var(--primary);
+        color: #f1f7ff;
+      }
+    }
   }
   @media only screen and (max-width: 768px) {
     display: grid;
@@ -94,6 +100,7 @@ export default {
     .list-group-item {
       border-radius: 0rem;
       padding: 1.5rem 0.25rem 1.5rem 0.5rem;
+
       &.tabActive {
         color: white;
         background: var(--primary) !important;
@@ -113,12 +120,6 @@ export default {
     padding: 0.75rem 1rem;
     cursor: pointer;
     transition: background 0.5s, color 0.5s;
-    &:hover {
-      &:not(.tabActive) {
-        background: var(--primary);
-        color: #f1f7ff;
-      }
-    }
 
     @media only screen and (min-width: 768px) {
       a {

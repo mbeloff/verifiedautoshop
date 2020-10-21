@@ -31,8 +31,7 @@
           <div class="swiper-pagination" slot="pagination"></div>
           <div
             tabindex="0"
-            @keydown.enter.prevent="prev()"
-            @keydown.space.prevent="prev()"
+            @keypress.enter="prev()"
             role="button"
             class="swiper-button-prev"
             slot="button-prev"
@@ -40,8 +39,7 @@
           ></div>
           <div
             tabindex="0"
-            @keydown.enter.prevent="next()"
-            @keydown.space.prevent="next()"
+            @keypress.enter="next()"
             role="button"
             class="swiper-button-next"
             slot="button-next"
