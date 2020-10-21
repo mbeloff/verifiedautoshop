@@ -371,13 +371,19 @@ export default {
 
 .vue__time-picker .dropdown {
   bottom: 100%;
+  height: 11rem;
   top: unset;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   right: calc(0% + 15px);
   left: unset;
+  width: calc(100% - 30px);
+  padding: 0.25rem 0;
   ul {
-    margin: 0.25rem;
+    height: 11rem;
+  }
+  &.drop-down {
+    width: calc(100% - 30px) !important;
   }
 }
 
