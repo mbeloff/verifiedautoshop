@@ -29,12 +29,12 @@
               </p>
               <p class="w-100 ml-4">
                 <b>phone:</b>
-                <a :href="` tel:${$store.state.global.phone} `">{{
-                  $store.state.global.phone
-                }}</a
+                <a
+                  class="long-word"
+                  :href="` tel:${$store.state.global.locations[0].phone} `"
+                  >{{ $store.state.global.locations[0].phone }}</a
                 ><br /><b>mail: </b>
-                <a :href="`mailto:` + $store.state.global.email">
-                  {{ $store.state.global.email }}</a
+                <a :href="`mailto:` + $store.state.global.email"> email us</a
                 ><br /><span v-if="$route.name != 'Contact'"
                   ><b>online: </b>
                   <router-link :to="{ name: 'Contact' }"
@@ -89,9 +89,17 @@
                 <i class="contact-icon fal fa-phone-square fa-fw fa-2x"></i>
               </p>
               <p class="w-100 ml-4">
-                <br /><b>mail: </b>
-                <a :href="`mailto:` + $store.state.global.email">
-                  {{ $store.state.global.email }}</a
+                <b>phone:</b>
+                <a
+                  class="long-word"
+                  :href="` tel:${$store.state.global.locations[1].phone} `"
+                  >{{ $store.state.global.locations[1].phone }}</a
+                ><br /><b>mail: </b>
+                <a
+                  class="long-word"
+                  :href="`mailto:` + $store.state.global.email"
+                >
+                  email us</a
                 ><br /><span v-if="$route.name != 'Contact'"
                   ><b>online: </b>
                   <router-link :to="{ name: 'Contact' }"
