@@ -330,8 +330,8 @@ export default {
       return moment(date).format("DD/MM/YYYY");
     },
     submitForm() {
-      this.submitted = true;
       this.$refs.theform.submit();
+      this.submitted = true;
     },
     hide() {
       this.$modal.hide("modal");
@@ -341,7 +341,8 @@ export default {
         this.$router.push({
           name: "Thanks",
           params: {
-            head: "Thanks for booking with Verified",
+            head: "Booking request received",
+            name: this.form.name.replace(/ .*/, ""),
             message: "We'll be in touch shortly to confirm your booking",
             type: "bookings"
           }
@@ -384,5 +385,9 @@ export default {
 .form .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .form .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
   border: 1px solid var(--primary);
+}
+
+.btn-close {
+  padding: 0.25rem;
 }
 </style>

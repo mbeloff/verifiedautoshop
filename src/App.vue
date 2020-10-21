@@ -136,6 +136,13 @@ h4,
   height: auto !important;
 }
 
+//
+// Spacing so mobile keyboard doesn't obscure form elements
+//
+.vm--container.scrollable .vm--modal {
+  margin-bottom: 10rem !important;
+}
+
 .content {
   a {
     color: #004997;

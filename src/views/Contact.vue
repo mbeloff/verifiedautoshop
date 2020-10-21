@@ -177,7 +177,8 @@ export default {
         question: "",
         preferredContact: "",
         location: "Brisbane"
-      }
+      },
+      shortname: ""
     };
   },
   methods: {
@@ -206,6 +207,7 @@ export default {
             name: "Thanks",
             params: {
               head: "Message received :)",
+              name: this.enquire.name.replace(/ .*/, ""),
               message: "We'll get back to you as soon as we can",
               type: "enquiries"
             }

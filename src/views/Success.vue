@@ -2,8 +2,8 @@
   <div class="s-page container h-100 d-flex flex-center">
     <div class="d-flex flex-column my-auto py-5">
       <h2 class="mb-3">{{ head }}</h2>
-      <p class="underline mb-5">
-        {{ message }}
+      <p class="message mb-5">
+        Thanks <span>{{ name }}!</span> {{ message }}
       </p>
       <a
         class="my-2"
@@ -19,7 +19,8 @@
 export default {
   props: {
     head: String,
-    message: String
+    message: String,
+    name: String
   },
   mounted() {
     if (!this.$route.params.head) {
@@ -35,5 +36,13 @@ a {
 }
 .s-page {
   min-height: 70vh;
+}
+
+.message {
+  span {
+    font-variation-settings: "wght" 600;
+    color: var(--primary);
+    letter-spacing: 1.2;
+  }
 }
 </style>

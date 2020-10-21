@@ -4,7 +4,7 @@
       <p class="mb-0">
         <span>Special:</span> Essential Lube Service - $99
         <a class="ml-4 btn-mini bg-light small" @click="show = !show"
-          >t&c's apply</a
+          ><nobr>t&c's apply</nobr></a
         >
       </p>
     </div>
