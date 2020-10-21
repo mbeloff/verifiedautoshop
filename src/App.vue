@@ -43,7 +43,8 @@ export default {
 <style lang="scss">
 body,
 .vm--container,
-.vm--overlay {
+.vm--overlay,
+* {
   scrollbar-width: thin;
   scrollbar-color: var(--light-color) var(--dark-color);
   &::-webkit-scrollbar {
@@ -108,16 +109,6 @@ body {
   color: #262f38;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
-
-.specials-ticker {
-  background: rgb(37, 95, 255);
-  font-variation-settings: "wght" 100;
-  color: rgb(255, 255, 255);
-  span {
-    font-weight: unset;
-    font-variation-settings: "wght" 600;
-  }
 }
 
 h1,

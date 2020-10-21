@@ -3,7 +3,10 @@
     <div class="specials-ticker container-fluid text-center">
       <p class="mb-0">
         <span>Special:</span> Essential Lube Service - $99
-        <a class="ml-4 btn-mini bg-light small" @click="show = !show"
+        <a
+          role="button"
+          class="ml-4 btn-mini bg-light small"
+          @click="show = !show"
           ><nobr>t&c's apply</nobr></a
         >
       </p>
@@ -54,5 +57,15 @@ export default {
 .fade-leave-to {
   opacity: 0;
   height: 0;
+}
+
+.specials-ticker {
+  background: rgb(37, 95, 255);
+  font-variation-settings: "wght" 100;
+  color: rgb(255, 255, 255);
+  span {
+    font-weight: unset;
+    font-variation-settings: "wght" 600;
+  }
 }
 </style>

@@ -369,6 +369,18 @@ export default {
   filter: opacity(0.5);
 }
 
+.vue__time-picker .dropdown {
+  bottom: 100%;
+  top: unset;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  right: calc(0% + 15px);
+  left: unset;
+  ul {
+    margin: 0.25rem;
+  }
+}
+
 .vue__time-picker .dropdown ul li:not([disabled]).active,
 .vue__time-picker .dropdown ul li:not([disabled]).active:focus,
 .vue__time-picker .dropdown ul li:not([disabled]).active:hover {
@@ -389,5 +401,15 @@ export default {
 
 .btn-close {
   padding: 0.25rem;
+}
+
+.vdp-datepicker__calendar {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  width: 280px;
+  border: 1px solid #ccc;
+  bottom: 100%;
+  border-radius: 0.25rem;
 }
 </style>
