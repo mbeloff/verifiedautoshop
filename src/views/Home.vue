@@ -15,7 +15,7 @@
       </div>
       <div
         class="position-absolute w-100 h-100"
-        style="top: 0; left: 0; z-index: 9000"
+        style="top: 0; left: 0; z-index: 100"
       >
         <picture class="d-flex flex-center w-100 h-100">
           <img
@@ -94,7 +94,7 @@ export default {
   background-image: radial-gradient(rgba(0, 0, 0, 0), rgb(2, 7, 29));
   background-size: 150% 250%;
   background-position: center center;
-  z-index: 1000;
+  z-index: 90;
 }
 
 .fa-check-circle {
