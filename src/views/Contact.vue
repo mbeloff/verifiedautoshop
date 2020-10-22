@@ -144,7 +144,7 @@
               <div class="text-right">
                 <button
                   type="submit"
-                  class="btn btn-cs btn-outline"
+                  class="btn btn-cs btn-rnd btn-outline"
                   aria-label="Submit"
                 >
                   <p class="mb-0">

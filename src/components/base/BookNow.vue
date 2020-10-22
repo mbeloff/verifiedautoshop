@@ -4,9 +4,9 @@
     role="button"
     @keypress.enter="show()"
     @click="show()"
-    class="btn btn-cs mt-2"
-    >Book Now <slot></slot></a
-  >
+    class="btn btn-cs btn-rnd mt-2"
+    >Book Now <slot></slot
+  ></a>
 </template>
 
 <script>
@@ -20,4 +20,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss"></style>

@@ -258,7 +258,7 @@
             <button
               type="submit"
               value="submit"
-              class="btn btn-cs btn-prime text-uppercase"
+              class="btn btn-cs btn-rnd btn-prime text-uppercase"
               aria-label="Submit"
             >
               <p class="mb-0">

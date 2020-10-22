@@ -151,6 +151,9 @@ h4,
     &:hover {
       box-shadow: 0rem 0rem 2rem #6589ff21;
     }
+    &.btn-rnd {
+      border-radius: 0.25rem;
+    }
   }
   &.btn-outline {
     border: 1px solid var(--primary);

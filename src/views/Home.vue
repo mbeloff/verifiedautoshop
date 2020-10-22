@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="container-fluid position-relative">
-      <div class="row fp-banner position-aboslute">
+      <div class="row fp-banner">
+        <div class="overlay"></div>
         <picture>
           <source srcset="../assets/bmw2.webp" type="image/webp" />
           <source srcset="../assets/bmw2.jpg" type="image/jpg" />
@@ -81,6 +82,16 @@ export default {
   height: 50vh;
   min-height: 250px;
   max-height: 350px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgb(2, 7, 29));
+  background-size: 150% 250%;
+  background-position: center center;
+  z-index: 1000;
 }
 
 .fa-check-circle {
