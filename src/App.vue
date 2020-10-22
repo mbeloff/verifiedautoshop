@@ -289,7 +289,13 @@ select::placeholder {
 }
 
 .form-control.special-input {
-  padding-left: 0.2rem;
+  // date-picker padding adjustments
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+}
+
+.vue__time-picker input.has-custom-icon {
+  padding-left: 2rem;
 }
 //
 //

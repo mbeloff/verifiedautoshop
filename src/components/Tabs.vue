@@ -78,7 +78,7 @@ export default {
   display: flex;
   flex-direction: column;
   .list-group-item {
-    // Extra tab from button outside slot (i.e. extra child when component created)
+    // remove extra child (from button outside slot) when component created
     &:last-of-type {
       display: none;
     }
