@@ -13,7 +13,10 @@
           />
         </picture>
       </div>
-      <div class="position-absolute w-100 h-100" style="top: 0; left: 0;">
+      <div
+        class="position-absolute w-100 h-100"
+        style="top: 0; left: 0; z-index: 9000"
+      >
         <picture class="d-flex flex-center w-100 h-100">
           <img
             src="../assets/logo-sm.svg"
