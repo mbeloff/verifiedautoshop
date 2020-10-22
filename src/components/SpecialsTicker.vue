@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="specials-ticker container-fluid text-center">
-      <p class="mb-0">
+      <p class="mb-0 py-2">
         <span>Special:</span> Essential Lube Service - $99
         <a
           role="button"
@@ -60,7 +60,7 @@ export default {
 }
 
 .specials-ticker {
-  background: rgb(37, 95, 255);
+  background: rgb(51, 97, 224);
   font-variation-settings: "wght" 100;
   color: rgb(255, 255, 255);
   span {

@@ -1,7 +1,11 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <img src="../assets/sign-banner-b.jpg" alt="" class="banner-img" />
+      <picture>
+        <source srcset="../assets/sign-banner-c.webp" type="image/webp" />
+        <source srcset="../assets/sign-banner-c.jpg" type="image/jpg" />
+        <img src="../assets/sign-banner-c.jpg" alt="" class="banner-img" />
+      </picture>
     </div>
 
     <div class="container py-5">
@@ -22,7 +26,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .banner-img {
   object-fit: cover;
   min-height: 100px;

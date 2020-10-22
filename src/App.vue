@@ -61,14 +61,14 @@ body,
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .vm--overlay,
 .vm--container {
   overflow: hidden;
   max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -83,10 +83,6 @@ body {
 
 .color-prime {
   color: var(--primary);
-}
-
-.bg-prime {
-  background: var(--primary);
 }
 
 .dark-bg {
@@ -195,13 +191,13 @@ h4,
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-//
+
 //
 //
 // FORM STYLES
 //
 //
-//
+
 .check-grid {
   display: grid;
   grid-template-columns: 2rem 1fr;

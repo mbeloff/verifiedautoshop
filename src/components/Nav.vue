@@ -18,8 +18,8 @@
       >
         <template v-slot:custom-section>
           <div class="custom-section-content">
-            <p class="mb-0 font-weight-bold">
-              <nobr>{{ $store.state.global.phone }}</nobr>
+            <p role="button" class="mb-0 font-weight-bold">
+              <nobr>{{ $store.state.global.phone }} </nobr>
             </p>
           </div>
         </template>
@@ -201,9 +201,6 @@ export default {
                 path: { name: "Locations" }
               },
               {
-                type: "hr"
-              },
-              {
                 type: "link",
                 text: "Make an Enquiry",
                 path: { name: "Contact" },
@@ -252,6 +249,9 @@ export default {
     text-align: right;
     margin-left: auto;
     font-size: 1.25rem;
+    p {
+      line-height: 1;
+    }
   }
   svg {
     width: 20px !important;

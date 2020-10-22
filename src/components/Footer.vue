@@ -36,7 +36,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
-          <p class="footer-heading h6"><span>Services</span></p>
+          <p class="footer-heading"><span>Services</span></p>
           <ul class="list-unstyled small">
             <li class="list-item">
               <router-link
@@ -131,7 +131,7 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6 class="footer-heading"><span>Quick Links</span></h6>
+          <p class="footer-heading"><span>Quick Links</span></p>
           <ul class="list-unstyled small">
             <li class="list-item">
               <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
@@ -154,9 +154,14 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6 class="footer-heading"><span>Contact</span></h6>
+          <p class="footer-heading"><span>Contact</span></p>
           <ul class="list-unstyled small">
-            <li class="list-item h5 mb-0">{{ $store.state.global.phone }}</li>
+            <li class="list-item h5 mb-0">
+              <span>au: </span>{{ $store.state.global.locations[0].phone }}
+            </li>
+            <li class="list-item h5 mb-0">
+              <span>nz: </span>{{ $store.state.global.locations[1].phone }}
+            </li>
             <li class="list-item">
               <a
                 class="long-word"
@@ -211,7 +216,8 @@ export default {};
         rgba(160, 212, 255, 0)
       );
       width: 100%;
-      height: 1px;
+      height: 3px;
+      clip-path: polygon(100% 0, 0 0, 0 100%);
     }
   }
 }
@@ -229,5 +235,9 @@ export default {};
 
 .map {
   border-top: 5px solid var(--primary);
+}
+
+.footer-heading {
+  font-size: 2rem;
 }
 </style>

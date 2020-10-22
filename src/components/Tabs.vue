@@ -35,11 +35,7 @@ export default {
     this.tabs = this.$children;
   },
   mounted() {
-    if (this.$route.params.sIndex) {
-      this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
-    } else {
-      this.selectTab(0);
-    }
+    this.selectTab(0);
   },
   methods: {
     selectTab(i) {
@@ -54,7 +50,11 @@ export default {
   watch: {
     "$route.params.sIndex": {
       handler: function() {
-        this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
+        if (!this.$route.params.sIndex) {
+          this.selectTab(0);
+        } else {
+          this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
+        }
       },
       deep: true,
       immediate: true

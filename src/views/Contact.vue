@@ -88,7 +88,7 @@
                     <label class="section-label col-12" for=""
                       >Preferred Contact:</label
                     >
-                    <div class="col-12 form-group">
+                    <div class="col-12 form-group radio-group">
                       <label for="usePhone"
                         ><input
                           class="mr-2 ml-2"
@@ -228,4 +228,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.radio-group {
+  line-height: 2rem;
+}
+</style>
