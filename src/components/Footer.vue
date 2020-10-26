@@ -6,7 +6,13 @@
           <picture>
             <source srcset="../assets/mta-qld.webp" type="image/webp" />
             <source srcset="../assets/mta-qld.png" type="image/jpeg" />
-            <img src="../assets/mta-qld.png" alt="" class="img-fluid" />
+            <img
+              src="../assets/mta-qld.png"
+              width="500px"
+              height="260px"
+              alt=""
+              class="img-fluid"
+            />
           </picture>
         </div>
       </div>
@@ -15,7 +21,13 @@
           <picture>
             <source srcset="../assets/afterpay/AP_FB2.webp" type="image/webp" />
             <source srcset="../assets/afterpay/AP_FB2.jpg" type="image/jpeg" />
-            <img src="../assets/afterpay/AP_FB2.jpg" alt="" class="img-fluid" />
+            <img
+              src="../assets/afterpay/AP_FB2.jpg"
+              width="851px"
+              height="315px"
+              alt=""
+              class="img-fluid"
+            />
           </picture>
         </div>
       </div>
@@ -35,10 +47,7 @@
         </div>
       </div>
       <div class="row mt-3">
-        <div
-          class="col-12 col-sm-6 col-md-4 d-none d-md-block"
-          style="min-height: 430px"
-        >
+        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
           <p class="footer-heading"><span>Services</span></p>
           <ul class="list-unstyled small">
             <li class="list-item">

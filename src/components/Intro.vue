@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 intro text-center light-bg" style="min-height: 500px">
+  <div class="py-5 intro text-center light-bg">
     <div class="container">
       <p class="">
         Verified Autoshop is your complete auto repair centre, offering a full
