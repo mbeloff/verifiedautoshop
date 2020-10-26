@@ -21,6 +21,8 @@ const paths = [
     priority: "0.6"
   }
 ];
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 module.exports = {
   configureWebpack: {
     plugins: [
@@ -57,5 +59,15 @@ module.exports = {
       // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: "Verified Auto Shop - Quality servicing and repairs"
     }
+  },
+  chainWebpack: config => {
+    // ...your other webpack config overrides here
+
+    if (process.env.NODE_ENV === "production")
+      config.plugin("webpack-report").use(BundleAnalyzerPlugin, [
+        {
+          // ...webpack-bundle-analyzer options here
+        }
+      ]);
   }
 };

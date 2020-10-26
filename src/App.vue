@@ -6,7 +6,6 @@
       name="modal"
       height="auto"
       width="700px"
-      style="z-index: 10000"
       :scrollable="true"
       :adaptive="true"
       :clickToClose="false"

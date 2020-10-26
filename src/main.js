@@ -56,6 +56,9 @@ Vue.use(Zendesk, {
     webWidget: {
       color: {
         theme: "#1B3E9E"
+      },
+      chat: {
+        connectOnPageLoad: false
       }
     }
   }

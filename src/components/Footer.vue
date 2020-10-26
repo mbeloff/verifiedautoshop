@@ -35,7 +35,10 @@
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
+        <div
+          class="col-12 col-sm-6 col-md-4 d-none d-md-block"
+          style="min-height: 430px"
+        >
           <p class="footer-heading"><span>Services</span></p>
           <ul class="list-unstyled small">
             <li class="list-item">
