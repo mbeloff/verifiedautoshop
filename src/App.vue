@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav id="nav" class="fixed-top"></Nav>
+    <Nav id="nav"></Nav>
 
     <modal
       name="modal"
@@ -132,10 +132,10 @@ h4,
 }
 
 .content {
-  padding-top: 62px;
-  @media only screen and (min-width: 992px) {
-    padding-top: 40px;
-  }
+  // padding-top: 62px;
+  // @media only screen and (min-width: 992px) {
+  //   padding-top: 40px;
+  // }
   a {
     color: #004997;
   }
