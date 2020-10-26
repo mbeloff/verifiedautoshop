@@ -59,7 +59,7 @@ module.exports = {
       // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: "Verified Auto Shop - Quality servicing and repairs"
     }
-  },
+  }
   // chainWebpack: config => {
   //   // ...your other webpack config overrides here
 

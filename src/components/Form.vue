@@ -30,6 +30,12 @@
       >
         <input
           type="hidden"
+          id="subject"
+          name="subject"
+          :value="'VerifiedAutoshop Enquiry from' + form.name"
+        />
+        <input
+          type="hidden"
           :value="locations[locationIndex].token"
           name="token"
         />

@@ -17,8 +17,6 @@
 
     <div class="col-12 rounded border p-2 px-3 shadow-responsive pb-5">
       <slot></slot>
-
-      
     </div>
   </div>
 </template>
