@@ -40,7 +40,7 @@
         <input type="hidden" :value="form.rego" name="registration_number" />
         <input type="hidden" :value="form.number" name="phone" />
         <input type="hidden" :value="form.email" name="email" />
-        <input type="hidden" :value="form.comments" name="note" />
+        <input type="hidden" :value="form.comments + carWashStr" name="note" />
         <input
           type="hidden"
           :value="formatDate(form.pickup) + ' ' + form.pickup_time"
@@ -51,22 +51,49 @@
           :value="formatDate(form.dropoff) + ' ' + form.dropoff_time"
           name="drop_off_time"
         />
-        <div class="row form-group">
-          <label for="" class="col-12 section-label">Select Location</label>
-          <div class="col-12 col-sm-6 form-group">
-            <select
-              class="form-control"
-              v-model="locationIndex"
-              ref="locSelect"
-              required
-            >
-              <option v-for="(location, i) in locations" :key="i" :value="i">{{
-                location.city
-              }}</option>
-              <!-- <option value="Brisbane" selected>Brisbane</option>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row ">
+              <label for="" class="col-12 section-label">Select Location</label>
+              <div class="col-12 form-group">
+                <select
+                  class="form-control"
+                  v-model="locationIndex"
+                  ref="locSelect"
+                  required
+                >
+                  <option
+                    v-for="(location, i) in locations"
+                    :key="i"
+                    :value="i"
+                    >{{ location.city }}</option
+                  >
+                  <!-- <option value="Brisbane" selected>Brisbane</option>
             <option value="Christchurch">Christchurch</option> -->
-            </select>
-            <i class="form-icon fal fa-globe"></i>
+                </select>
+                <i class="form-icon fal fa-globe"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="" class="section-label">Car Wash</label>
+            <div class="row form-group">
+              <div class="col-12">
+                <div class="col-12 form-control" style="padding-left: 2rem;">
+                  <input
+                    type="checkbox"
+                    class="text-left mr-auto"
+                    id="carwashCheck"
+                    v-model="carWash"
+                    value="add car wash to booking $35"
+                  />
+                  <label for="carwashCheck" class="ml-2"
+                    >Add to booking (+$35)</label
+                  >
+                </div>
+                <i class="form-icon fal fa-car-wash"></i>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -294,6 +321,8 @@ export default {
   },
   data() {
     return {
+      carWash: false,
+      carWashStr: "",
       submitted: false,
       locationIndex: 0,
       locations: this.$store.state.global.locations,
@@ -323,6 +352,13 @@ export default {
     "form.dropoff": function() {
       this.form.pickup = this.form.dropoff;
       this.datepicker.disabledPickup.to = this.form.dropoff;
+    },
+    carWash: function() {
+      if (this.carWash == false) {
+        this.carWashStr = "";
+      } else {
+        this.carWashStr = "--- add car wash to booking ($35)";
+      }
     }
   },
   methods: {

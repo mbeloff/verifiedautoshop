@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <Nav id="nav"></Nav>
+    <Nav id="nav" class="fixed-top"></Nav>
 
     <modal
       name="modal"
       height="auto"
       width="700px"
+      style="z-index: 10000"
       :scrollable="true"
       :adaptive="true"
       :clickToClose="false"
@@ -131,6 +132,10 @@ h4,
 }
 
 .content {
+  padding-top: 62px;
+  @media only screen and (min-width: 992px) {
+    padding-top: 40px;
+  }
   a {
     color: #004997;
   }

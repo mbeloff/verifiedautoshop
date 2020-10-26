@@ -18,7 +18,7 @@
     <div class="col-12 rounded border p-2 px-3 shadow-responsive pb-5">
       <slot></slot>
 
-      <BookNow class="btn-outline btn-bottom m-2"></BookNow>
+      
     </div>
   </div>
 </template>
@@ -79,9 +79,9 @@ export default {
   flex-direction: column;
   .list-group-item {
     // remove extra child (from button outside slot) when component created
-    &:last-of-type {
-      display: none;
-    }
+    // &:last-of-type {
+    //   display: none;
+    // }
     &.tabActive {
       color: var(--primary);
       background: rgb(230, 232, 238);

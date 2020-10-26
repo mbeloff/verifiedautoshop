@@ -233,10 +233,27 @@
           ><tab title="Car Grooming"
             ><h4>Car Cleaning & Detailing</h4>
             <p>
-              Revive your car with our full car grooming services. Get a
-              thorough exterior and/or interior clean with your next routine
-              service, repair, or as a standalone service.
+              Revive your car with our car grooming service. Get an interior and
+              exterior clean with your next service or repair, or drop by for a
+              standalone car wash.
             </p>
+            <p class="color-prime font-weight-bold mb-1">
+              $35 Wash includes:
+            </p>
+            <ul class="list-unstyled">
+              <li class="list-item item-dash">
+                External Hand Wash
+              </li>
+              <li class="list-item item-dash">
+                Wheel Wash
+              </li>
+              <li class="list-item item-dash">
+                Chamois Dry
+              </li>
+              <li class="list-item item-dash">
+                Interior Vacuum
+              </li>
+            </ul>
           </tab>
         </transition>
       </tabs>
