@@ -10,7 +10,7 @@ import VModal from "vue-js-modal";
 import upperFirst from "lodash/upperFirst";
 import camelCase from "lodash/camelCase";
 import VueGtm from "vue-gtm";
-import Zendesk from "@dansmaculotte/vue-zendesk";
+// import Zendesk from "@dansmaculotte/vue-zendesk";
 Vue.use(VModal);
 Vue.config.productionTip = false;
 
@@ -48,21 +48,21 @@ requireComponent.keys().forEach(fileName => {
   );
 });
 
-Vue.use(Zendesk, {
-  key: "03191626-a9ac-46fa-880f-dd84494f9bd5",
-  disabled: false,
-  hideOnLoad: false,
-  settings: {
-    webWidget: {
-      color: {
-        theme: "#1B3E9E"
-      },
-      chat: {
-        connectOnPageLoad: false
-      }
-    }
-  }
-});
+// Vue.use(Zendesk, {
+//   key: "03191626-a9ac-46fa-880f-dd84494f9bd5",
+//   disabled: false,
+//   hideOnLoad: false,
+//   settings: {
+//     webWidget: {
+//       color: {
+//         theme: "#1B3E9E"
+//       },
+//       chat: {
+//         connectOnPageLoad: false
+//       }
+//     }
+//   }
+// });
 
 Vue.use(VueGtm, {
   id: "GTM-58FJJZN",
