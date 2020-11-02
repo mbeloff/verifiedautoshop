@@ -21,7 +21,7 @@
           <img
             src="../assets/logo-sm.svg"
             alt="Verified Autoshop Logo"
-            class="img-fluid mx-auto w-100 banner-logo"
+            class="mx-auto w-100 banner-logo"
           />
         </picture>
       </div>

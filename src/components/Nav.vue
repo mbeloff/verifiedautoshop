@@ -18,14 +18,11 @@
       >
         <template v-slot:custom-section>
           <div class="custom-section-content">
-            <a href="tel:" class="mb-0 font-weight-bold">
-              <nobr
-                ><a
-                  class="text-white"
-                  :href="` tel:${$store.state.global.locations[0].phone} `"
-                  >{{ $store.state.global.locations[0].phone }}</a
-                >
-              </nobr>
+            <a
+              :href="` tel:${$store.state.global.locations[0].phone} `"
+              class="mb-0 font-weight-bold"
+            >
+              <nobr>{{ $store.state.global.locations[0].phone }} </nobr>
             </a>
           </div>
         </template>
@@ -255,8 +252,10 @@ export default {
     text-align: right;
     margin-left: auto;
     font-size: 1.25rem;
-    p {
+
+    a {
       line-height: 1;
+      color: white;
     }
   }
   svg {
@@ -307,7 +306,11 @@ export default {
     &__bottom {
       padding-top: 0;
       &__custom-section {
-        color: var(--primary);
+        .custom-section-content {
+          a {
+            color: var(--primary) !important;
+          }
+        }
       }
       &__menu-options {
         margin-bottom: 0;
