@@ -38,7 +38,6 @@ export default {
   methods: {
     vnbItemClicked(text) {
       if (text === "Book Now") {
-        this.$zendesk.hide();
         this.$modal.show("modal");
       }
       if (text === "Servicing") {
