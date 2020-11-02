@@ -33,10 +33,9 @@ export default {
     this.tabs = this.$children;
   },
   mounted() {
-    if (!this.$route.params.sIndex) {
-      this.selectTab(0);
-    } else {
-      this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
+    this.selectTab(0);
+    if (this.$route.hash) {
+      this.matchHash();
     }
   },
   methods: {
@@ -47,16 +46,23 @@ export default {
       this.tabs.forEach((tab, index) => {
         tab.tabActive = index == i;
       });
+    },
+    matchHash() {
+      this.selectTab(0);
+      if (this.$route.hash) {
+        this.tabs.forEach((tab, index) => {
+          tab.tabActive = tab.hash == this.$route.hash;
+          if (tab.hash == this.$route.hash) {
+            this.selectTab(index);
+          }
+        });
+      }
     }
   },
   watch: {
-    "$route.params.sIndex": {
+    "$route.params.hash": {
       handler: function() {
-        if (!this.$route.params.sIndex) {
-          this.selectTab(0);
-        } else {
-          this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
-        }
+        this.matchHash();
       },
       deep: true,
       immediate: true

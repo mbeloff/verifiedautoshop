@@ -44,6 +44,11 @@ const routes = [
     component: Services
   },
   {
+    path: "/services/:service",
+    name: "Services",
+    component: Services
+  },
+  {
     path: "/contact",
     name: "Contact",
     component: Contact

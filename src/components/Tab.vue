@@ -11,7 +11,7 @@ export default {
       type: String,
       default: "Tab"
     },
-    header: {
+    hash: {
       type: String,
       default: "Default Header"
     }

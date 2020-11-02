@@ -6,7 +6,7 @@
     <div class="container p-0 px-md-3">
       <tabs>
         <transition name="slide-fade"
-          ><tab title="Servicing">
+          ><tab title="Servicing" hash="#servicing">
             <h2 class="h4">Essential Servicing & Maintenance</h2>
             <p>
               Trust Verified Autoshop to keep your car running smoothly by
@@ -26,7 +26,7 @@
           </tab>
         </transition>
         <transition name="slide-fade">
-          <tab title="Air Conditioning"
+          <tab title="Air Conditioning" hash="#air-con"
             ><h2 class="h4">Air Conditioning Servicing and Repairs</h2>
             <p>
               Does your air conditioning seem to not be working as well as it
@@ -43,7 +43,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Diagnostics"
+          ><tab title="Diagnostics" hash="#diagnostics"
             ><h2 class="h4">Diagnostics</h2>
             <p>
               We have the equipment and experience to diagnose all kinds of
@@ -54,7 +54,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Auto Electrical"
+          ><tab title="Auto Electrical" hash="#auto-electrical"
             ><h2 class="h4">Auto Electrical</h2>
             <p>
               Your car’s electrical system is complex. When things start to go
@@ -85,7 +85,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Inspections"
+          ><tab title="Inspections" hash="#inspections"
             ><h2 class="h4">Inspections</h2>
             <p class="color-prime font-weight-bold">
               Buying a second hand car?
@@ -134,7 +134,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Brakes & Suspensions"
+          ><tab title="Brakes & Suspension" hash="#brakes-and-suspension"
             ><h2 class="h4">Brakes & Suspensions</h2>
             <p class="color-prime font-weight-bold">
               Get your brakes check at Verified
@@ -178,7 +178,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Tyres"
+          ><tab title="Tyres" hash="#tyres"
             ><h2 class="h4">Tyres</h2>
             <p>
               Let us make sure you get the right tyres for your vehicle and
@@ -208,7 +208,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Paint and Panel"
+          ><tab title="Paint and Panel" hash="#paint-and-panel"
             ><h2 class="h4">Paint & Panel</h2>
             <p>
               Verified Autoshop's qualified staff can assist with collision
@@ -230,7 +230,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Car Grooming"
+          ><tab title="Car Grooming" hash="#car-grooming"
             ><h2 class="h4">Car Cleaning & Detailing</h2>
             <p>
               Revive your car with our car grooming service. Get an interior and

@@ -44,64 +44,55 @@ export default {
       if (text === "Servicing") {
         this.$router.push({
           name: "Services",
-          hash: "#servicing",
-          params: { sIndex: "0" }
+          hash: "#servicing"
         });
       }
       if (text === "Air Conditioning") {
         this.$router.push({
           name: "Services",
-          hash: "#air-con",
-          params: { sIndex: "1" }
+          hash: "#air-con"
         });
       }
       if (text === "Diagnostics") {
         this.$router.push({
           name: "Services",
-          hash: "#diagnostics",
-          params: { sIndex: "2" }
+          hash: "#diagnostics"
         });
       }
       if (text === "Auto Electrical") {
         this.$router.push({
           name: "Services",
-          hash: "#auto-electrical",
-          params: { sIndex: "3" }
+          hash: "#auto-electrical"
         });
       }
       if (text === "Inspections") {
         this.$router.push({
           name: "Services",
-          hash: "#inspections",
-          params: { sIndex: "4" }
+          hash: "#inspections"
         });
       }
       if (text === "Brakes and Suspension") {
         this.$router.push({
           name: "Services",
-          hash: "#brakes-and-suspension",
-          params: { sIndex: "5" }
+          hash: "#brakes-and-suspension"
         });
       }
       if (text === "Tyres") {
         this.$router.push({
           name: "Services",
-          hash: "#tyres",
-          params: { sIndex: "6" }
+          hash: "#tyres"
         });
       }
       if (text === "Paint and Panel") {
         this.$router.push({
           name: "Services",
-          hash: "#paint-and-panel",
-          params: { sIndex: "7" }
+          hash: "#paint-and-panel"
         });
       }
       if (text === "Car Grooming") {
         this.$router.push({
           name: "Services",
-          hash: "#car-grooming",
-          params: { sIndex: "8" }
+          hash: "#car-grooming"
         });
       }
     }
@@ -131,8 +122,7 @@ export default {
                 text: "Servicing",
                 path: {
                   name: "Services",
-                  hash: "#servicing",
-                  params: { sIndex: "0" }
+                  hash: "#servicing"
                 }
               },
               {

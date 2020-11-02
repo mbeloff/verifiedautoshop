@@ -54,8 +54,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#servicing',
-                  params: { sIndex: '0' }
+                  hash: '#servicing'
                 }"
                 >Servicing</router-link
               >
@@ -64,8 +63,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#air-con',
-                  params: { sIndex: '1' }
+                  hash: '#air-con'
                 }"
                 >Air Conditioning</router-link
               >
@@ -74,8 +72,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#diagnostics',
-                  params: { sIndex: '2' }
+                  hash: '#diagnostics'
                 }"
                 >Diagnostics</router-link
               >
@@ -84,8 +81,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#auto-electrical',
-                  params: { sIndex: '3' }
+                  hash: '#auto-electrical'
                 }"
                 >Auto Electrical</router-link
               >
@@ -94,8 +90,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#inspections',
-                  params: { sIndex: '4' }
+                  hash: '#inspections'
                 }"
                 >Vehicle Inspections</router-link
               >
@@ -104,8 +99,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#brakes-and-suspension',
-                  params: { sIndex: '5' }
+                  hash: '#brakes-and-suspension'
                 }"
                 >Brakes & Suspension</router-link
               >
@@ -114,8 +108,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#tyres',
-                  params: { sIndex: '6' }
+                  hash: '#tyres'
                 }"
                 >Tyres</router-link
               >
@@ -124,8 +117,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#paint-and-panel',
-                  params: { sIndex: '7' }
+                  hash: '#paint-and-panel'
                 }"
                 >Paint & Panel</router-link
               >
@@ -134,8 +126,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#car-grooming',
-                  params: { sIndex: '8' }
+                  hash: '#car-grooming'
                 }"
                 >Car Grooming</router-link
               >
@@ -149,9 +140,7 @@
               <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
             </li>
             <li class="list-item">
-              <router-link :to="{ name: 'Services', hash: '' }"
-                >Services</router-link
-              >
+              <router-link :to="{ name: 'Services' }">Services</router-link>
             </li>
             <li class="list-item">
               <router-link :to="{ name: 'Locations', hash: '' }"
@@ -169,10 +158,16 @@
           <p class="footer-heading"><span>Contact</span></p>
           <ul class="list-unstyled small">
             <li class="list-item h5 mb-0">
-              <span>au: </span><a :href="` tel:${$store.state.global.locations[0].phone} `">{{ $store.state.global.locations[0].phone }}</a>
+              <span>au: </span
+              ><a :href="` tel:${$store.state.global.locations[0].phone} `">{{
+                $store.state.global.locations[0].phone
+              }}</a>
             </li>
             <li class="list-item h5 mb-0">
-              <span>nz: </span><a :href="` tel:${$store.state.global.locations[1].phone} `">{{ $store.state.global.locations[1].phone }}</a>
+              <span>nz: </span
+              ><a :href="` tel:${$store.state.global.locations[1].phone} `">{{
+                $store.state.global.locations[1].phone
+              }}</a>
             </li>
             <li class="list-item">
               <a
