@@ -371,7 +371,7 @@ export default {
     },
     hide() {
       this.$modal.hide("modal");
-      this.$zendesk.show();
+      // this.$zendesk.show();
       if (this.submitted === true) {
         this.submitted = false;
         this.$router.push({
