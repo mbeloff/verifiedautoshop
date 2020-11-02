@@ -20,13 +20,8 @@
               id="VerifiedEnquiry"
               action="/success"
               @submit.prevent="handleSubmit"
+              :subject="'VerifiedAutoshop Enquiry from - ' + enquire.name"
             >
-              <input
-                type="hidden"
-                id="subject"
-                name="subject"
-                :value="'VerifiedAutoshop Enquiry from - ' + enquire.name"
-              />
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label class="sr-only">Name</label>

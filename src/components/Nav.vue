@@ -18,9 +18,15 @@
       >
         <template v-slot:custom-section>
           <div class="custom-section-content">
-            <p role="button" class="mb-0 font-weight-bold">
-              <nobr>{{ $store.state.global.phone }} </nobr>
-            </p>
+            <a href="tel:" class="mb-0 font-weight-bold">
+              <nobr
+                ><a
+                  class="text-white"
+                  :href="` tel:${$store.state.global.locations[0].phone} `"
+                  >{{ $store.state.global.locations[0].phone }}</a
+                >
+              </nobr>
+            </a>
           </div>
         </template>
       </vue-navigation-bar>

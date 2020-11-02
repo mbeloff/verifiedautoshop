@@ -169,10 +169,10 @@
           <p class="footer-heading"><span>Contact</span></p>
           <ul class="list-unstyled small">
             <li class="list-item h5 mb-0">
-              <span>au: </span>{{ $store.state.global.locations[0].phone }}
+              <span>au: </span><a :href="` tel:${$store.state.global.locations[0].phone} `">{{ $store.state.global.locations[0].phone }}</a>
             </li>
             <li class="list-item h5 mb-0">
-              <span>nz: </span>{{ $store.state.global.locations[1].phone }}
+              <span>nz: </span><a :href="` tel:${$store.state.global.locations[1].phone} `">{{ $store.state.global.locations[1].phone }}</a>
             </li>
             <li class="list-item">
               <a
