@@ -76,7 +76,7 @@ export default {
   }
 }
 
-.tabs-header {
+.tabs-header.list-group {
   display: flex;
   flex-direction: column;
   .list-group-item {

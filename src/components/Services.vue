@@ -7,7 +7,7 @@
       <tabs>
         <transition name="slide-fade"
           ><tab title="Servicing">
-            <h4>Essential Servicing & Maintenance</h4>
+            <h2 class="h4">Essential Servicing & Maintenance</h2>
             <p>
               Trust Verified Autoshop to keep your car running smoothly by
               booking your regular service with us. Keeping your car serviced
@@ -27,7 +27,7 @@
         </transition>
         <transition name="slide-fade">
           <tab title="Air Conditioning"
-            ><h4>Air Conditioning Servicing and Repairs</h4>
+            ><h2 class="h4">Air Conditioning Servicing and Repairs</h2>
             <p>
               Does your air conditioning seem to not be working as well as it
               should? A/C units should be checked for leaks and motors and
@@ -44,7 +44,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Diagnostics"
-            ><h4>Diagnostics</h4>
+            ><h2 class="h4">Diagnostics</h2>
             <p>
               We have the equipment and experience to diagnose all kinds of
               mechanical and electrical problems.
@@ -55,7 +55,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Auto Electrical"
-            ><h4>Auto Electrical</h4>
+            ><h2 class="h4">Auto Electrical</h2>
             <p>
               Your car’s electrical system is complex. When things start to go
               wrong, it can damage other parts of your car, making it more
@@ -86,7 +86,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Inspections"
-            ><h4>Inspections</h4>
+            ><h2 class="h4">Inspections</h2>
             <p class="color-prime font-weight-bold">
               Buying a second hand car?
             </p>
@@ -135,7 +135,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Brakes & Suspensions"
-            ><h4>Brakes & Suspensions</h4>
+            ><h2 class="h4">Brakes & Suspensions</h2>
             <p class="color-prime font-weight-bold">
               Get your brakes check at Verified
             </p>
@@ -179,7 +179,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Tyres"
-            ><h4>Tyres</h4>
+            ><h2 class="h4">Tyres</h2>
             <p>
               Let us make sure you get the right tyres for your vehicle and
               driving needs.
@@ -209,7 +209,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Paint and Panel"
-            ><h4>Paint & Panel</h4>
+            ><h2 class="h4">Paint & Panel</h2>
             <p>
               Verified Autoshop's qualified staff can assist with collision
               repairs, panel beating and spray painting - ensuring your car is
@@ -231,7 +231,7 @@
         </transition>
         <transition name="slide-fade"
           ><tab title="Car Grooming"
-            ><h4>Car Cleaning & Detailing</h4>
+            ><h2 class="h4">Car Cleaning & Detailing</h2>
             <p>
               Revive your car with our car grooming service. Get an interior and
               exterior clean with your next service or repair, or drop by for a
