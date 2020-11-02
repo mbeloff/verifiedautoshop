@@ -33,7 +33,11 @@ export default {
     this.tabs = this.$children;
   },
   mounted() {
-    this.selectTab(0);
+    if (!this.$route.params.sIndex) {
+      this.selectTab(0);
+    } else {
+      this.selectTab(Number.parseInt(this.$route.params.sIndex, 10));
+    }
   },
   methods: {
     selectTab(i) {
