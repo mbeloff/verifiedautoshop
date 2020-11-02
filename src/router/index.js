@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-const Home = () => import("../views/Home.vue");
+import Home from "../views/Home.vue"
 const Success = () => import("../views/Success.vue");
 const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
