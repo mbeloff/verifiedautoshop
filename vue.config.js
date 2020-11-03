@@ -17,10 +17,6 @@ const paths = [
     priority: "0.7"
   },
   {
-    path: "/services/servicing",
-    priority: "0.5"
-  },
-  {
     path: "/services/tyres",
     priority: "0.5"
   },
