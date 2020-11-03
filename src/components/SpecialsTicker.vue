@@ -2,7 +2,7 @@
   <div>
     <div class="specials-ticker container-fluid text-center">
       <p class="mb-0 py-2">
-        <span>Special:</span> Essential Lube Service - $99
+        <span>Special:</span> Lube Service & Safety Check - <span>$99</span>
         <a
           role="button"
           class="ml-4 btn-mini bg-light small"
