@@ -34,7 +34,7 @@ export default {
   methods: {
     show() {
       this.$modal.show("modal");
-      this.$zendesk.hide();
+      // this.$zendesk.hide();
     }
   }
 };
