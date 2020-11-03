@@ -17,12 +17,24 @@
         @vnb-item-clicked="vnbItemClicked"
       >
         <template v-slot:custom-section>
-          <div class="custom-section-content">
+          <div class="custom-section-content d-flex flex-column">
             <a
               :href="` tel:${$store.state.global.locations[0].phone} `"
-              class="mb-0 font-weight-bold"
+              class="mb-1 font-weight-bold"
             >
-              <nobr>{{ $store.state.global.locations[0].phone }} </nobr>
+              <nobr
+                >{{ $store.state.global.locations[0].phone }}
+                <span class="text-muted font-weight-normal">(au)</span></nobr
+              >
+            </a>
+            <a
+              :href="` tel:${$store.state.global.locations[1].phone} `"
+              class="mb-0 small"
+            >
+              <nobr
+                >{{ $store.state.global.locations[1].phone }}
+                <span class="text-muted font-weight-normal">(nz)</span></nobr
+              >
             </a>
           </div>
         </template>
@@ -258,8 +270,8 @@ export default {
   text-align: left;
   background: transparent;
   color: white;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   @media only screen and (max-width: 992px) {
     padding: 15px 0;
