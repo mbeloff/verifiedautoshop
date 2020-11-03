@@ -230,7 +230,7 @@
           </tab>
         </transition>
         <transition name="slide-fade"
-          ><tab title="Car Grooming" service="car-grooming"
+          ><tab title="Car Grooming" service="car-wash"
             ><h2 class="h4">Car Cleaning & Detailing</h2>
             <p>
               Revive your car with our car grooming service. Get an interior and

@@ -132,7 +132,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  params: { service: 'car-grooming' }
+                  params: { service: 'car-wash' }
                 }"
                 >Car Grooming</router-link
               >
@@ -146,7 +146,10 @@
               <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
             </li>
             <li class="list-item">
-              <router-link :to="{ name: 'Services', params: {service: 'servicing'}}">Services</router-link>
+              <router-link
+                :to="{ name: 'Services', params: { service: 'servicing' } }"
+                >Services</router-link
+              >
             </li>
             <li class="list-item">
               <router-link :to="{ name: 'Locations', hash: '' }"

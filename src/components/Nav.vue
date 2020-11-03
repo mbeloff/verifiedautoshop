@@ -118,7 +118,7 @@ export default {
           name: "Services",
 
           params: {
-            service: "car-grooming"
+            service: "car-wash"
           }
         });
       }

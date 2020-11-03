@@ -17,6 +17,42 @@ const paths = [
     priority: "0.7"
   },
   {
+    path: "/services/servicing",
+    priority: "0.5"
+  },
+  {
+    path: "/services/tyres",
+    priority: "0.5"
+  },
+  {
+    path: "/services/air-con",
+    priority: "0.5"
+  },
+  {
+    path: "/services/diagnostics",
+    priority: "0.5"
+  },
+  {
+    path: "/services/paint-and-panel",
+    priority: "0.5"
+  },
+  {
+    path: "/services/auto-electrical",
+    priority: "0.5"
+  },
+  {
+    path: "/services/inspections",
+    priority: "0.5"
+  },
+  {
+    path: "/services/car-wash",
+    priority: "0.5"
+  },
+  {
+    path: "/services/brakes-and-suspensions",
+    priority: "0.5"
+  },
+  {
     path: "/contact",
     priority: "0.6"
   }
