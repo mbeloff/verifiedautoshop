@@ -1,4 +1,3 @@
-// const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 const SitemapPlugin = require("sitemap-webpack-plugin").default;
 const paths = [
   {
@@ -55,28 +54,17 @@ const paths = [
 ];
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 //   .BundleAnalyzerPlugin;
+const webpack = require("webpack");
 module.exports = {
   configureWebpack: {
     plugins: [
-      // new ImageminWebpWebpackPlugin({
-      //   config: [
-      //     {
-      //       test: /\.(jpe?g|png)/,
-      //       options: {
-      //         quality: 80
-      //       }
-      //     }
-      //   ],
-      //   overrideExtension: true,
-      //   detailedLogs: false,
-      //   silent: false,
-      //   strict: true
-      // }),
       new SitemapPlugin("https://verifiedautoshop.com", paths, {
         lastmod: true,
         changefreq: "monthly",
         priority: "0.5"
-      })
+      }),
+      // Ignore all locale files of moment.js
+      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ]
   },
   pages: {
