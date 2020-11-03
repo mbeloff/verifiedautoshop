@@ -19,7 +19,7 @@
       >
         <picture class="d-flex flex-center w-100 h-100">
           <img
-            src="../assets/logo-sm.svg"
+            src="../assets/logo.svg"
             alt="Verified Autoshop Logo"
             class="mx-auto w-100 banner-logo"
           />

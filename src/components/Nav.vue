@@ -131,7 +131,7 @@ export default {
         isUsingVueRouter: true,
         mobileBreakpoint: 992,
         brandImagePath: "/",
-        brandImage: require("../assets/logo.svg"),
+        brandImage: require("../assets/logo-sm.svg"),
         brandImageAltText: "brand-image",
         collapseButtonOpenColor: "white",
         collapseButtonCloseColor: "white",
