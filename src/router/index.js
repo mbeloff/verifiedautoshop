@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue"
+import Home from "../views/Home.vue";
 const Success = () => import("../views/Success.vue");
 const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
@@ -39,14 +39,16 @@ const routes = [
     props: true
   },
   {
-    path: "/services",
-    name: "Services",
-    component: Services
-  },
-  {
     path: "/services/:service",
     name: "Services",
-    component: Services
+    component: Services,
+    props: true
+  },
+  {
+    path: "/services",
+    name: "ServiceHome",
+    component: Services,
+    props: true
   },
   {
     path: "/contact",

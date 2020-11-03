@@ -54,7 +54,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#servicing'
+                  params: { service: 'servicing' }
                 }"
                 >Servicing</router-link
               >
@@ -63,7 +63,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#air-con'
+                  params: { service: 'air-con' }
                 }"
                 >Air Conditioning</router-link
               >
@@ -72,7 +72,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#diagnostics'
+                  params: { service: 'diagnostics' }
                 }"
                 >Diagnostics</router-link
               >
@@ -81,7 +81,9 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#auto-electrical'
+                  params: {
+                    service: 'auto-electrical'
+                  }
                 }"
                 >Auto Electrical</router-link
               >
@@ -90,7 +92,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#inspections'
+                  params: { service: 'inspections' }
                 }"
                 >Vehicle Inspections</router-link
               >
@@ -99,7 +101,9 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#brakes-and-suspension'
+                  params: {
+                    service: 'brakes-and-suspension'
+                  }
                 }"
                 >Brakes & Suspension</router-link
               >
@@ -108,7 +112,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#tyres'
+                  params: { service: 'tyres' }
                 }"
                 >Tyres</router-link
               >
@@ -117,7 +121,9 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#paint-and-panel'
+                  params: {
+                    service: 'paint-and-panel'
+                  }
                 }"
                 >Paint & Panel</router-link
               >
@@ -126,7 +132,7 @@
               <router-link
                 :to="{
                   name: 'Services',
-                  hash: '#car-grooming'
+                  params: { service: 'car-grooming' }
                 }"
                 >Car Grooming</router-link
               >
@@ -140,7 +146,7 @@
               <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
             </li>
             <li class="list-item">
-              <router-link :to="{ name: 'Services' }">Services</router-link>
+              <router-link :to="{ name: 'Services', params: {service: 'servicing'}}">Services</router-link>
             </li>
             <li class="list-item">
               <router-link :to="{ name: 'Locations', hash: '' }"

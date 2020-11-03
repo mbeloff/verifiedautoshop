@@ -26,16 +26,19 @@ export default {
   data() {
     return {
       selectedIndex: 0,
-      tabs: []
+      tabs: [],
+      matchFound: undefined
     };
   },
   created() {
     this.tabs = this.$children;
   },
   mounted() {
-    this.selectTab(0);
-    if (this.$route.hash) {
+    // this.selectTab(0);
+    if (this.$route.params.service) {
       this.matchHash();
+    } else {
+      this.selectTab(0);
     }
   },
   methods: {
@@ -48,19 +51,22 @@ export default {
       });
     },
     matchHash() {
-      this.selectTab(0);
-      if (this.$route.hash) {
-        this.tabs.forEach((tab, index) => {
-          tab.tabActive = tab.hash == this.$route.hash;
-          if (tab.hash == this.$route.hash) {
-            this.selectTab(index);
-          }
-        });
-      }
+      // this.selectTab(0);
+      this.tabs.forEach((tab, index) => {
+        tab.tabActive = tab.service == this.$route.params.service;
+        if (tab.service == this.$route.params.service) {
+          this.selectTab(index);
+          this.matchFound = true;
+          // return;
+        }
+        if (!this.matchFound) {
+          this.selectTab(this.tabs.length - 1);
+        }
+      });
     }
   },
   watch: {
-    "$route.params.hash": {
+    "$route.params.service": {
       handler: function() {
         this.matchHash();
       },
@@ -86,10 +92,10 @@ export default {
   display: flex;
   flex-direction: column;
   .list-group-item {
-    // remove extra child (from button outside slot) when component created
-    // &:last-of-type {
-    //   display: none;
-    // }
+    // remove extra child ('page not found' tab) when component created
+    &:last-of-type {
+      display: none;
+    }
     &.tabActive {
       color: var(--primary);
       background: rgb(230, 232, 238);

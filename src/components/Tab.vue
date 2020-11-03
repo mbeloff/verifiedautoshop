@@ -11,9 +11,9 @@ export default {
       type: String,
       default: "Tab"
     },
-    hash: {
+    service: {
       type: String,
-      default: "Default Header"
+      default: "servicing"
     }
   },
   data() {

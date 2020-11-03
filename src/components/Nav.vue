@@ -44,55 +44,82 @@ export default {
       if (text === "Servicing") {
         this.$router.push({
           name: "Services",
-          hash: "#servicing"
+
+          params: {
+            service: "servicing"
+          }
         });
       }
       if (text === "Air Conditioning") {
         this.$router.push({
           name: "Services",
-          hash: "#air-con"
+
+          params: {
+            service: "air-con"
+          }
         });
       }
       if (text === "Diagnostics") {
         this.$router.push({
           name: "Services",
-          hash: "#diagnostics"
+
+          params: {
+            service: "diagnostics"
+          }
         });
       }
       if (text === "Auto Electrical") {
         this.$router.push({
           name: "Services",
-          hash: "#auto-electrical"
+
+          params: {
+            service: "auto-electrical"
+          }
         });
       }
       if (text === "Inspections") {
         this.$router.push({
           name: "Services",
-          hash: "#inspections"
+
+          params: {
+            service: "inspections"
+          }
         });
       }
       if (text === "Brakes and Suspension") {
         this.$router.push({
           name: "Services",
-          hash: "#brakes-and-suspension"
+
+          params: {
+            service: "brakes-and-suspension"
+          }
         });
       }
       if (text === "Tyres") {
         this.$router.push({
           name: "Services",
-          hash: "#tyres"
+
+          params: {
+            service: "tyres"
+          }
         });
       }
       if (text === "Paint and Panel") {
         this.$router.push({
           name: "Services",
-          hash: "#paint-and-panel"
+
+          params: {
+            service: "paint-and-panel"
+          }
         });
       }
       if (text === "Car Grooming") {
         this.$router.push({
           name: "Services",
-          hash: "#car-grooming"
+
+          params: {
+            service: "car-grooming"
+          }
         });
       }
     }
@@ -191,12 +218,16 @@ export default {
               {
                 type: "link",
                 text: "Locations",
-                path: { name: "Locations" }
+                path: {
+                  name: "Locations"
+                }
               },
               {
                 type: "link",
                 text: "Make an Enquiry",
-                path: { name: "Contact" },
+                path: {
+                  name: "Contact"
+                },
                 iconLeft: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
               }
             ]
@@ -222,15 +253,18 @@ export default {
 .nav-wrapper {
   background: var(--dark-bg);
 }
+
 .vnb {
   text-align: left;
   background: transparent;
   color: white;
   padding-top: 0;
   padding-bottom: 0;
+
   @media only screen and (max-width: 992px) {
     padding: 15px 0;
   }
+
   &__brand-image-wrapper {
     &__link {
       &__image {
@@ -238,6 +272,7 @@ export default {
       }
     }
   }
+
   .custom-section-content {
     text-align: right;
     margin-left: auto;
@@ -248,9 +283,11 @@ export default {
       color: white;
     }
   }
+
   svg {
     width: 20px !important;
   }
+
   &__menu-options {
     &--left {
       .fa,
@@ -260,12 +297,15 @@ export default {
         color: var(--primary);
       }
     }
+
     &--right {
       margin-left: 1rem;
     }
+
     &__option {
       &__link {
         color: rgb(225, 228, 230);
+
         &:hover {
           color: white;
         }
@@ -286,15 +326,19 @@ export default {
   &__popup {
     border-radius: 5px;
     box-shadow: 0 0.5rem 3rem black;
+
     &__top {
       background: var(--dark-bg);
       padding: 0.5rem;
+
       &__image {
         margin-bottom: 0;
       }
     }
+
     &__bottom {
       padding-top: 0;
+
       &__custom-section {
         .custom-section-content {
           a {
@@ -302,14 +346,17 @@ export default {
           }
         }
       }
+
       &__menu-options {
         margin-bottom: 0;
+
         &__option {
           &__link {
             &:not(.btn) {
               color: var(--primary);
               font-variation-settings: "wght" 600;
               position: relative;
+
               &::after {
                 position: absolute;
                 content: "";
