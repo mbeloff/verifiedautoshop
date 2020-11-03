@@ -2,7 +2,7 @@
   <div class="py-5 intro text-center light-bg">
     <div class="container">
       <p class="">
-        Verified Autoshop is your complete auto repair centre, offering a full
+        Verified Auto Shop is your complete auto repair centre, offering a full
         range of maintenance, repair & grooming services.
       </p>
       <div

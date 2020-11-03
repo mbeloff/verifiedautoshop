@@ -11,7 +11,7 @@
     <div class="container py-5">
       <Title>Locations</Title>
       <p>
-        Verified Autoshop is expanding and currently has locations in Brisbane,
+        Verified Auto Shop is expanding and currently has locations in Brisbane,
         Australia and Christchuch, New Zealand.
       </p>
     </div>

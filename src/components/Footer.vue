@@ -187,12 +187,14 @@
               >
             </li>
             <li class="list-item mt-2">
-              <b>Verified Autoshop Brisbane</b> <br />46 Deshon St
-              <br />Woolloongabba, 4102
+              <b>Verified Auto Shop Brisbane</b> <br />46 Deshon St
+              <br />Woolloongabba, 4102 <br />
+              mon-fri: 8am - 4 pm
             </li>
             <li class="list-item mt-2">
-              <b>Verified Autoshop Christchurch</b> <br />135 Ferry Rd
-              <br />Christchurch, 8011
+              <b>Verified Auto Shop Christchurch</b> <br />135 Ferry Rd
+              <br />Christchurch, 8011<br />
+              mon-fri: 8am - 4 pm
             </li>
           </ul>
         </div>

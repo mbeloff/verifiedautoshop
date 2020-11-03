@@ -9,13 +9,13 @@
           ><tab title="Servicing" service="servicing">
             <h2 class="h4">Essential Servicing & Maintenance</h2>
             <p>
-              Trust Verified Autoshop to keep your car running smoothly by
+              Trust Verified Auto Shop to keep your car running smoothly by
               booking your regular service with us. Keeping your car serviced
               regularly will improve fuel efficiency and help prevent more
               costly problems by detecting issues before they develop.
             </p>
             <p class="color-prime font-weight-bold mb-1">
-              Call Verified Autoshop for:
+              Call Verified Auto Shop for:
             </p>
             <ul class="list-unstyled">
               <li class="list-item item-dash">New Car and Log Book Service</li>
@@ -35,7 +35,7 @@
               comfortable in summer.
             </p>
             <p>
-              Contact Verified Autoshop for an A/C inspection, service or
+              Contact Verified Auto Shop for an A/C inspection, service or
               refrigerant refill ("re-gas") or let us know when you book in for
               a regular service and we'll diagnose and repair any issues while
               we're at it.
@@ -97,7 +97,7 @@
               safety.
             </p>
             <p>
-              Let Verified Autoshop look over the vehicle first to give you
+              Let Verified Auto Shop look over the vehicle first to give you
               peace of mind before parting ways with your hard earned cash.
               We'll identify any existing or developing issues so you can make
               an informed decision about your purchase.
@@ -147,8 +147,8 @@
             </p>
             <p>
               If your brakes are performing like they used to, or your noticing
-              any noise or change in steering when braking, give Verified
-              Autoshop a call and get your car checked out by our qualified
+              any noise or change in steering when braking, give Verified Auto
+              Shop a call and get your car checked out by our qualified
               technicians.
             </p>
             <p class="color-prime font-weight-bold mb-1">
@@ -202,7 +202,7 @@
               </li>
             </ul>
             <p>
-              Contact Verified Autoshop for great value tyre replacement along
+              Contact Verified Auto Shop for great value tyre replacement along
               with wheel balancing, alignment and puncture repairs.
             </p>
           </tab>
@@ -211,7 +211,7 @@
           ><tab title="Paint and Panel" service="paint-and-panel"
             ><h2 class="h4">Paint & Panel</h2>
             <p>
-              Verified Autoshop's qualified staff can assist with collision
+              Verified Auto Shop's qualified staff can assist with collision
               repairs, panel beating and spray painting - ensuring your car is
               always looking it's best. Leave it to Verified to get your back on
               the road ASAP.
