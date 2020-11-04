@@ -49,7 +49,7 @@
       <div class="row mt-3">
         <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
           <p class="footer-heading"><span>Services</span></p>
-          <ul class="list-unstyled small">
+          <ul class="list-unstyled">
             <li class="list-item">
               <router-link
                 :to="{
@@ -141,7 +141,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4">
           <p class="footer-heading"><span>Quick Links</span></p>
-          <ul class="list-unstyled small">
+          <ul class="list-unstyled quick-links">
             <li class="list-item">
               <router-link :to="{ name: 'Home', hash: '' }">Home</router-link>
             </li>
@@ -164,21 +164,22 @@
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <p class="footer-heading"><span>Contact</span></p>
-          <ul class="list-unstyled small">
-            <li class="list-item h5 mb-0">
-              <span>au: </span
-              ><a :href="` tel:${$store.state.global.locations[0].phone} `">{{
-                $store.state.global.locations[0].phone
-              }}</a>
-            </li>
-            <li class="list-item h5 mb-0">
-              <span>nz: </span
-              ><a :href="` tel:${$store.state.global.locations[1].phone} `">{{
-                $store.state.global.locations[1].phone
-              }}</a>
-            </li>
+          <ul class="list-unstyled text-muted">
             <li class="list-item">
+              <p class="mb-2">Verified Auto Shop Brisbane</p>
+              <a
+                class="h4"
+                :href="` tel:${$store.state.global.loc.brisbane.phone} `"
+                ><i class="fas fa-phone mr-2 color-prime"></i
+                >{{ $store.state.global.loc.brisbane.phone }}</a
+              ><br />
+              <p class="mb-0 ">
+                46 Deshon St <br />Woolloongabba, 4102 <br />
+                mon-fri: 8am - 4 pm
+              </p>
+            </li>
+            <li class="list-item mb-4">
+              <i class="fas fa-envelope mr-2 color-prime"></i>
               <a
                 class="long-word"
                 :href="`mailto:` + $store.state.global.email"
@@ -186,15 +187,26 @@
                 {{ $store.state.global.email }}</a
               >
             </li>
-            <li class="list-item mt-2">
-              <b>Verified Auto Shop Brisbane</b> <br />46 Deshon St
-              <br />Woolloongabba, 4102 <br />
-              mon-fri: 8am - 4 pm
-            </li>
-            <li class="list-item mt-2">
-              <b>Verified Auto Shop Christchurch</b> <br />135 Ferry Rd
+            <li class="list-item">
+              <p class="mb-2">Verified Auto Shop Christchurch</p>
+              <a
+                class="h4"
+                :href="` tel:${$store.state.global.loc.christchurch.phone} `"
+                ><i class="fas fa-phone mr-2 color-prime"></i
+                >{{ $store.state.global.loc.christchurch.phone }}</a
+              ><br />
+              135 Ferry Rd
               <br />Christchurch, 8011<br />
               mon-fri: 8am - 4 pm
+            </li>
+            <li class="list-item mb-4">
+              <i class="fas fa-envelope mr-2 color-prime"></i>
+              <a
+                class="long-word"
+                :href="`mailto:` + $store.state.global.email"
+              >
+                {{ $store.state.global.email }}</a
+              >
             </li>
           </ul>
         </div>
@@ -249,6 +261,7 @@ export default {};
   font-weight: normal;
   font-variation-settings: "wght" 100;
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .map {
