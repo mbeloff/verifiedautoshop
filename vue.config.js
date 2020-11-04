@@ -8,10 +8,6 @@ const paths = [
     path: "/quote"
   },
   {
-    path: "/locations",
-    priority: "0.5"
-  },
-  {
     path: "/locations/brisbane",
     priority: "0.6"
   },
