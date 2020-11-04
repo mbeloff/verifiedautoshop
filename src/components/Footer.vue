@@ -165,39 +165,23 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4">
           <ul class="list-unstyled text-muted">
-            <li class="list-item">
-              <p class="mb-2">Verified Auto Shop Brisbane</p>
-              <a
-                class="h4"
-                :href="` tel:${$store.state.global.loc.brisbane.phone} `"
+            <li
+              class="list-item mb-4"
+              v-for="(location, i) in $store.state.global.loc"
+              :key="i"
+            >
+              <p class="mb-2 font-weight-bold">
+                Verified Auto Shop {{ location.name }}
+              </p>
+              <a class="h4" :href="` tel:${location.phone} `"
                 ><i class="fas fa-phone mr-2 color-prime"></i
-                >{{ $store.state.global.loc.brisbane.phone }}</a
+                >{{ location.phone }}</a
               ><br />
               <p class="mb-0 ">
-                46 Deshon St <br />Woolloongabba, 4102 <br />
+                {{ location.street }} <br />{{ location.locality }},
+                {{ location.postcode }} <br />
                 mon-fri: 8am - 4 pm
               </p>
-            </li>
-            <li class="list-item mb-4">
-              <i class="fas fa-envelope mr-2 color-prime"></i>
-              <a
-                class="long-word"
-                :href="`mailto:` + $store.state.global.email"
-              >
-                {{ $store.state.global.email }}</a
-              >
-            </li>
-            <li class="list-item">
-              <p class="mb-2">Verified Auto Shop Christchurch</p>
-              <a
-                class="h4"
-                :href="` tel:${$store.state.global.loc.christchurch.phone} `"
-                ><i class="fas fa-phone mr-2 color-prime"></i
-                >{{ $store.state.global.loc.christchurch.phone }}</a
-              ><br />
-              135 Ferry Rd
-              <br />Christchurch, 8011<br />
-              mon-fri: 8am - 4 pm
             </li>
             <li class="list-item mb-4">
               <i class="fas fa-envelope mr-2 color-prime"></i>
@@ -262,6 +246,10 @@ export default {};
   font-variation-settings: "wght" 100;
   margin: 0.5rem 0;
   font-size: 1rem;
+}
+
+.text-muted {
+  color: rgb(163, 163, 163) !important;
 }
 
 .map {

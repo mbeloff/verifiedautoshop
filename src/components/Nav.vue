@@ -18,13 +18,15 @@
       >
         <template v-slot:custom-section>
           <div class="custom-section-content d-flex flex-column">
-            <a
+            <!-- <a
               :href="` tel:${$store.state.global.locations[0].phone} `"
               class="mb-1 font-weight-bold"
             >
               <nobr
                 >{{ $store.state.global.locations[0].phone }}
-                <span class="text-muted font-weight-normal">(au)</span></nobr
+                <span class="font-weight-normal"
+                  ><i class="fas fa-phone mr-1"></i> au</span
+                ></nobr
               >
             </a>
             <a
@@ -33,9 +35,11 @@
             >
               <nobr
                 >{{ $store.state.global.locations[1].phone }}
-                <span class="text-muted font-weight-normal">(nz)</span></nobr
+                <span class="font-weight-normal"
+                  ><i class="fas fa-phone mr-1"></i>nz</span
+                ></nobr
               >
-            </a>
+            </a> -->
           </div>
         </template>
       </vue-navigation-bar>
