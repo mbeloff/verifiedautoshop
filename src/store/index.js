@@ -45,6 +45,8 @@ export default new Vuex.Store({
             "@type": "LocalBusiness",
             name: "Verified Auto Shop Brisbane",
             telephone: "0424 975 336",
+            image:
+              "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462332/verified/v-exterior.jpg",
             email: "bookings@verifiedautoshop.com",
             address: {
               "@type": "PostalAddress",
