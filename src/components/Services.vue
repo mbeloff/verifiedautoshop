@@ -7,7 +7,7 @@
       <tabs>
         <transition name="slide-fade"
           ><tab title="Servicing" service="servicing">
-            <h2 class="h4">Essential Servicing & Maintenance</h2>
+            <h2 class="h4">Servicing & Maintenance</h2>
             <p>
               Trust Verified Auto Shop to keep your car running smoothly by
               booking your regular service with us. Keeping your car serviced

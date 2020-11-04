@@ -9,6 +9,14 @@ const paths = [
   },
   {
     path: "/locations",
+    priority: "0.5"
+  },
+  {
+    path: "/locations/brisbane",
+    priority: "0.6"
+  },
+  {
+    path: "/locations/christchurch",
     priority: "0.6"
   },
   {

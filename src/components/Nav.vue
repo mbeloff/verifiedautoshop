@@ -53,6 +53,24 @@ export default {
         // this.$zendesk.hide();
         this.$modal.show("modal");
       }
+      if (text === "Brisbane") {
+        this.$router.push({
+          name: "Location",
+
+          params: {
+            location: "Brisbane"
+          }
+        });
+      }
+      if (text === "Christchurch") {
+        this.$router.push({
+          name: "Location",
+
+          params: {
+            location: "Christchurch"
+          }
+        });
+      }
       if (text === "Servicing") {
         this.$router.push({
           name: "Services",
@@ -160,8 +178,7 @@ export default {
                 type: "link",
                 text: "Servicing",
                 path: {
-                  name: "Services",
-                  hash: "#servicing"
+                  name: "Services"
                 }
               },
               {
@@ -229,7 +246,14 @@ export default {
             subMenuOptions: [
               {
                 type: "link",
-                text: "Locations",
+                text: "Brisbane",
+                path: {
+                  name: "Locations"
+                }
+              },
+              {
+                type: "link",
+                text: "Christchurch",
                 path: {
                   name: "Locations"
                 }

@@ -15,14 +15,18 @@
         Australia and Christchuch, New Zealand.
       </p>
     </div>
-    <LocationInfo></LocationInfo>
+    <Location
+      v-for="location in this.$store.state.global.loc"
+      :key="location"
+      :location="location.name.toLowerCase()"
+    ></Location>
   </div>
 </template>
 
 <script>
-import LocationInfo from "@/components/LocationInfo.vue";
+import Location from "@/components/Location.vue";
 export default {
-  components: { LocationInfo }
+  components: { Location }
 };
 </script>
 

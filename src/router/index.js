@@ -6,6 +6,7 @@ const NotFound = () => import("../views/NotFound.vue");
 const Contact = () => import("../views/Contact.vue");
 const Locations = () => import("../views/Locations.vue");
 const Services = () => import("../views/Services.vue");
+const Location = () => import("../views/Location.vue");
 // const Form = () => import("../components/Form.vue");
 
 Vue.use(VueRouter);
@@ -25,6 +26,12 @@ const routes = [
     path: "/locations",
     name: "Locations",
     component: Locations
+  },
+  {
+    path: "/locations/:location",
+    name: "Location",
+    component: Location,
+    props: true
   },
   {
     path: "/:type/success",
