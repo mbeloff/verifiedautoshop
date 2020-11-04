@@ -47,6 +47,8 @@ export default new Vuex.Store({
             telephone: "0424 975 336",
             image:
               "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462332/verified/v-exterior.jpg",
+            logo:
+              "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462491/verified/verified-logo-dark-bg.jpg",
             email: "bookings@verifiedautoshop.com",
             address: {
               "@type": "PostalAddress",
@@ -78,6 +80,10 @@ export default new Vuex.Store({
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             name: "Verified Auto Shop Christchurch",
+            image:
+              "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462851/verified/v-exterior-chch.jpg",
+            logo:
+              "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462491/verified/verified-logo-dark-bg.jpg",
             telephone: "0424 975 336",
             email: "bookings@verifiedautoshop.com",
             address: {
