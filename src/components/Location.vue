@@ -62,7 +62,12 @@
 
 <script>
 export default {
-  props: { location: String },
+  jsonld() {
+    return this.data.jsonld;
+  },
+  props: {
+    location: String
+  },
   data() {
     return {
       data: {}
@@ -77,6 +82,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   font-variation-settings: "wght" 400;
+
   span {
     font-variation-settings: "wght" 600;
   }
@@ -85,8 +91,11 @@ h1 {
 .location-grid {
   display: grid;
   grid-template-rows: auto auto;
+
   @media only screen and (min-width: 768px) {
     grid-template-columns: 1fr 1.5fr;
   }
 }
 </style>
+
+>

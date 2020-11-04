@@ -10,8 +10,13 @@ import VModal from "vue-js-modal";
 import upperFirst from "lodash/upperFirst";
 import camelCase from "lodash/camelCase";
 import VueGtm from "vue-gtm";
+import VueMeta from "vue-meta";
+import VueJsonLD from "vue-jsonld";
+
+Vue.use(VueJsonLD);
 // import Zendesk from "@dansmaculotte/vue-zendesk";
 Vue.use(VModal);
+Vue.use(VueMeta);
 Vue.config.productionTip = false;
 
 const requireComponent = require.context(

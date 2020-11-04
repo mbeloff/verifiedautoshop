@@ -39,7 +39,27 @@ export default new Vuex.Store({
           email: "bookings@verifiedautoshop.com",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           map:
-            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x925433f346606b25!2sVerified%20Auto%20Shop!5e0!3m2!1sen!2sau!4v1604448658879!5m2!1sen!2sau"
+            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x925433f346606b25!2sVerified%20Auto%20Shop!5e0!3m2!1sen!2sau!4v1604448658879!5m2!1sen!2sau",
+          jsonld: {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            name: "Verified Auto Shop Brisbane",
+            telephone: "0424 975 336",
+            email: "bookings@verifiedautoshop.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "46 Deshon St",
+              postalCode: "4102"
+            },
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: {
+                "@type": "DayOfWeek",
+                name: "Mo-Fr 08:00-16:00"
+              }
+            },
+            url: "http://www.verifiedautoshop.com/"
+          }
         },
         christchurch: {
           name: "Christchurch",
@@ -51,7 +71,28 @@ export default new Vuex.Store({
           email: "bookings@verifiedautoshop.com",
           token: "27b7c5186fa1eb92837c02a07b0227ca454fb598",
           map:
-            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11569.08424239832!2d172.6515898!3d-43.5383913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c4b43db87b3c0d5!2sverified%20auto%20shop!5e0!3m2!1sen!2sau!4v1604450474459!5m2!1sen!2sau"
+            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11569.08424239832!2d172.6515898!3d-43.5383913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c4b43db87b3c0d5!2sverified%20auto%20shop!5e0!3m2!1sen!2sau!4v1604450474459!5m2!1sen!2sau",
+          jsonld: {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            name: "Verified Auto Shop Christchurch",
+            telephone: "0424 975 336",
+            email: "bookings@verifiedautoshop.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "135 Ferry Rd",
+              addressLocality: "Christchurch",
+              postalCode: "8011"
+            },
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: {
+                "@type": "DayOfWeek",
+                name: "Mo-Fr 08:00-16:00"
+              }
+            },
+            url: "http://www.verifiedautoshop.com/"
+          }
         }
       }
     },
