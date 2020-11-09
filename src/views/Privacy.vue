@@ -459,6 +459,22 @@ p {
   margin-bottom: 1rem;
 }
 
+ul p {
+  margin-bottom: 0rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
 h2,
 h1,
 h3,
