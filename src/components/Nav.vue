@@ -252,14 +252,14 @@ export default {
                 type: "link",
                 text: "Brisbane",
                 path: {
-                  name: "Locations"
+                  name: "Location"
                 }
               },
               {
                 type: "link",
                 text: "Christchurch",
                 path: {
-                  name: "Locations"
+                  name: "Location"
                 }
               },
               {

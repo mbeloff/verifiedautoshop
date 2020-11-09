@@ -163,7 +163,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4 text-right">
           <ul class="list-unstyled text-muted">
             <li
               class="list-item mb-4"
@@ -183,7 +183,7 @@
                 mon-fri: 8am - 4 pm
               </p>
             </li>
-            <li class="list-item mb-4">
+            <li class="list-item">
               <i class="fas fa-envelope mr-2 color-prime"></i>
               <a
                 class="long-word"
@@ -191,6 +191,9 @@
               >
                 {{ $store.state.global.email }}</a
               >
+            </li>
+            <li class="list-item mb-4 text-right">
+              <router-link to="Privacy">Privacy Policy</router-link>
             </li>
           </ul>
         </div>

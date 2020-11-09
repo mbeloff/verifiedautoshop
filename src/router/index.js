@@ -7,6 +7,7 @@ const Contact = () => import("../views/Contact.vue");
 const Locations = () => import("../views/Locations.vue");
 const Services = () => import("../views/Services.vue");
 const Location = () => import("../views/Location.vue");
+const Privacy = () => import("../views/Privacy.vue");
 // const Form = () => import("../components/Form.vue");
 
 Vue.use(VueRouter);
@@ -61,6 +62,11 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact
+  },
+  {
+    path: "/privacy",
+    name: "Privacy",
+    component: Privacy
   },
   {
     path: "/404",
