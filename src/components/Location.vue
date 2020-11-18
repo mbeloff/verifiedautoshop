@@ -73,8 +73,18 @@ export default {
       data: {}
     };
   },
+  methods: {
+    getData() {
+      this.data = this.$store.state.global.loc[this.location.toLowerCase()];
+    }
+  },
   created() {
     this.data = this.$store.state.global.loc[this.location.toLowerCase()];
+  },
+  watch: {
+    location: function() {
+      this.getData();
+    }
   }
 };
 </script>
