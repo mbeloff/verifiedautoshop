@@ -68,7 +68,11 @@ export default {
   watch: {
     "$route.params.service": {
       handler: function() {
-        this.matchHash();
+        if (this.$route.params.service) {
+          this.matchHash();
+        } else {
+          this.selectTab(0);
+        }
       },
       deep: true,
       immediate: true
