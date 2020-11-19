@@ -39,13 +39,7 @@
                     v-for="star in Math.floor(review.stars)"
                     :key="star"
                   ></i>
-                  <i
-                    class="fas fa-star-half"
-                    v-for="half in Math.ceil(
-                      review.stars - Math.floor(review.stars)
-                    )"
-                    :key="half"
-                  ></i>
+                  <i class="fas fa-star-half" v-if="review.stars % 1"></i>
                 </p>
               </div>
             </div>
