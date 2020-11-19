@@ -14,16 +14,25 @@
             <div class="h-100 w-100">
               <div class="card-body small text-left">
                 <div
-                  class="mr-auto mb-3 rounded-circle shadow-lg"
-                  style="height:50px; width: 50px;"
+                  class="mr-auto mb-3 rounded-circle shadow-lg d-flex justify-content-center align-content-center"
+                  style="height:50px; width: 50px; background: var(--verified)"
                 >
                   <img
+                    v-if="test.img"
                     :src="test.img"
                     alt=""
-                    class="h-100 w-100 rounded-circle"
+                    class="h-100 w-100 rounded-circle "
                   />
+                  <span
+                    v-else
+                    class="justify-self-center align-self-center font-weight-bold h4 mt-2 text-white"
+                    style="height: max-content"
+                    >A</span
+                  >
                 </div>
-                <p class="test-author">{{ test.author }}</p>
+                <p class="test-author">
+                  {{ test.author }}
+                </p>
                 <p>{{ test.comment }}</p>
               </div>
             </div>
@@ -106,6 +115,11 @@ export default {
           comment: "Excellent service!"
         },
         {
+          author: "Alexis",
+          comment:
+            "Very good and honest mechanics, they helped me find a cheap fuel pump for my car and fit it perfectly for a very honest price. I strongly recommend them."
+        },
+        {
           author: "Liz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.webp",
@@ -116,8 +130,7 @@ export default {
           author: "Anna",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.webp",
-          comment:
-            "I'm so happy with the service and the price. Don't get ripped off elsewhere."
+          comment: "I'm so happy with the service and the price."
         },
         {
           author: "Waz",
