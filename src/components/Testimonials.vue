@@ -14,7 +14,7 @@
             <div class="h-100 w-100">
               <div class="card-body small text-left">
                 <div
-                  class="mr-auto mb-3 rounded-circle shadow-lg d-flex justify-content-center align-content-center"
+                  class="mr-auto mb-3 rounded-circle shadow-lg d-flex justify-content-center"
                   style="height:50px; width: 50px; background: var(--verified)"
                 >
                   <img
@@ -25,15 +25,17 @@
                   />
                   <span
                     v-else
-                    class="justify-self-center align-self-center font-weight-bold h4 mt-2 text-white"
-                    style="height: max-content"
-                    >A</span
+                    class="align-self-center font-weight-bold h4 my-0 text-white"
+                    >{{ test.initial }}</span
                   >
                 </div>
                 <p class="test-author">
                   {{ test.author }}
                 </p>
                 <p>{{ test.comment }}</p>
+                <p class="text-center mb-0" v-if="test.stars">
+                  <i class="fas fa-star" v-for="i in test.stars" :key="i"></i>
+                </p>
               </div>
             </div>
           </swiper-slide>
@@ -116,8 +118,10 @@ export default {
         },
         {
           author: "Alexis",
+          initial: "A",
           comment:
-            "Very good and honest mechanics, they helped me find a cheap fuel pump for my car and fit it perfectly for a very honest price. I strongly recommend them."
+            "Very good and honest mechanics, they helped me find a cheap fuel pump for my car and fit it perfectly for a very honest price. I strongly recommend them.",
+          stars: 5
         },
         {
           author: "Liz",
@@ -136,7 +140,8 @@ export default {
           author: "Waz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.webp",
-          comment: "Easy to recommend these guys, they did a great job."
+          comment: "Easy to recommend these guys, they did a great job.",
+          stars: 5
         }
       ]
     };
@@ -179,5 +184,9 @@ export default {
 .test-author {
   font-variation-settings: "wght" 800;
   color: rgb(41, 68, 126);
+}
+
+.fa-star {
+  color: rgb(255, 182, 25);
 }
 </style>
