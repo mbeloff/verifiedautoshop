@@ -8,8 +8,8 @@
         <swiper ref="mySwiperRef" class="swiper p-5" :options="swiperOption">
           <swiper-slide
             class="rounded shadow-lg"
-            v-for="(test, i) in testimonials"
-            :key="i"
+            v-for="(review, index) in testimonials"
+            :key="index"
           >
             <div class="h-100 w-100">
               <div class="card-body small text-left">
@@ -18,23 +18,34 @@
                   style="height:50px; width: 50px; background: var(--verified)"
                 >
                   <img
-                    v-if="test.img"
-                    :src="test.img"
+                    v-if="review.img"
+                    :src="review.img"
                     alt=""
                     class="h-100 w-100 rounded-circle "
                   />
                   <span
                     v-else
                     class="align-self-center font-weight-bold h4 my-0 text-white"
-                    >{{ test.initial }}</span
+                    >{{ review.initial }}</span
                   >
                 </div>
-                <p class="test-author">
-                  {{ test.author }}
+                <p class="review-author">
+                  {{ review.author }}
                 </p>
-                <p>{{ test.comment }}</p>
-                <p class="text-center mb-0" v-if="test.stars">
-                  <i class="fas fa-star" v-for="i in test.stars" :key="i"></i>
+                <p>{{ review.comment }}</p>
+                <p class="text-center mb-0" v-if="review.stars">
+                  <i
+                    class="fas fa-star"
+                    v-for="star in Math.floor(review.stars)"
+                    :key="star"
+                  ></i>
+                  <i
+                    class="fas fa-star-half"
+                    v-for="half in Math.ceil(
+                      review.stars - Math.floor(review.stars)
+                    )"
+                    :key="half"
+                  ></i>
                 </p>
               </div>
             </div>
@@ -141,7 +152,7 @@ export default {
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/5.webp",
           comment: "Easy to recommend these guys, they did a great job.",
-          stars: 5
+          stars: 4.5
         }
       ]
     };
@@ -181,12 +192,13 @@ export default {
   max-width: 100vw !important;
 }
 
-.test-author {
+.review-author {
   font-variation-settings: "wght" 800;
   color: rgb(41, 68, 126);
 }
 
-.fa-star {
+.fa-star,
+.fa-star-half {
   color: rgb(255, 182, 25);
 }
 </style>
