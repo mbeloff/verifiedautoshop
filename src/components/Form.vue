@@ -40,7 +40,11 @@
         <input type="hidden" :value="form.rego" name="registration_number" />
         <input type="hidden" :value="form.number" name="phone" />
         <input type="hidden" :value="form.email" name="email" />
-        <input type="hidden" :value="form.comments + carWashStr" name="note" />
+        <input
+          type="hidden"
+          :value="form.comments + carWashStr + promoCodeStr"
+          name="note"
+        />
         <input
           type="hidden"
           :value="formatDate(form.pickup) + ' ' + form.pickup_time"
@@ -278,6 +282,21 @@
             ><i class="textarea-icon fal fa-comment-alt-lines"></i>
           </div>
         </div>
+        <div class="row form-group">
+          <div class="col-12 col-sm-6 ml-auto form-group">
+            <input
+              name="promo code"
+              class="form-control"
+              type="text"
+              aria-label="Promo Code"
+              autocomplete="off"
+              placeholder="Promo Code"
+              maxlength="8"
+              v-model="promoCode"
+            />
+            <i class="form-icon fal fa-tags"></i>
+          </div>
+        </div>
         <div class="row">
           <div
             class="col-12 col-sm-6 ml-auto text-right mt-2 mt-sm-4 order-sm-2"
@@ -323,6 +342,8 @@ export default {
     return {
       carWash: false,
       carWashStr: "",
+      promoCode: "",
+      promoCodeStr: "",
       submitted: false,
       locationIndex: 0,
       locations: this.$store.state.global.locations,
@@ -357,7 +378,15 @@ export default {
       if (this.carWash == false) {
         this.carWashStr = "";
       } else {
-        this.carWashStr = "--- add car wash to booking ($35)";
+        this.carWashStr = " --- add car wash to booking ($35)";
+      }
+    },
+    promoCode: function() {
+      if (this.promoCode.toLowerCase() == "easi10") {
+        this.promoCodeStr =
+          " --- Promo Code easi10 - $89 Service + 10% off labour";
+      } else {
+        this.promoCodeStr = "";
       }
     }
   },
