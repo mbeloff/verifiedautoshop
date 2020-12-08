@@ -382,12 +382,19 @@ export default {
       }
     },
     promoCode: function() {
-      if (this.promoCode.toLowerCase() == "easi10") {
+      if (
+        this.locationIndex === 0 &&
+        this.promoCode.toLowerCase() == "easi10"
+      ) {
         this.promoCodeStr =
           " --- Promo Code easi10 - $89 Service + 10% off labour";
       } else {
         this.promoCodeStr = "";
       }
+    },
+    //reset promo code field on location change
+    locationIndex: function() {
+      this.promoCode = "";
     }
   },
   methods: {
