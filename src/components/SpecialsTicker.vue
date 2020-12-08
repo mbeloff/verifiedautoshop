@@ -2,7 +2,7 @@
   <div>
     <div class="specials-ticker container-fluid text-center">
       <p class="mb-0 py-2">
-        <span>Special:</span> Lube Service & Safety Check - <span>$99</span>
+        <span>Special:</span> Lube Service & Safety Check from <span>$99</span>
         <a
           role="button"
           class="ml-4 btn-mini bg-light small"
@@ -14,8 +14,8 @@
     <transition name="fade">
       <div class="more-info light-bg" v-if="show">
         <p class="mb-0 text-muted small px-2">
-          Offer valid for 4-cylinder vehicles. European models may incur
-          additional fee.
+          Offer valid for 4-cylinder petrol vehicles. European and/or diesel
+          models may incur additional fees.
         </p>
       </div>
     </transition>
