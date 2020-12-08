@@ -14,8 +14,8 @@
     <transition name="fade">
       <div class="more-info light-bg" v-if="show">
         <p class="mb-0 text-muted small px-2">
-          Offer valid for 4-cylinder petrol vehicles. European and/or diesel
-          models may incur additional fees.
+          Offer valid for most 4-cylinder petrol vehicles. European and/or
+          diesel models may incur additional fee.
         </p>
       </div>
     </transition>
