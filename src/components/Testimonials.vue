@@ -129,6 +129,13 @@ export default {
           stars: 5
         },
         {
+          author: "Tasman Emtage",
+          initial: "T",
+          comment: "",
+          stars: 5
+        },
+
+        {
           author: "Liz",
           img:
             "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/3.webp",
