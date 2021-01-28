@@ -42,7 +42,7 @@
         <input type="hidden" :value="form.email" name="email" />
         <input
           type="hidden"
-          :value="form.comments + carWashStr + promoCodeStr"
+          :value="form.comments + carWashStr + promoString"
           name="note"
         />
         <input
@@ -343,7 +343,7 @@ export default {
       carWash: false,
       carWashStr: "",
       promoCode: "",
-      promoCodeStr: "",
+      promoString: "",
       submitted: false,
       locationIndex: 0,
       locations: this.$store.state.global.locations,
@@ -382,16 +382,15 @@ export default {
       }
     },
     promoCode: function() {
+      this.promoString = "";
       if (this.locationIndex === 0 && this.promoCode) {
         this.promoCode = this.promoCode.toLowerCase();
         if (this.promoCode == "easi10") {
-          this.promoCodeStr =
+          this.promoString =
             " --- Promo Code easi10 - $89 Service + 10% off labour";
         } else if (this.promoCode == "ver10") {
-          this.promoCodeStr =
+          this.promoString =
             " --- Promo Code ver10 - 10% of Minor Or Major Service";
-        } else {
-          this.promoCodeStr = "";
         }
       }
     },
