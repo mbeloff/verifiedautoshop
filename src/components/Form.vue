@@ -390,7 +390,7 @@ export default {
             " --- Promo Code easi10 - $89 Service + 10% off labour";
         } else if (this.promoCode == "ver10") {
           this.promoString =
-            " --- Promo Code ver10 - 10% of Minor Or Major Service";
+            " --- Promo Code ver10 - 10% off Minor Or Major Service";
         }
       }
     },
