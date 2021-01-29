@@ -4,10 +4,10 @@
       <div class="row fp-banner">
         <div class="overlay"></div>
         <picture>
-          <source srcset="../assets/bmw2.webp" type="image/webp" />
-          <source srcset="../assets/bmw2.jpg" type="image/jpg" />
+          <!-- <source srcset="../assets/bmw2.webp" type="image/webp" />
+          <source srcset="../assets/bmw2.jpg" type="image/jpg" /> -->
           <img
-            src="../assets/bmw2.jpg"
+            src="https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1060/q_auto,f_auto/v1/verified/8.jpg"
             alt="Stylish photo of verified auto bmw"
             class="mx-auto position-absolute banner-img"
           />
