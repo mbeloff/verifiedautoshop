@@ -44,14 +44,14 @@ export default {
 }
 
 .more-info {
-  height: 50px;
+  height: 70px;
   display: grid;
   place-items: center;
 }
 .fade-enter-active,
 .fade-leave-active {
   transition: height 0.5s, opacity 0.5s;
-  height: 50px;
+  height: 70px;
 }
 .fade-enter,
 .fade-leave-to {
