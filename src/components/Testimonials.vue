@@ -117,8 +117,9 @@ export default {
       testimonials: [
         {
           author: "Serena",
-          img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.webp",
+          initial: "S",
+          // img:
+          // "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.webp",
           comment: "Excellent service!"
         },
         {
@@ -144,8 +145,9 @@ export default {
         },
         {
           author: "Anna",
-          img:
-            "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.webp",
+          initial: "A",
+          // img:
+          //   "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/4.webp",
           comment: "I'm so happy with the service and the price."
         },
         {
