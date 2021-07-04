@@ -16,7 +16,7 @@ export default new Vuex.Store({
           city: "Brisbane",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           index: 0,
-          phone: "0424 975 336"
+          phone: "0411 244 929"
         },
         {
           city: "Christchurch",
