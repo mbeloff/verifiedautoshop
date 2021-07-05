@@ -5,7 +5,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     global: {
-      phone: "0424 975 336",
+      phone: "0411 244 929",
       email: "bookings@verifiedautoshop.com",
       //
       // Original data for form
@@ -35,7 +35,7 @@ export default new Vuex.Store({
           locality: "Woolloongabba",
           city: "Brisbane",
           postcode: "4102",
-          phone: "0424 975 336",
+          phone: "0411 244 929",
           email: "bookings@verifiedautoshop.com",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           map:
