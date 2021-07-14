@@ -146,10 +146,10 @@
               on the road.
             </p>
             <p>
-              If your brakes are performing like they used to, or your noticing
-              any noise or change in steering when braking, give Verified Auto
-              Shop a call and get your car checked out by our qualified
-              technicians.
+              If your brakes aren't performing like they used to, or you're
+              noticing any noise or change in steering when braking, give
+              Verified Auto Shop a call and get your car checked out by our
+              qualified technicians.
             </p>
             <p class="color-prime font-weight-bold mb-1">
               Common Steering and Suspension Problems:
