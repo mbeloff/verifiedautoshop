@@ -31,7 +31,7 @@ export default new Vuex.Store({
       loc: {
         brisbane: {
           name: "Brisbane",
-          street: "46 Deshon St",
+          street: "100 Longlands St",
           locality: "Woolloongabba",
           city: "Brisbane",
           postcode: "4102",
@@ -39,7 +39,7 @@ export default new Vuex.Store({
           email: "bookings@verifiedautoshop.com",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           map:
-            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14157.078780074915!2d153.0441013!3d-27.4919868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x925433f346606b25!2sVerified%20Auto%20Shop!5e0!3m2!1sen!2sau!4v1604448658879!5m2!1sen!2sau",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.286743752041!2d153.04186376505737!3d-27.491456432881755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d28d9ccb%3A0x2f93bd23fe7dd95a!2s100%20Longlands%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1628635830561!5m2!1sen!2sau",
           jsonld: {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
