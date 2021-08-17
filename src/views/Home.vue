@@ -7,8 +7,7 @@
           <!-- <source srcset="../assets/bmw2.webp" type="image/webp" />
           <source srcset="../assets/bmw2.jpg" type="image/jpg" /> -->
           <img
-            src="https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fit,w_1060/q_auto,f_auto/v1/verified/8.jpg"
-            alt="Stylish photo of verified auto bmw"
+            alt="Verfied Auto Front Entrance"
             class="mx-auto position-absolute banner-img"
           />
         </picture>
@@ -106,11 +105,21 @@ export default {
   width: 100%;
   max-width: 100vw;
   object-fit: cover;
+  object-position: left;
+  filter: brightness(0.75);
+  content: url("https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_1024/v1629162334/verified/front-2.jpg");
+
+  @media only screen and (max-width: 768px) {
+    content: url("https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_768/v1629162334/verified/front-2.jpg");
+  }
+  @media only screen and (max-width: 546px) {
+    content: url("https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_546/v1629162334/verified/front-2.jpg");
+  }
 }
 
 .banner-logo {
   max-width: 500px;
-  filter: drop-shadow(4px 6px 5px rgba(33, 33, 37, 0.411)) opacity(0.9);
+  filter: drop-shadow(4px 6px 15px rgba(26, 26, 29, 0.911));
   @media only screen and (max-width: 546px) {
     max-width: 90vw;
   }
