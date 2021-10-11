@@ -128,7 +128,7 @@
                 >Paint & Panel</router-link
               >
             </li>
-            <li class="list-item">
+            <!-- <li class="list-item">
               <router-link
                 :to="{
                   name: 'Services',
@@ -136,7 +136,7 @@
                 }"
                 >Car Grooming</router-link
               >
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4">

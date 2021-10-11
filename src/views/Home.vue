@@ -105,7 +105,7 @@ export default {
   width: 100%;
   max-width: 100vw;
   object-fit: cover;
-  object-position: left;
+  object-position: top left;
   filter: brightness(0.75);
   content: url("https://res.cloudinary.com/dg5ybbkbh/image/upload/q_auto,f_auto/c_scale,w_1024/v1629162334/verified/front-2.jpg");
 

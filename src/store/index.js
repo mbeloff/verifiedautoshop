@@ -24,6 +24,18 @@ export default new Vuex.Store({
           index: 1,
           phone: "03 377 3716"
         }
+        // {
+        //   city: "Perth",
+        //   token: "4a98d038aa7c10af0cdfa0489bd20dc1951b955d",
+        //   index: 2,
+        //   phone: ""
+        // },
+        // {
+        //   city: "Broome",
+        //   token: "",
+        //   index: 3,
+        //   phone: ""
+        // }
       ],
       //
       // New data for pages
@@ -39,7 +51,7 @@ export default new Vuex.Store({
           email: "bookings@verifiedautoshop.com",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           map:
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.286743752041!2d153.04186376505737!3d-27.491456432881755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d28d9ccb%3A0x2f93bd23fe7dd95a!2s100%20Longlands%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1628635830561!5m2!1sen!2sau",
+            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2104.470426525506!2d153.0445784004174!3d-27.4915643319131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x925433f346606b25!2sVerified%20Auto%20Shop!5e0!3m2!1sen!2sau!4v1630298591128!5m2!1sen!2sau",
           jsonld: {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
@@ -102,6 +114,78 @@ export default new Vuex.Store({
             url: "http://www.verifiedautoshop.com/"
           }
         }
+        // broome: {
+        //   name: "Broome",
+        //   street: "2/97 Guy St",
+        //   locality: "Bilingurr",
+        //   city: "Broome",
+        //   postcode: "6725",
+        //   phone: "",
+        //   email: "bookings@verifiedautoshop.com",
+        //   token: "",
+        //   map:
+        //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15181.266497351337!2d122.21568443749314!3d-17.964000303766717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c7a2ee141754ced%3A0x49310c44b1301cf1!2s2%2F97%20Guy%20St%2C%20Broome%20WA%206725!5e0!3m2!1sen!2sau!4v1626389285812!5m2!1sen!2sau",
+        //   jsonld: {
+        //     "@context": "http://schema.org",
+        //     "@type": "LocalBusiness",
+        //     name: "Verified Auto Shop Broome",
+        //     image: "",
+        //     logo:
+        //       "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462491/verified/verified-logo-dark-bg.jpg",
+        //     telephone: "",
+        //     email: "bookings@verifiedautoshop.com",
+        //     address: {
+        //       "@type": "PostalAddress",
+        //       streetAddress: "2/97 Guy St",
+        //       addressLocality: "Bilingurr",
+        //       postalCode: "6725"
+        //     },
+        //     openingHoursSpecification: {
+        //       "@type": "OpeningHoursSpecification",
+        //       dayOfWeek: {
+        //         "@type": "DayOfWeek",
+        //         name: "Mo-Fr 08:00-16:00"
+        //       }
+        //     },
+        //     url: "http://www.verifiedautoshop.com/"
+        //   }
+        // },
+        // perth: {
+        //   name: "Perth",
+        //   street: "28 Charles Street",
+        //   locality: "Bentley",
+        //   city: "Perth",
+        //   postcode: "6102",
+        //   phone: "",
+        //   email: "bookings@verifiedautoshop.com",
+        //   token: "4a98d038aa7c10af0cdfa0489bd20dc1951b955d",
+        //   map:
+        //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13534.548626070284!2d115.91567024101118!3d-31.997850249426946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bc133cfe9a11%3A0xf48252fffe4fd3d6!2s28%20Charles%20St%2C%20Bentley%20WA%206102!5e0!3m2!1sen!2sau!4v1626389944031!5m2!1sen!2sau",
+        //   jsonld: {
+        //     "@context": "http://schema.org",
+        //     "@type": "LocalBusiness",
+        //     name: "Verified Auto Shop Perth",
+        //     image: "",
+        //     logo:
+        //       "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462491/verified/verified-logo-dark-bg.jpg",
+        //     telephone: "",
+        //     email: "bookings@verifiedautoshop.com",
+        //     address: {
+        //       "@type": "PostalAddress",
+        //       streetAddress: "28 Charles Street",
+        //       addressLocality: "Bentley",
+        //       postalCode: "6102"
+        //     },
+        //     openingHoursSpecification: {
+        //       "@type": "OpeningHoursSpecification",
+        //       dayOfWeek: {
+        //         "@type": "DayOfWeek",
+        //         name: "Mo-Fr 08:00-16:00"
+        //       }
+        //     },
+        //     url: "http://www.verifiedautoshop.com/"
+        //   }
+        // }
       }
     },
     selectedMake: "Vehicle Make",

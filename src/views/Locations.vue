@@ -1,20 +1,20 @@
 <template>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center">
       <picture>
         <source srcset="../assets/sign-banner-c.webp" type="image/webp" />
         <source srcset="../assets/sign-banner-c.jpg" type="image/jpg" />
-        <img src="../assets/sign-banner-c.jpg" alt="" class="banner-img" />
+        <img src="../assets/sign-banner-c.jpg" alt="" class="banner" />
       </picture>
     </div>
 
-    <div class="container py-5">
+    <!-- <div class="container py-5">
       <Title>Locations</Title>
       <p>
-        Verified Auto Shop is expanding and currently has locations in Brisbane,
-        Australia and Christchuch, New Zealand.
+        Verified Auto Shop is expanding and currently has 4 locations in
+        Australia and New Zealand.
       </p>
-    </div>
+    </div> -->
     <Location
       v-for="location in this.$store.state.global.loc"
       :key="location"
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.banner-img {
+.banner {
   object-fit: cover;
   min-height: 100px;
   max-height: 300px;

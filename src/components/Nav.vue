@@ -1,6 +1,6 @@
 <template>
   <div class="nav-wrapper">
-    <div class="position-absolute" style="width: 0; height: 0">
+    <!-- <div class="position-absolute" style="width: 0; height: 0">
       <div id="servicing"></div>
       <div id="air-con"></div>
       <div id="diagnostics"></div>
@@ -10,7 +10,7 @@
       <div id="tyres"></div>
       <div id="paint-and-panel"></div>
       <div id="car-grooming"></div>
-    </div>
+    </div> -->
     <div class="container">
       <vue-navigation-bar
         :options="navbarOptions"
@@ -147,15 +147,15 @@ export default {
           }
         });
       }
-      if (text === "Car Grooming") {
-        this.$router.push({
-          name: "Services",
+      // if (text === "Car Grooming") {
+      //   this.$router.push({
+      //     name: "Services",
 
-          params: {
-            service: "car-wash"
-          }
-        });
-      }
+      //     params: {
+      //       service: "car-wash"
+      //     }
+      //   });
+      // }
     }
   },
   data() {
@@ -233,14 +233,14 @@ export default {
                 path: {
                   name: "Services"
                 }
-              },
-              {
-                type: "link",
-                text: "Car Grooming",
-                path: {
-                  name: "Services"
-                }
               }
+              // {
+              //   type: "link",
+              //   text: "Car Grooming",
+              //   path: {
+              //     name: "Services"
+              //   }
+              // }
             ]
           },
           {
@@ -253,6 +253,9 @@ export default {
                 text: "Brisbane",
                 path: {
                   name: "Location"
+                },
+                params: {
+                  location: "Brisbane"
                 }
               },
               {
@@ -260,6 +263,9 @@ export default {
                 text: "Christchurch",
                 path: {
                   name: "Location"
+                },
+                params: {
+                  location: "Christchurch"
                 }
               },
               {

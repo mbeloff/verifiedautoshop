@@ -40,11 +40,7 @@
         <input type="hidden" :value="form.rego" name="registration_number" />
         <input type="hidden" :value="form.number" name="phone" />
         <input type="hidden" :value="form.email" name="email" />
-        <input
-          type="hidden"
-          :value="form.comments + carWashStr + promoString"
-          name="note"
-        />
+        <input type="hidden" :value="form.comments + promoString" name="note" />
         <input
           type="hidden"
           :value="formatDate(form.pickup) + ' ' + form.pickup_time"
@@ -79,7 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <!-- <div class="col-12 col-md-6">
             <label for="" class="section-label">Car Wash</label>
             <div class="row form-group">
               <div class="col-12">
@@ -98,7 +94,7 @@
                 <i class="form-icon fal fa-car-wash"></i>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="row form-group">
@@ -340,13 +336,10 @@ export default {
   },
   data() {
     return {
-      carWash: false,
-      carWashStr: "",
       promoCode: "",
       promoString: "",
       submitted: false,
       locationIndex: 0,
-      locations: this.$store.state.global.locations,
       makes: this.$store.state.makes,
       selectedModel: this.$store.state.selectedModel,
       selectedMake: this.$store.state.selectedMake,
@@ -362,6 +355,11 @@ export default {
       }
     };
   },
+  computed: {
+    locations() {
+      return this.$store.state.global.locations.filter(el => el.token);
+    }
+  },
   watch: {
     selectedMake: function() {
       this.form.make = this.selectedMake.label;
@@ -373,13 +371,6 @@ export default {
     "form.dropoff": function() {
       this.form.pickup = this.form.dropoff;
       this.datepicker.disabledPickup.to = this.form.dropoff;
-    },
-    carWash: function() {
-      if (this.carWash == false) {
-        this.carWashStr = "";
-      } else {
-        this.carWashStr = " --- add car wash to booking ($35)";
-      }
     },
     promoCode: function() {
       this.promoString = "";
