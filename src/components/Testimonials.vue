@@ -160,7 +160,7 @@ export default {
           title: "Verified Autoshop on AutoGuru",
           link: "https://www.autoguru.com.au/s/verified-autoshop",
           stars: 4.7,
-          reviews: 14
+          reviews: 23
         },
         {
           site: "Google",
@@ -169,25 +169,23 @@ export default {
           title: "review us on Google",
           link: "https://g.page/r/CSVrYEbzM1SSEAg/review",
           stars: 5,
-          reviews: 4
+          reviews: 7
         }
       ],
       testimonials: [
         {
           author: "Nick L",
           initial: "N",
-          // img:
-          // "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.webp",
           comment:
             "top workmanship an really good pricing. will be back cheers",
           stars: 5
         },
         {
-          author: "Serena",
+          author: "Simon V",
           initial: "S",
-          // img:
-          // "https://res.cloudinary.com/dg5ybbkbh/image/upload/c_fill,h_100,w_100/v1600665252/verified/1.webp",
-          comment: "Excellent service!"
+          comment:
+            "Jimmy is a legend! Called, dropped off and fixed a broken headlight within the hour! Way cheaper than what I was quoted elsewhere. Will happily come to him for my regular service in the future",
+          stars: 5
         },
         {
           author: "Alexis",
@@ -197,9 +195,10 @@ export default {
           stars: 5
         },
         {
-          author: "Tasman E",
-          initial: "T",
-          comment: "",
+          author: "Jodie V",
+          initial: "J",
+          comment:
+            "Would recommend. We had an issue with our Nissan Pathfinder burning oil after a routine service done at our regular mechanic. They suggested we needed a new engine but Verified spent the time and found the issue, fixed it and car was like new again.",
           stars: 5
         },
         {

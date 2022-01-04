@@ -24,7 +24,7 @@
             {{ this.data.postcode }}
           </p>
 
-          <p class="mb-0">Mon - Fri: 8am - 4pm</p>
+          <p class="mb-0">Mon - Fri: 7am - 5pm</p>
           <p>Sat - Sun: Closed</p>
         </div>
         <div>

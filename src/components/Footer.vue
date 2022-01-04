@@ -180,7 +180,7 @@
               <p class="mb-0 ">
                 {{ location.street }} <br />{{ location.locality }},
                 {{ location.postcode }} <br />
-                mon-fri: 8am - 4 pm
+                mon-fri: 7am - 5pm
               </p>
             </li>
             <li class="list-item">

@@ -71,7 +71,7 @@ export default new Vuex.Store({
               "@type": "OpeningHoursSpecification",
               dayOfWeek: {
                 "@type": "DayOfWeek",
-                name: "Mo-Fr 08:00-16:00"
+                name: "Mo-Fr 07:00-17:00"
               }
             },
             url: "http://www.verifiedautoshop.com/"
