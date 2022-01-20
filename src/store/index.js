@@ -205,10 +205,14 @@ export default new Vuex.Store({
       pickup_time: "15:00"
     },
     makes: [
-      { label: "Other/Not Listed", models: ["Other/Not Listed"] },
+      {
+        label: "Other/Not Listed",
+        models: ["Other/Not Listed"]
+      },
       {
         label: "Alfa Romeo",
         models: [
+          "Other/Not Listed",
           "1300",
           "147",
           "155",
@@ -238,6 +242,7 @@ export default new Vuex.Store({
       {
         label: "Audi",
         models: [
+          "Other/Not Listed",
           "100",
           "90",
           "A1",
@@ -281,6 +286,7 @@ export default new Vuex.Store({
       {
         label: "Aston Martin",
         models: [
+          "Other/Not Listed",
           "DB11",
           "DB2/4",
           "DB5",
@@ -299,6 +305,7 @@ export default new Vuex.Store({
       {
         label: "BMW",
         models: [
+          "Other/Not Listed",
           "1 Series",
           "1 Series M",
           "2 Seires",
@@ -337,6 +344,7 @@ export default new Vuex.Store({
       {
         label: "Chevrolet",
         models: [
+          "Other/Not Listed",
           "3100",
           "Apache",
           "Avalanche",
@@ -373,6 +381,7 @@ export default new Vuex.Store({
       {
         label: "Chrysler",
         models: [
+          "Other/Not Listed",
           "300",
           "300c",
           "62",
@@ -396,6 +405,7 @@ export default new Vuex.Store({
       {
         label: "Citroen",
         models: [
+          "Other/Not Listed",
           "2CV",
           "Berlingo",
           "BX",
@@ -420,6 +430,7 @@ export default new Vuex.Store({
       {
         label: "Daewoo",
         models: [
+          "Other/Not Listed",
           "BH117",
           "Cielo",
           "Kalos",
@@ -433,6 +444,7 @@ export default new Vuex.Store({
       {
         label: "Daihatsu",
         models: [
+          "Other/Not Listed",
           "Atrai",
           "Charade",
           "Cuore",
@@ -447,6 +459,7 @@ export default new Vuex.Store({
       {
         label: "Dodge",
         models: [
+          "Other/Not Listed",
           "AT4",
           "Avenger",
           "Caliber",
@@ -468,6 +481,7 @@ export default new Vuex.Store({
       {
         label: "Fiat",
         models: [
+          "Other/Not Listed",
           "1100",
           "124",
           "128",
@@ -494,6 +508,7 @@ export default new Vuex.Store({
       {
         label: "Ford",
         models: [
+          "Other/Not Listed",
           "Anglia",
           "Bronco",
           "Capri",
@@ -557,6 +572,8 @@ export default new Vuex.Store({
       {
         label: "Ford Performance Vehicles",
         models: [
+          "Other/Not Listed",
+          "Other/Not Listed",
           "F6",
           "F6 E",
           "F6 Tornado",
@@ -573,12 +590,16 @@ export default new Vuex.Store({
       },
       {
         label: "Great Wall",
-        models: ["Steed", "V200", "V240", "X200", "X240"]
+        models: ["Other/Not Listed", "Steed", "V200", "V240", "X200", "X240"]
       },
-      { label: "Hino", models: ["300 Series", "500 Series"] },
+      {
+        label: "Hino",
+        models: ["Other/Not Listed", "300 Series", "500 Series"]
+      },
       {
         label: "Holden",
         models: [
+          "Other/Not Listed",
           "Acadia",
           "Adventra",
           "Apollo",
@@ -639,6 +660,7 @@ export default new Vuex.Store({
       {
         label: "Holden Special Vehicles",
         models: [
+          "Other/Not Listed",
           "Avalanche",
           "Clubsport",
           "Colorado",
@@ -657,6 +679,7 @@ export default new Vuex.Store({
       {
         label: "Honda",
         models: [
+          "Other/Not Listed",
           "Accord",
           "Accord Euro",
           "Beat",
@@ -684,6 +707,7 @@ export default new Vuex.Store({
       {
         label: "Hyundai",
         models: [
+          "Other/Not Listed",
           "Accent",
           "Coupe",
           "Elantra",
@@ -714,6 +738,7 @@ export default new Vuex.Store({
       {
         label: "INFINITI",
         models: [
+          "Other/Not Listed",
           "FX30d",
           "FX50",
           "G37",
@@ -730,11 +755,19 @@ export default new Vuex.Store({
       },
       {
         label: "Isuzu",
-        models: ["D-MAX", "F Series", "MU", "MU-X", "N Series"]
+        models: [
+          "Other/Not Listed",
+          "D-MAX",
+          "F Series",
+          "MU",
+          "MU-X",
+          "N Series"
+        ]
       },
       {
         label: "Jaguar",
         models: [
+          "Other/Not Listed",
           "240",
           "420",
           "420G",
@@ -774,6 +807,7 @@ export default new Vuex.Store({
       {
         label: "Jeep",
         models: [
+          "Other/Not Listed",
           "Cherokee",
           "CJ7",
           "Commander",
@@ -788,6 +822,7 @@ export default new Vuex.Store({
       {
         label: "Kia",
         models: [
+          "Other/Not Listed",
           "Carnival",
           "Cerato",
           "Ceres",
@@ -811,6 +846,7 @@ export default new Vuex.Store({
       {
         label: "Land Rover",
         models: [
+          "Other/Not Listed",
           "110",
           "Defender",
           "Discovery",
@@ -830,6 +866,7 @@ export default new Vuex.Store({
       {
         label: "Lexus",
         models: [
+          "Other/Not Listed",
           "CT",
           "ES",
           "GS",
@@ -846,6 +883,7 @@ export default new Vuex.Store({
       {
         label: "Maserati",
         models: [
+          "Other/Not Listed",
           "3200GT",
           "3500GT",
           "Coupe",
@@ -863,6 +901,7 @@ export default new Vuex.Store({
       {
         label: "McLaren",
         models: [
+          "Other/Not Listed",
           "540C",
           "570GT",
           "570S",
@@ -877,6 +916,7 @@ export default new Vuex.Store({
       {
         label: "Mazda",
         models: [
+          "Other/Not Listed",
           "1000",
           "1200",
           "121",
@@ -915,6 +955,7 @@ export default new Vuex.Store({
       {
         label: "Mercedes-Benz",
         models: [
+          "Other/Not Listed",
           "170S",
           "180E",
           "190B",
@@ -1008,6 +1049,7 @@ export default new Vuex.Store({
       {
         label: "MG",
         models: [
+          "Other/Not Listed",
           "1100",
           "A",
           "B",
@@ -1034,6 +1076,7 @@ export default new Vuex.Store({
       {
         label: "Mini",
         models: [
+          "Other/Not Listed",
           "Cabrio",
           "Clubman",
           "Convertible",
@@ -1047,6 +1090,7 @@ export default new Vuex.Store({
       {
         label: "Mitsubishi",
         models: [
+          "Other/Not Listed",
           "3000GT",
           "380",
           "Airtrek",
@@ -1083,6 +1127,7 @@ export default new Vuex.Store({
       {
         label: "Nissan",
         models: [
+          "Other/Not Listed",
           "1200",
           "200SX",
           "280ZX",
@@ -1133,11 +1178,21 @@ export default new Vuex.Store({
       },
       {
         label: "Proton",
-        models: ["Exora", "Gen2", "Jumbuck", "Persona", "Preve", "S16", "Savvy"]
+        models: [
+          "Other/Not Listed",
+          "Exora",
+          "Gen2",
+          "Jumbuck",
+          "Persona",
+          "Preve",
+          "S16",
+          "Savvy"
+        ]
       },
       {
         label: "Peugeot",
         models: [
+          "Other/Not Listed",
           "2008",
           "205",
           "206",
@@ -1164,6 +1219,7 @@ export default new Vuex.Store({
       {
         label: "Porsche",
         models: [
+          "Other/Not Listed",
           "356",
           "356A",
           "356B",
@@ -1188,6 +1244,7 @@ export default new Vuex.Store({
       {
         label: "Renault",
         models: [
+          "Other/Not Listed",
           "5",
           "750",
           "Captur",
@@ -1210,6 +1267,7 @@ export default new Vuex.Store({
       {
         label: "SsangYong",
         models: [
+          "Other/Not Listed",
           "Actyon",
           "Actyon Sports",
           "Korando",
@@ -1224,6 +1282,7 @@ export default new Vuex.Store({
       {
         label: "Suburu",
         models: [
+          "Other/Not Listed",
           "Brumby",
           "BRZ",
           "Forester",
@@ -1240,6 +1299,7 @@ export default new Vuex.Store({
       {
         label: "Suzuki",
         models: [
+          "Other/Not Listed",
           "Alto",
           "APV",
           "Baleno",
@@ -1260,10 +1320,14 @@ export default new Vuex.Store({
           "XL-7"
         ]
       },
-      { label: "Tesla", models: ["Model 3", "Model S", "Model X"] },
+      {
+        label: "Tesla",
+        models: ["Other/Not Listed", "Model 3", "Model S", "Model X"]
+      },
       {
         label: "Toyota",
         models: [
+          "Other/Not Listed",
           "4Runner",
           "86",
           "Alphard",
@@ -1326,10 +1390,14 @@ export default new Vuex.Store({
           "Yaris"
         ]
       },
-      { label: "TRD", models: ["Aurion", "Hilux"] },
+      {
+        label: "TRD",
+        models: ["Other/Not Listed", "Aurion", "Hilux"]
+      },
       {
         label: "Volkswagon",
         models: [
+          "Other/Not Listed",
           "1500",
           "1600",
           "Amarok",
@@ -1361,6 +1429,7 @@ export default new Vuex.Store({
       {
         label: "Volvo",
         models: [
+          "Other/Not Listed",
           "122S",
           "240",
           "245",
