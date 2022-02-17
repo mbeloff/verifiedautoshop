@@ -66,6 +66,15 @@ export default {
           }
         });
       }
+      if (text === "Perth") {
+        this.$router.push({
+          name: "Location",
+
+          params: {
+            location: "Perth"
+          }
+        });
+      }
       if (text === "Christchurch") {
         this.$router.push({
           name: "Location",
@@ -270,12 +279,22 @@ export default {
               },
               {
                 type: "link",
-                text: "Make an Enquiry",
+                text: "Perth",
                 path: {
-                  name: "Contact"
+                  name: "Location"
                 },
-                iconLeft: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
+                params: {
+                  location: "Perth"
+                }
               }
+              // {
+              //   type: "link",
+              //   text: "Make an Enquiry",
+              //   path: {
+              //     name: "Contact"
+              //   },
+              //   iconLeft: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
+              // }
             ]
           }
         ],

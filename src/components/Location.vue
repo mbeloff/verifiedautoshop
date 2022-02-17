@@ -24,7 +24,9 @@
             {{ this.data.postcode }}
           </p>
 
-          <p class="mb-0">Mon - Fri: 7am - 5pm</p>
+          <p class="mb-0">
+            {{ data.jsonld.openingHoursSpecification.dayOfWeek.name }}
+          </p>
           <p>Sat - Sun: Closed</p>
         </div>
         <div>

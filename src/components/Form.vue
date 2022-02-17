@@ -196,7 +196,9 @@
 
         <div class="row form-group">
           <div class="col-sm-6">
-            <label class="section-label" for="drop">Dropoff Time</label>
+            <label class="section-label" for="drop"
+              >Preferred Dropoff Time</label
+            >
             <div class="row form-group">
               <datepicker
                 class="col-7"
@@ -229,7 +231,9 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <label class="section-label" for="pick">Collect Time</label>
+            <label class="section-label" for="pick"
+              >Preferred Collect Time</label
+            >
             <div class="row form-group">
               <datepicker
                 class="col-7"

@@ -156,11 +156,11 @@
                 >Locations</router-link
               >
             </li>
-            <li class="list-item">
+            <!-- <li class="list-item">
               <router-link :to="{ name: 'Contact', hash: '#' }"
                 >Contact</router-link
               >
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-right">
@@ -170,27 +170,26 @@
               v-for="(location, i) in $store.state.global.loc"
               :key="i"
             >
-              <p class="mb-2 font-weight-bold">
-                Verified Auto Shop {{ location.name }}
+              <p class="mb-2">
+                Verified Auto Shop
+                <span class="text-white font-weight-bold">{{
+                  location.name
+                }}</span>
               </p>
               <a class="h4" :href="` tel:${location.phone} `"
                 ><i class="fas fa-phone mr-2 color-prime"></i
                 >{{ location.phone }}</a
               ><br />
+              <i class="fas fa-envelope mr-2 color-prime"></i
+              ><a class="long-word" :href="`mailto:` + location.email">
+                {{ location.email }}</a
+              >
+              <br />
               <p class="mb-0 ">
                 {{ location.street }} <br />{{ location.locality }},
                 {{ location.postcode }} <br />
-                mon-fri: 7am - 5pm
+                {{ location.jsonld.openingHoursSpecification.dayOfWeek.name }}
               </p>
-            </li>
-            <li class="list-item">
-              <i class="fas fa-envelope mr-2 color-prime"></i>
-              <a
-                class="long-word"
-                :href="`mailto:` + $store.state.global.email"
-              >
-                {{ $store.state.global.email }}</a
-              >
             </li>
             <li class="list-item mb-4 text-right">
               <router-link to="Privacy">Privacy Policy</router-link>

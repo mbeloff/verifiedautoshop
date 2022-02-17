@@ -20,7 +20,12 @@
               id="VerifiedEnquiry"
               action="/success"
               @submit.prevent="handleSubmit"
-              :subject="'VerifiedAutoshop Enquiry from - ' + enquire.name"
+              :subject="
+                'VerifiedAutoshop ' +
+                  enquire.location +
+                  ' Enquiry from - ' +
+                  enquire.name
+              "
             >
               <div class="row">
                 <div class="col-md-12 form-group">
@@ -136,6 +141,7 @@
                       >
                         <option value="Brisbane" selected>Brisbane</option>
                         <option value="Christchurch">Christchurch</option>
+                        <option value="Christchurch">Perth</option>
                       </select>
                       <i class="form-icon fal fa-globe"></i>
                     </div>
@@ -159,16 +165,16 @@
       </div>
     </div>
 
-    <div class="light-bg">
+    <!-- <div class="light-bg">
       <LocationInfo></LocationInfo>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import LocationInfo from "@/components/LocationInfo.vue";
+// import LocationInfo from "@/components/LocationInfo.vue";
 export default {
-  components: { LocationInfo },
+  // components: { LocationInfo },
   data() {
     return {
       enquire: {

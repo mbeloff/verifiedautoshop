@@ -9,7 +9,7 @@
 import Location from "@/components/Location.vue";
 import Services from "@/components/Services.vue";
 export default {
-  components: { Location, Services },
+  components: { Location, Services }
 };
 </script>
 
