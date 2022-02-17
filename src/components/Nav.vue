@@ -53,10 +53,10 @@ import "vue-navigation-bar/dist/vue-navigation-bar.css";
 export default {
   methods: {
     vnbItemClicked(text) {
-      // if (text === "Book Now") {
-      //   // this.$zendesk.hide();
-      //   this.$modal.show("modal");
-      // }
+      if (text === "Book Now") {
+        // this.$zendesk.hide();
+        this.$modal.show("modal");
+      }
       if (text === "Brisbane") {
         this.$router.push({
           name: "Location",
@@ -297,17 +297,17 @@ export default {
               // }
             ]
           }
+        ],
+        menuOptionsRight: [
+          {
+            isLinkAction: true,
+            type: "button",
+            text: "Book Now",
+            path: "",
+            class: "btn btn-cs btn-prime",
+            iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
+          }
         ]
-        // menuOptionsRight: [
-        //   {
-        //     isLinkAction: true,
-        //     type: "button",
-        //     text: "Book Now",
-        //     path: "",
-        //     class: "btn btn-cs btn-prime",
-        //     iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
-        //   }
-        // ]
       }
     };
   }

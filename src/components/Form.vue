@@ -55,6 +55,10 @@
           <div class="col-12 col-md-6">
             <div class="row ">
               <label for="" class="col-12 section-label">Select Location</label>
+              <p class="px-3">
+                Online bookings currently only available for Brisbane. For other
+                locations please contact via phone or email.
+              </p>
               <div class="col-12 form-group">
                 <select
                   class="form-control"

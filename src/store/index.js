@@ -17,19 +17,19 @@ export default new Vuex.Store({
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           index: 0,
           phone: "0411 244 929"
-        },
-        {
-          city: "Christchurch",
-          token: "27b7c5186fa1eb92837c02a07b0227ca454fb598",
-          index: 1,
-          phone: "03 377 3716"
-        },
-        {
-          city: "Perth",
-          token: "4a98d038aa7c10af0cdfa0489bd20dc1951b955d",
-          index: 2,
-          phone: "0438 084 218"
         }
+        // {
+        //   city: "Christchurch",
+        //   token: "27b7c5186fa1eb92837c02a07b0227ca454fb598",
+        //   index: 1,
+        //   phone: "03 377 3716"
+        // },
+        // {
+        //   city: "Perth",
+        //   token: "4a98d038aa7c10af0cdfa0489bd20dc1951b955d",
+        //   index: 2,
+        //   phone: "0438 084 218"
+        // }
         // {
         //   city: "Broome",
         //   token: "",
