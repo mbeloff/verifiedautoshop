@@ -52,7 +52,7 @@
           name="drop_off_time"
         />
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12">
             <div class="row ">
               <label for="" class="col-12 section-label">Select Location</label>
               <p class="px-3">
