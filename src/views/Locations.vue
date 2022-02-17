@@ -17,7 +17,7 @@
     </div> -->
     <Location
       v-for="location in this.$store.state.global.loc"
-      :key="location"
+      :key="location.name"
       :location="location.name.toLowerCase()"
     ></Location>
   </div>
