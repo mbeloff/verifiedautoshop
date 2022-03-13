@@ -16,7 +16,7 @@ export default new Vuex.Store({
           city: "Brisbane",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           index: 0,
-          phone: "0411 244 929"
+          phone: "0417 740 308"
         }
         // {
         //   city: "Christchurch",
@@ -47,7 +47,7 @@ export default new Vuex.Store({
           locality: "Woolloongabba",
           city: "Brisbane",
           postcode: "4102",
-          phone: "0411 244 929",
+          phone: "0417 740 308",
           email: "bookings@verifiedautoshop.com",
           token: "208c5f70fea76d55514cb31d4799f335353ea6ba",
           map:
@@ -56,7 +56,7 @@ export default new Vuex.Store({
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             name: "Verified Auto Shop Brisbane",
-            telephone: "0424 975 336",
+            telephone: "0417 740 308",
             image:
               "https://res.cloudinary.com/dg5ybbkbh/image/upload/v1604462332/verified/v-exterior.jpg",
             logo:
