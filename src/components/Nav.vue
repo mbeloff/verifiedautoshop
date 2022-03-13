@@ -297,17 +297,17 @@ export default {
               // }
             ]
           }
-        ],
-        menuOptionsRight: [
-          {
-            isLinkAction: true,
-            type: "button",
-            text: "Book Now",
-            path: "",
-            class: "btn btn-cs btn-prime",
-            iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
-          }
         ]
+        // menuOptionsRight: [
+        //   {
+        //     isLinkAction: true,
+        //     type: "button",
+        //     text: "Book Now",
+        //     path: "",
+        //     class: "btn btn-cs btn-prime",
+        //     iconRight: '<i class="fas fa-comment-alt-lines fa-fw"></i>'
+        //   }
+        // ]
       }
     };
   }
