@@ -41,9 +41,9 @@
             style="height: 40px;"
             class="mt-3"
           />
-          <BookNow class="btn-prime ml-md-3 mt-3"
+          <!-- <BookNow class="btn-prime ml-md-3 mt-3"
             ><i class="fas fa-comment-alt-lines fa-fw ml-1"></i
-          ></BookNow>
+          ></BookNow> -->
         </div>
       </div>
       <div class="row mt-3">
