@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <BookNow class="btn-outline"></BookNow>
+      <!-- <BookNow class="btn-outline"></BookNow> -->
     </div>
   </div>
 </template>
