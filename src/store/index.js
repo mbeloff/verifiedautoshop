@@ -83,7 +83,7 @@ export default new Vuex.Store({
           locality: "Waltham",
           city: "Christchurch",
           postcode: "8011",
-          phone: "03 377 3716",
+          phone: "0220 382 617",
           email: "christchurch@verifiedautoshop.com",
           token: "27b7c5186fa1eb92837c02a07b0227ca454fb598",
           map:
